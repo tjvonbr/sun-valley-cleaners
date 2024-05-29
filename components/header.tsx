@@ -10,7 +10,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 h-20 w-full px-4 py-8 flex justify-between items-center border-b bg-white">
+    <header className="sticky top-0 z-50 h-20 w-full px-4 py-8 flex justify-between items-center bg-background">
       <p>Sun Valley Cleaners</p>
       <HeaderNav />
       <Link
