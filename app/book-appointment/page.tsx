@@ -1,7 +1,38 @@
+import Link from "next/link";
+
 export default function BookAppointmentPage() {
   return (
-    <div className="min-h-screen w-full">
-      <h1>Book appointment</h1>
+    <div className="container min-h-screen w-full flex flex-col items-center">
+      <div className="h-[400px] w-full max-w-[600px] flex flex-col justify-center items-center space-y-4 text-center">
+        <h1 className="text-4xl text-black font-bold">
+          Book a cleaning with us today!
+        </h1>
+        <p className="text-muted-foreground">
+          Book a cleaning by completing the form below to the best of your
+          ability! If you&apos;d rather secure a cleaning with a phone call,
+          please call (623) 295-0506 and we&apos;ll get you setup!
+        </p>
+        <p className="text-xs text-muted-foreground">
+          If you cannot access the form below for whatever reason, please click{" "}
+          <Link
+            href="https://sunvalleycleaners.bookingkoala.com/booknow"
+            className="underline"
+          >
+            here
+          </Link>{" "}
+          to book your appointment on our provider&apos;s website!
+        </p>
+      </div>
+      <iframe
+        src="https://sunvalleycleaners.bookingkoala.com/booknow/home_cleaning?embed=true&bar=false&banner=false"
+        style={{ border: "none", height: "1000px" }}
+        width="100%"
+        scrolling="no"
+      ></iframe>
+      <script
+        src="https://sunvalleycleaners.bookingkoala.com/resources/embed.js"
+        defer
+      ></script>
     </div>
   );
 }
