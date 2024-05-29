@@ -1,112 +1,151 @@
 import Image from "next/image";
+import icon from "../public/hero.svg";
+import femaleCleaner from "../public/female-cleaner.svg";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import {
+  IconBed,
+  IconBox,
+  IconBoxOpen,
+  IconCheck,
+  IconCircleCheck,
+  IconEvent,
+  IconOven,
+  IconRibbon,
+  IconSprayBottle,
+} from "@/components/ui/icons";
+import CommitmentCard from "@/components/feature-card";
+import ServiceCard from "@/components/service-card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="flex min-h-screen flex-col items-center">
+      <div className="h-[1024px] w-full flex items-center border">
+        <div className="flex flex-col space-y-4">
+          <h1 className="text-6xl text-primary font-bold">
+            #1 House Cleaning Company in the Phoenix area!
+          </h1>
+          <p className="text-muted-foreground">
+            We stand by the quality of our work at Sun Valley Cleaners. If for
+            any reason you&apos;re not satisfied with our cleaning service,
+            we&apos;ll return and make it right at no cost to you!
+          </p>
+          <Link
+            href="/book-appointment"
+            className={cn(buttonVariants({ variant: "default" }))}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Book now!
+          </Link>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={icon}
+          height="750"
+          width="500"
+          alt="hello"
+          className="bg-background"
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="py-12 w-full flex flex-col justify-between items-center space-y-8 bg-secondary text-white">
+        <CommitmentCard
+          title="100% Guarantee"
+          description="We stand by our work with a 100% guarantee, ensuring that every clean meets your highest expectations."
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          <IconCheck className="size-16" />
+        </CommitmentCard>
+        <CommitmentCard
+          title="Best In Class Service"
+          description="Our commitment to best-in-class service means we deliver meticulous, top-tier cleaning with a personal touch."
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          <IconRibbon className="size-16" />
+        </CommitmentCard>
+        <CommitmentCard
+          title="Competitive Pricing"
+          description="Competitive pricing that ensures you receive outstanding value and quality, making a pristine home accessible to everyone."
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          <IconCheck className="size-16" />
+        </CommitmentCard>
+      </div>
+      <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-white">
+        <h2 className="text-3xl text-black font-bold">
+          Commited to quality and customer satisfaction
+        </h2>
+        <p className="text-sm text-slate-400">
+          We provide a range of services to meet each of your house cleaning
+          needs. Whatever problem you&apos;re facing, we have a solution!
+        </p>
+        <div className="flex flex-col items-start space-y-4">
+          <div className="flex items-center">
+            <IconCircleCheck className="size-10 mr-2 text-secondary" />
+            <p className="text-lg text-black font-semibold">
+              100% Satisfaction Guarantee
+            </p>
+          </div>
+          <div className="flex items-center">
+            <IconCircleCheck className="size-10 mr-2 text-secondary" />
+            <p className="text-lg text-black font-semibold">
+              Highly professional staff
+            </p>
+          </div>
+          <div className="flex items-center">
+            <IconCircleCheck className="size-10 mr-2 text-secondary" />
+            <p className="text-lg text-black font-semibold">
+              Eco-friendly cleaning products
+            </p>
+          </div>
+        </div>
+        <Link
+          href="/book-appointment"
+          className={cn(buttonVariants({ variant: "default" }))}
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          Book now!
+        </Link>
+        <Image
+          src={femaleCleaner}
+          height="750"
+          width="500"
+          alt="hello"
+          className="bg-background"
+        />
+      </div>
+      <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-white">
+        <h2 className="text-3xl text-black font-bold">Services Provided</h2>
+        <ServiceCard
+          title="Standard Cleaning"
+          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+        >
+          <IconSprayBottle className="size-12 text-secondary" />
+        </ServiceCard>
+        <ServiceCard
+          title="Deep Cleaning"
+          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+        >
+          <IconOven className="size-12 text-secondary" />
+        </ServiceCard>
+        <ServiceCard
+          title="Move-in Cleaning"
+          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+        >
+          <IconBoxOpen className="size-12 text-secondary" />
+        </ServiceCard>
+        <ServiceCard
+          title="Move-out Cleaning"
+          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+        >
+          <IconBox className="size-12 text-secondary" />
+        </ServiceCard>
+        <ServiceCard
+          title="Event Cleaning"
+          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+        >
+          <IconEvent className="size-12 text-secondary" />
+        </ServiceCard>
+        <ServiceCard
+          title="Linen Service"
+          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+        >
+          <IconBed className="size-12 text-secondary" />
+        </ServiceCard>
       </div>
     </main>
   );

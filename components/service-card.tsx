@@ -1,0 +1,24 @@
+import AppointmentLink from "./appointment-link";
+
+interface ServiceCardProps {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+}
+
+export default function ServiceCard({
+  title,
+  description,
+  children,
+}: ServiceCardProps) {
+  return (
+    <div className="px-5 py-8 flex flex-col items-center space-y-2 rounded-md text-center bg-background">
+      {children}
+      <h3 className="text-2xl font-bold">{title}</h3>
+      <p className="text-slate-500">{description}</p>
+      <div>
+        <AppointmentLink className="mt-6" />
+      </div>
+    </div>
+  );
+}
