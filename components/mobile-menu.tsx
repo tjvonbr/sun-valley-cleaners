@@ -26,7 +26,7 @@ export default function MobileMenu() {
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Link href="/about" className="w-full">
-              About
+              About Us
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
