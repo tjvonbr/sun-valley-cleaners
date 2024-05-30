@@ -9,7 +9,7 @@ export default function HeaderNav() {
         Home
       </Link>
       <Link href="/about" className="hover:underline">
-        About
+        About Us
       </Link>
       <LocationsDropdown />
       <ServicesDropdown />
