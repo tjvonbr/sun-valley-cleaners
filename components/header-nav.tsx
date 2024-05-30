@@ -4,7 +4,7 @@ import ServicesDropdown from "./services-dropdown";
 
 export default function HeaderNav() {
   return (
-    <nav className="flex items-center space-x-8 text-sm">
+    <nav className="hidden md:flex items-center space-x-8 text-sm">
       <Link href="/" className="hover:underline">
         Home
       </Link>
