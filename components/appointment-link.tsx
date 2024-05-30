@@ -12,7 +12,7 @@ export default function AppointmentLink({ className }: AppointmentLinkProps) {
       href="/book-appointment"
       className={cn(buttonVariants({ variant: "default" }), className)}
     >
-      Book appointment!
+      Book an appointment!
     </Link>
   );
 }
