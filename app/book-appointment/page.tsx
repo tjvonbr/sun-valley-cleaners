@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function BookAppointmentPage() {
   return (
     <div className="container min-h-screen w-full flex flex-col items-center">
-      <div className="h-[400px] w-full max-w-[600px] flex flex-col justify-center items-center space-y-4 text-center">
+      <div className="h-[400px] w-full max-w-[600px] flex flex-col justify-center items-center space-y-4 text-center overflow-visible">
         <h1 className="text-4xl text-black font-bold">
           Book a cleaning with us today!
         </h1>

@@ -20,10 +20,10 @@ import ServiceCard from "@/components/service-card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
-      <div className="h-[1024px] w-full flex items-center border">
-        <div className="flex flex-col space-y-4">
-          <h1 className="text-6xl text-primary font-bold">
+    <main className="p-5 flex min-h-screen flex-col items-center">
+      <div className="w-full flex flex-col items-center">
+        <div className="flex flex-col items-center text-center space-y-4">
+          <h1 className="text-4xl text-primary font-black">
             #1 House Cleaning Company in the Phoenix area!
           </h1>
           <p className="text-muted-foreground">
@@ -38,13 +38,7 @@ export default function Home() {
             Book now!
           </Link>
         </div>
-        <Image
-          src={icon}
-          height="750"
-          width="500"
-          alt="hello"
-          className="bg-background"
-        />
+        <Image src={icon} height="1000" width="10000" alt="hello" />
       </div>
       <div className="py-12 w-full flex flex-col justify-between items-center space-y-8 bg-secondary text-white">
         <CommitmentCard
