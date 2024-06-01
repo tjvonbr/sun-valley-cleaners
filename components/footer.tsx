@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div>
           <p className="font-bold underline">Hours of Operation</p>
-          <p>Monday - Friday 8am - 5pm</p>
+          <p>Sunday - Saturday 8am - 8pm</p>
         </div>
 
         {/* <Link
@@ -45,7 +45,7 @@ export default function Footer() {
         </Link> */}
       </div>
       <Image src={logo} height="250" width="250" alt="hello" />
-      <div className="my-8 flex flex-col items-center">
+      <div className="my-8 flex flex-col items-start">
         <p className="font-bold underline">Services Provided</p>
         <Link
           href="/services/standard-cleaning"
