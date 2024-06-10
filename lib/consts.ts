@@ -36,15 +36,15 @@ export const navigation = {
   services: [
     {
       name: "Standard Cleaning",
-      href: "/services/standard-clean",
+      href: "/services/standard-cleaning",
     },
     {
       name: "Deep Cleaning",
-      href: "/services/deep-clean",
+      href: "/services/deep-cleaning",
     },
     {
       name: "Move-in/Move-out Cleaning",
-      href: "/services/move-clean",
+      href: "/services/move-cleaning",
     },
   ],
 };
