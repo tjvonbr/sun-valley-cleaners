@@ -2,31 +2,35 @@ export const navigation = {
   locations: [
     {
       name: "Phoenix",
-      href: "/phoenix",
+      href: "/locations/phoenix",
     },
     {
       name: "Scottsdale",
-      href: "/scottsdale",
+      href: "/locations/scottsdale",
     },
     {
       name: "Tempe",
-      href: "/tempe",
+      href: "/locations/tempe",
     },
     {
       name: "Mesa",
-      href: "/mesa",
+      href: "/locations/mesa",
     },
     {
       name: "Paradise Valley",
-      href: "/paradise-valley",
+      href: "/locations/paradise-valley",
     },
     {
       name: "Chandler",
-      href: "/chandler",
+      href: "/locations/chandler",
     },
     {
       name: "Gilbert",
-      href: "/gilbert",
+      href: "/locations/gilbert",
+    },
+    {
+      name: "Queen Creek",
+      href: "/locations/queen-creek",
     },
   ],
   services: [
