@@ -1,11 +1,14 @@
 import { cn } from "@/lib/utils";
 import AppointmentLink from "./appointment-link";
+import Link from "next/link";
+import { buttonVariants } from "./ui/button";
 
 interface ServiceCardProps {
   title: string;
   description: string;
   children: React.ReactNode;
   className?: string;
+  link?: string;
 }
 
 export default function ServiceCard({
@@ -13,6 +16,7 @@ export default function ServiceCard({
   description,
   children,
   className,
+  link = "",
 }: ServiceCardProps) {
   return (
     <div
@@ -25,7 +29,18 @@ export default function ServiceCard({
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="text-slate-500">{description}</p>
       <div>
-        <AppointmentLink className="mt-6" />
+        {link !== "" ? (
+          <Link
+            href={link}
+            className={cn(buttonVariants({ variant: "default" }), className)}
+          >
+            {link?.includes("locations")
+              ? "Explore Service Area"
+              : "Explore Service"}
+          </Link>
+        ) : (
+          <AppointmentLink className="mt-6" />
+        )}
       </div>
     </div>
   );
