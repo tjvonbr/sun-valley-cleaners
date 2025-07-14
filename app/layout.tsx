@@ -7,8 +7,9 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sun Valley Cleaners | #1 House Cleaning Company in Phoenix Area!",
-  description: "Providing the best house cleaning service in the Phoenix area.",
+  title: "#1 House Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners",
+  description:
+    "Sun Valley Cleaners offers #1 house cleaning services in Scottsdale, AZ. Reliable, detailed, and satisfaction-guaranteed for your home. Call now!",
 };
 
 export default function RootLayout({

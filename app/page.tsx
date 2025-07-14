@@ -24,7 +24,7 @@ export default function Home() {
       <div className="px-16 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
           <h1 className="text-4xl lg:text-6xl text-primary font-black">
-            #1 House Cleaning Company in the Phoenix area!
+            #1 House Cleaning Services in Scottsdale, AZ
           </h1>
           <p className="text-muted-foreground lg:text-lg">
             We stand by the quality of our work at Sun Valley Cleaners. If for
