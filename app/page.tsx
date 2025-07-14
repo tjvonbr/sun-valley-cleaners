@@ -176,7 +176,7 @@ export default function Home() {
           >
             <div className="max-w-md px-6 mx-auto pb-28 sm:max-w-3xl lg:max-w-7xl lg:px-8">
               <div className="flex flex-col justify-center text-center">
-                <p className="text-lg font-semibold text-custom">FAQ's</p>
+                <p className="text-lg font-semibold text-custom">FAQs</p>
                 <h2 className="mt-2 text-4xl font-bold tracking-tight text-black">
                   Frequently Asked Questions
                 </h2>

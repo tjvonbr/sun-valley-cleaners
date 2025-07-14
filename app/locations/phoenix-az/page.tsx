@@ -272,7 +272,7 @@ export default function Home() {
                 <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
                   Looking for top-rated house cleaning services in Phoenix, AZ?
                   Our team is proud to serve local residents with thorough,
-                  reliable cleaning solutions. Whether you're near downtown or
+                  reliable cleaning solutions. Whether you are near downtown or
                   in the suburbs, we’re ready to help you enjoy a spotless home
                   with unmatched care and professionalism.
                 </p>
