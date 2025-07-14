@@ -22,7 +22,7 @@ export const metadata = {
   description:
     "Affordable house cleaning services in Chandler, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/cjandler-az",
+    canonical: "https://www.sunvalleycleaners.com/locations/chandler-az",
   },
 };
 
