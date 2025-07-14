@@ -2,7 +2,7 @@ export const navigation = {
   locations: [
     {
       name: "Phoenix",
-      href: "/locations/phoenix",
+      href: "/locations/phoenix-az",
     },
     {
       name: "Scottsdale",
@@ -14,7 +14,7 @@ export const navigation = {
     },
     {
       name: "Mesa",
-      href: "/locations/mesa",
+      href: "/locations/mesa-az",
     },
     {
       name: "Paradise Valley",
@@ -22,11 +22,11 @@ export const navigation = {
     },
     {
       name: "Chandler",
-      href: "/locations/chandler",
+      href: "/locations/chandler-az",
     },
     {
       name: "Gilbert",
-      href: "/locations/gilbert",
+      href: "/locations/gilbert-az",
     },
     {
       name: "Queen Creek",

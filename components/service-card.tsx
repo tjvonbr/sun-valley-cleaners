@@ -34,9 +34,9 @@ export default function ServiceCard({
             href={link}
             className={cn(buttonVariants({ variant: "default" }), className)}
           >
-            {link?.includes("locations")
-              ? "Explore Service Area"
-              : "Explore Service"}
+            {link?.includes("cleaning")
+              ? "Explore Service"
+              : "Explore Service Area"}
           </Link>
         ) : (
           <AppointmentLink className="mt-6" />

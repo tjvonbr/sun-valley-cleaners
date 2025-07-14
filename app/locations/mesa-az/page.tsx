@@ -17,31 +17,30 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title:
-    "Top-Rated House Cleaning Services in Phoenix, AZ | Sun Valley Cleaners",
+  title: "Reliable House Cleaning Services in Mesa, AZ | Sun Valley Cleaners",
   description:
-    "Top-rated house cleaning services in Phoenix, AZ by Sun Valley Cleaners. Spotless results, reliable service, and guaranteed satisfaction. Call now!",
+    "Reliable house cleaning services in Mesa, AZ by Sun Valley Cleaners. Consistent results, flexible scheduling, and trusted service. Call now!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/phoenix-az",
+    canonical: "https://www.sunvalleycleaners.com/locations/mesa-az",
   },
 };
 
 const faqs = [
   {
+    question: "What areas do your house cleaning services in Mesa, AZ cover?",
+    answer:
+      "We clean all major living areas including kitchens, bathrooms, bedrooms, and high-traffic zones in Mesa homes, using detailed checklists to ensure consistency.",
+  },
+  {
     question:
-      "What does a standard house cleaning service in Phoenix, AZ include?",
+      "Are your cleaning professionals trained and insured in Mesa, AZ?",
     answer:
-      "It typically includes dusting, sweeping, mopping, vacuuming, and sanitizing common areas, kitchens, and bathrooms.",
+      "Yes, all our Mesa-based house cleaners are professionally trained, background-checked, and fully insured for your peace of mind.",
   },
   {
-    question: "Why hire a professional house cleaning service in Phoenix, AZ?",
+    question: "Can I schedule recurring house cleaning services in Mesa, AZ?",
     answer:
-      "Professionals save you time, use better products, and ensure a healthier environment with expert-level cleaning.",
-  },
-  {
-    question: "How do I choose the #1 house cleaning service in Phoenix, AZ?",
-    answer:
-      "Look for experience, satisfaction guarantees, great reviews, and flexible scheduling to ensure top service.",
+      "Absolutely. We offer weekly, biweekly, and monthly plans so Mesa residents can keep their homes clean and comfortable year-round.",
   },
 ];
 
@@ -52,20 +51,19 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Top-Rated House Cleaning Services in Phoenix, AZ
+              Reliable House Cleaning Services in Mesa, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
-              At{" "}
               <a
                 href="https://www.sunvalleycleaners.com/"
                 className="underline text-secondary"
                 target="_blank"
               >
                 Sun Valley Cleaners
-              </a>
-              , we provide Phoenix homeowners with spotless results and
-              dependable service. Not happy? We’ll fix it free—your satisfaction
-              is guaranteed!
+              </a>{" "}
+              provides reliable house cleaning services across Mesa, AZ. Our
+              consistent quality and attention to detail make it easy to keep
+              your home fresh, safe, and comfortable.
             </p>
 
             <Link
@@ -83,51 +81,41 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Choose Sun Valley Cleaners for House Cleaning Services in
-                Phoenix, AZ?
+                Sun Valley Cleaners: House Cleaning Services in Mesa, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
-                Premium solutions for busy homes
+                Trusted cleaning, tailored for you
               </p>
               <div className="flex flex-col items-start space-y-4">
-                <div className="flex items-start">
+                <div className="flex items-start space-x-2">
                   <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-
                   <p className="text-lg text-black font-semibold">
-                    <b>Flexible Appointments:</b> We offer adjustable scheduling
-                    options for homeowners across{" "}
-                    <a
-                      href="https://en.wikipedia.org/wiki/Phoenix,_Arizona"
-                      target="_blank"
-                      className="underline text-secondary"
-                    >
-                      Phoenix, AZ
-                    </a>
-                    , ensuring convenience without compromising quality in our
-                    house cleaning services.
+                    <b>Reliable Scheduling:</b> Our Mesa cleaning services run
+                    on-time, every time. Whether you are home or away, you can
+                    count on punctuality and consistency with every visit.
                   </p>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start space-x-2">
                   <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Professional and Respectful Staff:</b> Our trained
-                    cleaners handle your Phoenix home with care, ensuring every
-                    visit is courteous, efficient, and up to standard.
+                    <b>Complete Room Coverage:</b> We clean top-to-bottom,
+                    including under furniture, behind fixtures, and in
+                    often-missed areas—ensuring every inch of your Mesa home
+                    shines.
                   </p>
                 </div>
-                <div className="flex items-start w-full">
+                <div className="flex items-start space-x-2">
                   <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Tailored Cleaning for Phoenix Homes:</b> We tackle dust
-                    and debris common in desert climates with localized methods
-                    that make our house cleaning services in Phoenix, AZ extra
-                    effective.
+                    <b>Transparent, Flat-Rate Pricing:</b> Our Mesa clients
+                    enjoy clear, flat-rate pricing without surprise charges—just
+                    reliable service you can trust on any budget.
                   </p>
                 </div>
               </div>
@@ -143,7 +131,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="female cleaner in Phoenix house"
+              alt="female cleaner in Mesa home"
               className="bg-background"
             />
           </div>
@@ -156,10 +144,10 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Phoenix, AZ
+                Why House Cleaning Services Matter in Mesa, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
-                Clean homes, healthy lives
+                Clean living, every season
               </p>
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
@@ -167,10 +155,18 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Combating Desert Dust:</b> Phoenix homes are regularly
-                    exposed to dust storms and dry air. Routine house cleaning
-                    helps reduce allergens and maintain better air quality
-                    indoors.
+                    <b>Dry Climate Challenges:</b> Mesas dry, dusty environment
+                    demands frequent interior cleaning. Regular service helps
+                    control allergens and dust buildup across
+                    <a
+                      href="https://en.wikipedia.org/wiki/Mesa,_Arizona"
+                      target="_blank"
+                      className="underline text-secondary"
+                    >
+                      {" "}
+                      Mesa, AZ
+                    </a>{" "}
+                    homes.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -178,10 +174,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Healthier Living Conditions:</b> Regular house cleaning
-                    in Phoenix, AZ minimizes the spread of germs, pollen, and
-                    pet dander—especially important during allergy season and
-                    extreme heat months.
+                    <b>Improved Indoor Air Quality:</b> House cleaning in Mesa
+                    helps reduce airborne particles from dust and pollen,
+                    supporting respiratory health and home hygiene.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -189,9 +184,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Boosting Home Value:</b> A clean, well-maintained
-                    interior adds long-term value to your home, especially in a
-                    competitive real estate market like Phoenix, AZ.
+                    <b>Maintaining Clean Spaces Year-Round:</b> From summer heat
+                    to monsoon season, keeping your Mesa home clean and
+                    guest-ready is easier with a regular cleaning plan.
                   </p>
                 </div>
               </div>
@@ -207,7 +202,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="female cleaner with supplies in Phoenix"
+              alt="house cleaning service in Mesa"
               className="bg-background"
             />
           </div>
@@ -228,7 +223,6 @@ export default function Home() {
             <ServiceCard
               title="Deep Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-              link="/locations/phoenix-az/deep-cleaning"
             >
               <IconOven className="size-12 text-secondary" />
             </ServiceCard>
@@ -274,24 +268,22 @@ export default function Home() {
                   Find Us
                 </h2>
                 <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-                  Looking for top-rated house cleaning services in Phoenix, AZ?
-                  Our team is proud to serve local residents with thorough,
-                  reliable cleaning solutions. Whether you are near downtown or
-                  in the suburbs, we’re ready to help you enjoy a spotless home
-                  with unmatched care and professionalism.
+                  Sun Valley Cleaners delivers reliable house cleaning services
+                  in Mesa, AZ. Our local team proudly serves homes across the
+                  city, offering flexible schedules and dependable service
+                  designed to keep your home spotless no matter the season.
                 </p>
               </div>
               <div className="max-w-4xl mx-auto">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425348.8291985406!2d-112.124793!3d33.60432555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1752503704975!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425209.90144216334!2d-111.876183!3d33.41777765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba699bc03cc9d%3A0xceb9b7a49f2f7c7d!2sMesa%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1752588561791!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in phoenix, house cleaning near
-                  phoenix
+                  house cleaning services in mesa, house cleaning near mesa
                 </iframe>
               </div>
             </div>

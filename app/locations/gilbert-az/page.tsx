@@ -17,31 +17,31 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title:
-    "Top-Rated House Cleaning Services in Phoenix, AZ | Sun Valley Cleaners",
+  title: "Trusted House Cleaning Services in Gilbert, AZ | Sun Valley Cleaners",
   description:
-    "Top-rated house cleaning services in Phoenix, AZ by Sun Valley Cleaners. Spotless results, reliable service, and guaranteed satisfaction. Call now!",
+    "Trusted house cleaning services in Gilbert, AZ by Sun Valley Cleaners. Detailed cleaning, timely service, and guaranteed satisfaction. Call now!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/phoenix-az",
+    canonical: "https://www.sunvalleycleaners.com/locations/gilbert-az",
   },
 };
 
 const faqs = [
   {
     question:
-      "What does a standard house cleaning service in Phoenix, AZ include?",
+      "What makes your house cleaning services in Gilbert, AZ stand out?",
     answer:
-      "It typically includes dusting, sweeping, mopping, vacuuming, and sanitizing common areas, kitchens, and bathrooms.",
+      "Our Gilbert, AZ house cleaning services stand out through consistent attention to detail, eco-friendly products, and a satisfaction guarantee backed by trained professionals.",
   },
   {
-    question: "Why hire a professional house cleaning service in Phoenix, AZ?",
+    question: "How can regular house cleaning benefit my Gilbert home?",
     answer:
-      "Professionals save you time, use better products, and ensure a healthier environment with expert-level cleaning.",
+      "Routine house cleaning in Gilbert improves air quality, reduces allergens, and protects surfaces from dust and buildup—especially in high-traffic areas and dry conditions.",
   },
   {
-    question: "How do I choose the #1 house cleaning service in Phoenix, AZ?",
+    question:
+      "Do you offer flexible scheduling for house cleaning in Gilbert, AZ?",
     answer:
-      "Look for experience, satisfaction guarantees, great reviews, and flexible scheduling to ensure top service.",
+      "Yes, we offer weekly, biweekly, monthly, and one-time options for all Gilbert homeowners to fit every lifestyle and cleaning need.",
   },
 ];
 
@@ -52,20 +52,19 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Top-Rated House Cleaning Services in Phoenix, AZ
+              Trusted House Cleaning Services in Gilbert, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
-              At{" "}
               <a
                 href="https://www.sunvalleycleaners.com/"
                 className="underline text-secondary"
                 target="_blank"
               >
                 Sun Valley Cleaners
-              </a>
-              , we provide Phoenix homeowners with spotless results and
-              dependable service. Not happy? We’ll fix it free—your satisfaction
-              is guaranteed!
+              </a>{" "}
+              proudly delivers trusted house cleaning services throughout
+              Gilbert, AZ. We provide thorough, on-time cleanings designed to
+              keep your home fresh, healthy, and stress-free.
             </p>
 
             <Link
@@ -83,51 +82,50 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Choose Sun Valley Cleaners for House Cleaning Services in
-                Phoenix, AZ?
+                Why choose Sun Valley Cleaners for House Cleaning Services in
+                Gilbert, AZ?
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
-                Premium solutions for busy homes
+                Reliable care for every home
               </p>
               <div className="flex flex-col items-start space-y-4">
-                <div className="flex items-start">
+                <div className="flex items-start space-x-2">
                   <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-
                   <p className="text-lg text-black font-semibold">
-                    <b>Flexible Appointments:</b> We offer adjustable scheduling
-                    options for homeowners across{" "}
+                    <b>Custom Cleaning Plans:</b> We offer personalized services
+                    tailored to the layout and needs of your home in Gilbert,
+                    AZ. Whether its weekly or monthly, we adapt to you.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="flex-shrink-0 pt-1">
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
+                  </div>
+                  <p className="text-lg text-black font-semibold">
+                    <b>Respectful, Trained Staff:</b> Our friendly professionals
+                    arrive on time and respect your space while delivering a
+                    clean that exceeds expectations every visit.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="flex-shrink-0 pt-1">
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
+                  </div>
+                  <p className="text-lg text-black font-semibold">
+                    <b>Locally Rooted Knowledge:</b> Our team understands the
+                    cleaning needs specific to
                     <a
-                      href="https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+                      href="https://en.wikipedia.org/wiki/Gilbert,_Arizona"
                       target="_blank"
                       className="underline text-secondary"
                     >
-                      Phoenix, AZ
+                      {" "}
+                      Gilbert, AZ
                     </a>
-                    , ensuring convenience without compromising quality in our
-                    house cleaning services.
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
-                  </div>
-                  <p className="text-lg text-black font-semibold">
-                    <b>Professional and Respectful Staff:</b> Our trained
-                    cleaners handle your Phoenix home with care, ensuring every
-                    visit is courteous, efficient, and up to standard.
-                  </p>
-                </div>
-                <div className="flex items-start w-full">
-                  <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
-                  </div>
-                  <p className="text-lg text-black font-semibold">
-                    <b>Tailored Cleaning for Phoenix Homes:</b> We tackle dust
-                    and debris common in desert climates with localized methods
-                    that make our house cleaning services in Phoenix, AZ extra
-                    effective.
+                    , from seasonal dust to family-oriented homes—giving you
+                    top-tier local service.
                   </p>
                 </div>
               </div>
@@ -143,7 +141,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="female cleaner in Phoenix house"
+              alt="female cleaner in Gilbert home"
               className="bg-background"
             />
           </div>
@@ -156,10 +154,10 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Phoenix, AZ
+                Why House Cleaning Services Matter in Gilbert, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
-                Clean homes, healthy lives
+                Clean space, clear peace
               </p>
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
@@ -167,10 +165,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Combating Desert Dust:</b> Phoenix homes are regularly
-                    exposed to dust storms and dry air. Routine house cleaning
-                    helps reduce allergens and maintain better air quality
-                    indoors.
+                    <b>Dust Control for Desert Living:</b> Gilberts dry air and
+                    desert environment mean more dust indoors. Regular house
+                    cleaning keeps surfaces clean and indoor air healthier.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -178,10 +175,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Healthier Living Conditions:</b> Regular house cleaning
-                    in Phoenix, AZ minimizes the spread of germs, pollen, and
-                    pet dander—especially important during allergy season and
-                    extreme heat months.
+                    <b>Protecting Busy Family Homes:</b> With many family
+                    households in Gilbert, regular cleaning keeps high-traffic
+                    areas sanitary and organized, reducing stress and clutter.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -189,9 +185,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Boosting Home Value:</b> A clean, well-maintained
-                    interior adds long-term value to your home, especially in a
-                    competitive real estate market like Phoenix, AZ.
+                    <b>Long-Term Home Care:</b> Routine house cleaning in
+                    Gilbert, AZ protects your homes value by preventing grime,
+                    mildew, and wear on floors, counters, and fixtures.
                   </p>
                 </div>
               </div>
@@ -207,7 +203,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="female cleaner with supplies in Phoenix"
+              alt="house cleaner working in Gilbert home"
               className="bg-background"
             />
           </div>
@@ -228,7 +224,6 @@ export default function Home() {
             <ServiceCard
               title="Deep Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-              link="/locations/phoenix-az/deep-cleaning"
             >
               <IconOven className="size-12 text-secondary" />
             </ServiceCard>
@@ -274,24 +269,24 @@ export default function Home() {
                   Find Us
                 </h2>
                 <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-                  Looking for top-rated house cleaning services in Phoenix, AZ?
-                  Our team is proud to serve local residents with thorough,
-                  reliable cleaning solutions. Whether you are near downtown or
-                  in the suburbs, we’re ready to help you enjoy a spotless home
-                  with unmatched care and professionalism.
+                  Sun Valley Cleaners is proud to offer trusted house cleaning
+                  services in Gilbert, AZ. Centrally located, we efficiently
+                  serve neighborhoods across Gilbert with personalized,
+                  professional service and flexible scheduling for homes of all
+                  sizes.
                 </p>
               </div>
               <div className="max-w-4xl mx-auto">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425348.8291985406!2d-112.124793!3d33.60432555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1752503704975!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425279.17426632756!2d-111.86322675!3d33.337930449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872baebb9f383b63%3A0x19dffb61e3ea078d!2sGilbert%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1752584141783!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in phoenix, house cleaning near
-                  phoenix
+                  house cleaning services in gilbert, house cleaning near
+                  gilbert
                 </iframe>
               </div>
             </div>

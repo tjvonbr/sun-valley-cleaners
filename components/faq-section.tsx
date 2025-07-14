@@ -15,13 +15,10 @@ export default function FaqSection({
       <section id="faq" className="bg-white">
         <div className="max-w-md px-6 mx-auto pb-28 sm:max-w-3xl lg:max-w-7xl lg:px-8">
           <div className="flex flex-col justify-center text-center">
-            <p className="text-lg font-semibold text-custom">FAQss</p>
+            <p className="text-lg font-semibold text-custom">FAQs</p>
             <h2 className="mt-2 text-4xl font-bold tracking-tight text-black">
               Frequently Asked Questions
             </h2>
-            <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-              Answering your questions about house cleaning in {city}.
-            </p>
           </div>
           <div className="max-w-4xl mx-auto">
             <dl className="mt-10 space-y-6 divide-y divide-gray-900/20">

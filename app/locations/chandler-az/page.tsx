@@ -18,30 +18,32 @@ import ServiceCard from "@/components/service-card";
 
 export const metadata = {
   title:
-    "Top-Rated House Cleaning Services in Phoenix, AZ | Sun Valley Cleaners",
+    "Affordable House Cleaning Services in Chandler, AZ | Sun Valley Cleaners",
   description:
-    "Top-rated house cleaning services in Phoenix, AZ by Sun Valley Cleaners. Spotless results, reliable service, and guaranteed satisfaction. Call now!",
+    "Affordable house cleaning services in Chandler, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/phoenix-az",
+    canonical: "https://www.sunvalleycleaners.com/locations/cjandler-az",
   },
 };
 
 const faqs = [
   {
     question:
-      "What does a standard house cleaning service in Phoenix, AZ include?",
+      "What is included in your house cleaning services in Chandler, AZ?",
     answer:
-      "It typically includes dusting, sweeping, mopping, vacuuming, and sanitizing common areas, kitchens, and bathrooms.",
+      "Our house cleaning in Chandler, AZ includes dusting, vacuuming, mopping, bathroom and kitchen sanitization, and full surface wipe-downs in all main areas.",
   },
   {
-    question: "Why hire a professional house cleaning service in Phoenix, AZ?",
+    question:
+      "How often should Chandler homeowners schedule professional cleaning?",
     answer:
-      "Professionals save you time, use better products, and ensure a healthier environment with expert-level cleaning.",
+      "We recommend biweekly cleaning for most homes in Chandler. However, busy households or allergy-prone residents may benefit from weekly service.",
   },
   {
-    question: "How do I choose the #1 house cleaning service in Phoenix, AZ?",
+    question:
+      "Are eco-friendly products used for house cleaning in Chandler, AZ?",
     answer:
-      "Look for experience, satisfaction guarantees, great reviews, and flexible scheduling to ensure top service.",
+      "Yes, we use eco-friendly and non-toxic products for all Chandler homes to ensure safe, effective cleaning for families, pets, and the environment.",
   },
 ];
 
@@ -52,20 +54,19 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Top-Rated House Cleaning Services in Phoenix, AZ
+              Affordable House Cleaning Services in Chandler, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
-              At{" "}
               <a
                 href="https://www.sunvalleycleaners.com/"
                 className="underline text-secondary"
                 target="_blank"
               >
                 Sun Valley Cleaners
-              </a>
-              , we provide Phoenix homeowners with spotless results and
-              dependable service. Not happy? We’ll fix it free—your satisfaction
-              is guaranteed!
+              </a>{" "}
+              proudly delivers affordable and reliable house cleaning services
+              across Chandler, AZ. Whether you need routine upkeep or a one-time
+              refresh, we guarantee results youll love.
             </p>
 
             <Link
@@ -83,51 +84,49 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Choose Sun Valley Cleaners for House Cleaning Services in
-                Phoenix, AZ?
+                Sun Valley Cleaners: House Cleaning Services in Chandler, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
-                Premium solutions for busy homes
+                Clean homes made simple
               </p>
               <div className="flex flex-col items-start space-y-4">
-                <div className="flex items-start">
+                <div className="flex items-start space-x-2">
                   <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-
                   <p className="text-lg text-black font-semibold">
-                    <b>Flexible Appointments:</b> We offer adjustable scheduling
-                    options for homeowners across{" "}
+                    <b>Budget-Friendly Options:</b> We offer affordable packages
+                    tailored to different home sizes and cleaning needs, making
+                    quality house cleaning in Chandler, AZ accessible for all.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="flex-shrink-0 pt-1">
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
+                  </div>
+                  <p className="text-lg text-black font-semibold">
+                    <b>Locally Focused Service:</b> As a local provider, we
+                    understand the specific cleaning challenges in
                     <a
-                      href="https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+                      href="https://en.wikipedia.org/wiki/Chandler,_Arizona"
                       target="_blank"
                       className="underline text-secondary"
                     >
-                      Phoenix, AZ
-                    </a>
-                    , ensuring convenience without compromising quality in our
-                    house cleaning services.
+                      {" "}
+                      Chandler, AZ
+                    </a>{" "}
+                    and bring neighborhood-friendly reliability with every
+                    visit.
                   </p>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start space-x-2">
                   <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
+                    <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Professional and Respectful Staff:</b> Our trained
-                    cleaners handle your Phoenix home with care, ensuring every
-                    visit is courteous, efficient, and up to standard.
-                  </p>
-                </div>
-                <div className="flex items-start w-full">
-                  <div className="flex-shrink-0 pt-1">
-                    <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
-                  </div>
-                  <p className="text-lg text-black font-semibold">
-                    <b>Tailored Cleaning for Phoenix Homes:</b> We tackle dust
-                    and debris common in desert climates with localized methods
-                    that make our house cleaning services in Phoenix, AZ extra
-                    effective.
+                    <b>Quick Turnaround Time:</b> Our responsive scheduling and
+                    efficient team ensure your home gets cleaned quickly without
+                    compromising on thoroughness or care.
                   </p>
                 </div>
               </div>
@@ -143,7 +142,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="female cleaner in Phoenix house"
+              alt="female cleaner in Chandler home"
               className="bg-background"
             />
           </div>
@@ -156,10 +155,10 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Phoenix, AZ
+                Why House Cleaning Services Matter in Chandler, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
-                Clean homes, healthy lives
+                Comfort starts with cleanliness
               </p>
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
@@ -167,10 +166,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Combating Desert Dust:</b> Phoenix homes are regularly
-                    exposed to dust storms and dry air. Routine house cleaning
-                    helps reduce allergens and maintain better air quality
-                    indoors.
+                    <b>Warm Weather Dust Accumulation:</b> Chandlers dry and
+                    sunny climate leads to frequent indoor dust buildup. Regular
+                    house cleaning keeps air quality higher and surfaces fresh.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -178,10 +176,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Healthier Living Conditions:</b> Regular house cleaning
-                    in Phoenix, AZ minimizes the spread of germs, pollen, and
-                    pet dander—especially important during allergy season and
-                    extreme heat months.
+                    <b>Time-Saving for Families:</b> With Chandlers growing
+                    neighborhoods and busy households, having a trusted cleaning
+                    service lets residents focus more on family and work life.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -189,9 +186,9 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Boosting Home Value:</b> A clean, well-maintained
-                    interior adds long-term value to your home, especially in a
-                    competitive real estate market like Phoenix, AZ.
+                    <b>Improved Hygiene Year-Round:</b> House cleaning services
+                    in Chandler, AZ help reduce allergens and bacteria in the
+                    home, especially during seasonal transitions and flu season.
                   </p>
                 </div>
               </div>
@@ -207,7 +204,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="female cleaner with supplies in Phoenix"
+              alt="house cleaning in Chandler AZ"
               className="bg-background"
             />
           </div>
@@ -228,7 +225,6 @@ export default function Home() {
             <ServiceCard
               title="Deep Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-              link="/locations/phoenix-az/deep-cleaning"
             >
               <IconOven className="size-12 text-secondary" />
             </ServiceCard>
@@ -274,24 +270,23 @@ export default function Home() {
                   Find Us
                 </h2>
                 <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-                  Looking for top-rated house cleaning services in Phoenix, AZ?
-                  Our team is proud to serve local residents with thorough,
-                  reliable cleaning solutions. Whether you are near downtown or
-                  in the suburbs, we’re ready to help you enjoy a spotless home
-                  with unmatched care and professionalism.
+                  Sun Valley Cleaners is proud to offer affordable house
+                  cleaning services in Chandler, AZ. Centrally based, we
+                  efficiently serve Chandler neighborhoods with flexible
+                  scheduling and expert cleaning for all home sizes and needs.
                 </p>
               </div>
               <div className="max-w-4xl mx-auto">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425348.8291985406!2d-112.124793!3d33.60432555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1752503704975!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425297.2113749595!2d-111.9761252!3d33.306214849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba926f86e199d%3A0x1b088a1c40f3e74c!2sChandler%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1752578918592!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in phoenix, house cleaning near
-                  phoenix
+                  house cleaning services in chandler, house cleaning near
+                  chandler
                 </iframe>
               </div>
             </div>
