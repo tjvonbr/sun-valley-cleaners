@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import icon from "../public/hero.svg";
 import femaleCleaner from "../public/female-cleaner.svg";
@@ -20,6 +18,37 @@ import {
 import CommitmentCard from "@/components/feature-card";
 import ServiceCard from "@/components/service-card";
 import Head from "next/head";
+import FaqSection from "@/components/faq-section";
+
+export const metadata = {
+  title: "#1 House Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners",
+  description:
+    "#1 House cleaning services in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com",
+  },
+};
+
+const faqs = [
+  {
+    question:
+      "What is included in your house cleaning services in Scottsdale, AZ?",
+    answer:
+      "Our house cleaning in Scottsdale, AZ includes dusting, vacuuming, mopping, bathroom and kitchen sanitization, and full surface wipe-downs in all main areas.",
+  },
+  {
+    question:
+      "How often should Scottsdale, AZ homeowners schedule professional cleaning?",
+    answer:
+      "We recommend biweekly cleaning for most homes in Scottsdale, AZ. However, busy households or allergy-prone residents may benefit from weekly service.",
+  },
+  {
+    question:
+      "Are eco-friendly products used for house cleaning in Scottsdale, AZ?",
+    answer:
+      "Yes, we use eco-friendly and non-toxic products for all Scottsdale, AZ homes to ensure safe, effective cleaning for families, pets, and the environment.",
+  },
+];
 
 export default function Home() {
   return (
@@ -167,83 +196,7 @@ export default function Home() {
         </div>
 
         {/* FAQ SECTION - Start */}
-        <div className="px-8 py-12 w-full bg-white">
-          <section
-            id="faq"
-            className="bg-white"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <div className="max-w-md px-6 mx-auto pb-28 sm:max-w-3xl lg:max-w-7xl lg:px-8">
-              <div className="flex flex-col justify-center text-center">
-                <p className="text-lg font-semibold text-custom">FAQs</p>
-                <h2 className="mt-2 text-4xl font-bold tracking-tight text-black">
-                  Frequently Asked Questions
-                </h2>
-                <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-                  Answering your questions about house cleaning in Scottsdale.
-                </p>
-              </div>
-              <div className="max-w-4xl mx-auto">
-                <dl className="mt-10 space-y-6 divide-y divide-gray-900/20">
-                  {[
-                    {
-                      question:
-                        "What does a standard house cleaning service in Scottsdale, AZ include?",
-                      answer:
-                        "A standard house cleaning in Scottsdale, AZ typically includes dusting, sweeping, vacuuming, mopping, sanitizing kitchen and bathroom surfaces, and cleaning common areas to keep your home fresh and well-maintained.",
-                    },
-                    {
-                      question:
-                        "Why hire professional house cleaning services in Scottsdale, AZ?",
-                      answer:
-                        "Hiring professional house cleaning services in Scottsdale, AZ ensures a healthier home environment, saves time, and guarantees thorough cleaning using proper tools and products tailored to your specific needs.",
-                    },
-                    {
-                      question:
-                        "How do I choose the #1 house cleaning service in Scottsdale, AZ?",
-                      answer:
-                        "To find the #1 house cleaning service in Scottsdale, AZ, look for proven experience, client reviews, flexible scheduling, eco-friendly options, and a satisfaction guarantee for reliable and high-quality results.",
-                    },
-                  ].map((faq, idx) => (
-                    <div className="pt-6" key={idx} data-frequent-question>
-                      <dt>
-                        <button
-                          type="button"
-                          className="flex items-start justify-between w-full text-left text-black"
-                          onClick={(e) => {
-                            const dd =
-                              e.currentTarget.parentElement!
-                                .nextElementSibling!;
-                            dd.classList.toggle("hidden");
-                          }}
-                        >
-                          <span className="text-base font-semibold leading-7">
-                            {faq.question}
-                          </span>
-                          <span className="flex items-center ml-6 h-7">
-                            <Image
-                              src="/dropdown-icon.svg"
-                              className="w-6"
-                              alt="Dropdown Icon."
-                              width={24}
-                              height={24}
-                            />
-                          </span>
-                        </button>
-                      </dt>
-                      <dd className="hidden pr-12 mt-2">
-                        <p className="text-base leading-7 text-gray-700">
-                          {faq.answer}
-                        </p>
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
-          </section>
-        </div>
+        <FaqSection faqs={faqs} city="Scottsdale, AZ" />
 
         {/* FAQ SECTION - End */}
       </main>

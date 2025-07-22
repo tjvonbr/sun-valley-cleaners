@@ -3,6 +3,16 @@ import locationImg from "/public/female-cleaner.svg";
 import ServiceCard from "@/components/service-card";
 import { IconSprayBottle } from "@/components/ui/icons";
 
+export const metadata = {
+  title:
+    "#1 Standard Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners",
+  description:
+    "#1 Standard cleaning services in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com/services/standard-cleaning",
+  },
+};
+
 export default function StandardCleanPage() {
   return (
     <div className="min-h-screen w-full my-16 px-5 flex flex-col items-center">

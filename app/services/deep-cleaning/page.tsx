@@ -3,6 +3,16 @@ import locationImg from "/public/deep-clean.svg";
 import ServiceCard from "@/components/service-card";
 import { IconOven } from "@/components/ui/icons";
 
+export const metadata = {
+  title:
+    "Top Rated Deep Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners",
+  description:
+    "Top Rated Deep cleaning services in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com/services/deep-cleaning",
+  },
+};
+
 export default function DeepCleanPage() {
   return (
     <div className="min-h-screen w-full my-16 px-5 flex flex-col items-center">

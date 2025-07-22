@@ -3,6 +3,16 @@ import locationImg from "/public/vacuum-woman.svg";
 import ServiceCard from "@/components/service-card";
 import { IconBox, IconBoxOpen, IconOven } from "@/components/ui/icons";
 
+export const metadata = {
+  title:
+    "Professional Move Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners",
+  description:
+    "Professional Move cleaning services in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com/services/move-cleaning",
+  },
+};
+
 export default function MoveCleanPage() {
   return (
     <div className="min-h-screen w-full my-16 px-5 flex flex-col items-center">
