@@ -23,14 +23,14 @@ export default function Footer() {
           Standard Cleaning
         </Link>
         <Link
-          href="/services/standard-cleaning"
+          href="/services/deep-cleaning"
           className="flex items-center hover:underline"
         >
           <IconOven className="mr-2 size-4" />
           Deep Cleaning
         </Link>
         <Link
-          href="/services/deep-cleaning"
+          href="/services/move-cleaning"
           className="flex items-center hover:underline"
         >
           <IconBox className="mr-2 size-4" />
@@ -49,6 +49,44 @@ export default function Footer() {
         >
           <IconEvent className="mr-2 size-4" />
           Event Cleaning
+        </Link>
+      </div>
+      <div className="my-8 flex flex-col items-start">
+        <p className="font-bold underline">
+          <Link
+          href="/locations"
+          className="flex items-center hover:underline"
+        >
+          
+          Service Areas
+        </Link></p>
+        <Link
+          href="/locations/phoenix-az"
+          className="flex items-center hover:underline"
+        >
+          
+          Phoenix, AZ
+        </Link>
+        <Link
+          href="/locations/chandler-az"
+          className="flex items-center hover:underline"
+        >
+          
+          Chandler, AZ
+        </Link>
+        <Link
+          href="/locations/gilbert-az"
+          className="flex items-center hover:underline"
+        >
+          
+          Gilbert, AZ
+        </Link>
+        <Link
+          href="/locations/mesa-az"
+          className="flex items-center hover:underline"
+        >
+          
+          Mesa, AZ
         </Link>
       </div>
       <div className="my-8 flex flex-row items-center gap-8">

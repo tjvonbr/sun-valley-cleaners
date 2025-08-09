@@ -241,6 +241,7 @@ export default function Home() {
             <ServiceCard
               title="Move-out Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/phoenix-az/move-out-cleaning"
             >
               <IconBox className="size-12 text-secondary" />
             </ServiceCard>
