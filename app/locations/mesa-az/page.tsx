@@ -230,12 +230,14 @@ export default function Home() {
             <ServiceCard
               title="Move-in Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              
             >
               <IconBoxOpen className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
               title="Move-out Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/mesa-az/move-out-cleaning"
             >
               <IconBox className="size-12 text-secondary" />
             </ServiceCard>
@@ -246,7 +248,7 @@ export default function Home() {
               <IconEvent className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
-              title="Linen Service"
+              title="Commercial Service"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
             >
               <IconBed className="size-12 text-secondary" />
