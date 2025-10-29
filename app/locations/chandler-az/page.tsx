@@ -255,6 +255,13 @@ export default function Home() {
             >
               <IconBed className="size-12 text-secondary" />
             </ServiceCard>
+            <ServiceCard
+              title="Airbnb Cleaning Service"
+              description="Our airbnb cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/chandler-az/airbnb-cleaning"
+            >
+              <IconBed className="size-12 text-secondary" />
+            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}
