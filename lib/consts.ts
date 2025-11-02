@@ -1,24 +1,8 @@
 export const navigation = {
   locations: [
     {
-      name: "Phoenix",
-      href: "/locations/phoenix-az",
-    },
-    {
-      name: "Scottsdale",
-      href: "/locations/scottsdale",
-    },
-    {
-      name: "Tempe",
-      href: "/locations/tempe",
-    },
-    {
-      name: "Mesa",
-      href: "/locations/mesa-az",
-    },
-    {
-      name: "Paradise Valley",
-      href: "/locations/paradise-valley-az",
+      name: "Arcadia",
+      href: "/locations/arcadia-az",
     },
     {
       name: "Chandler",
@@ -29,8 +13,28 @@ export const navigation = {
       href: "/locations/gilbert-az",
     },
     {
+      name: "Mesa",
+      href: "/locations/mesa-az",
+    },
+    {
+      name: "Paradise Valley",
+      href: "/locations/paradise-valley-az",
+    },
+    {
+      name: "Phoenix",
+      href: "/locations/phoenix-az",
+    },
+    {
+      name: "Scottsdale",
+      href: "/locations/scottsdale-az",
+    },
+    {
+      name: "Tempe",
+      href: "/locations/tempe-az",
+    },
+    {
       name: "Queen Creek",
-      href: "/locations/queen-creek",
+      href: "/locations/queen-creek-az",
     },
   ],
   services: [
