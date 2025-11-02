@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "#1 Standard cleaning services in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/services/standard-cleaning",
+    canonical: "https://www.sunvalleycleaners.com/services/house-cleaning",
   },
 };
 

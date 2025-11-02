@@ -1,10 +1,26 @@
-export const navigation = {
+export interface NavigationItems {
+  locations: LocationLinkItem[];
+  services: ServiceLinkItem[];
+}
+
+export interface LocationLinkItem {
+  name: string;
+  href: string;
+}
+
+export interface ServiceLinkItem {
+  name: string;
+  href: string;
+}
+
+export const navigation: NavigationItems = {
   locations: [
     {
       name: "Arcadia",
       href: "/locations/arcadia-az",
     },
     {
+
       name: "Chandler",
       href: "/locations/chandler-az",
     },
@@ -40,7 +56,7 @@ export const navigation = {
   services: [
     {
       name: "Standard Cleaning",
-      href: "/services/standard-cleaning",
+      href: "/services/house-cleaning",
     },
     {
       name: "Deep Cleaning",
