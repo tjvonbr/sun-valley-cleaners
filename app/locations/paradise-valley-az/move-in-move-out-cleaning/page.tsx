@@ -8,30 +8,30 @@ import { cn } from "@/lib/utils";
 import { IconCircleCheck } from "@/components/ui/icons";
 
 export const metadata = {
-  title: "Trusted Move Out Cleaning in Mesa, AZ | Sun Valley Cleaners",
+  title: "Trusted Move In/Out Cleaning in Paradise Valley, AZ | Sun Valley Cleaners",
   description:
-    "Sun Valley Cleaners delivers trusted move out cleaning in Mesa, AZ with detailed service, timely results, and stress-free property transitions. Call now!",
+    "Sun Valley Cleaners delivers trusted move out cleaning in Paradise Valley, AZ with detailed service, timely results, and stress-free property transitions. Call now!",
   alternates: {
     canonical:
-      "https://www.sunvalleycleaners.com/locations/mesa-az/move-out-cleaning",
+      "https://www.sunvalleycleaners.com/locations/paradise-valley-az/move-in-move-out-cleaning",
   },
 };
 
 const faqs = [
   {
-    question: "What does trusted move out cleaning in Mesa, AZ cover?",
+    question: "What does trusted move out cleaning in Paradise Valley, AZ cover?",
     answer:
-      "Trusted move out cleaning in Mesa, AZ covers all rooms including kitchens, baths, and high-traffic areas. Sun Valley Cleaners ensures every surface is deep cleaned to pass inspection.",
+      "Trusted move out cleaning in Paradise Valley, AZ covers all rooms including kitchens, baths, and high-traffic areas. Sun Valley Cleaners ensures every surface is deep cleaned to pass inspection.",
   },
   {
-    question: "Why hire a professional for move out cleaning in Mesa, AZ?",
+    question: "Why hire a professional for move out cleaning in Paradise Valley, AZ?",
     answer:
-      "Hiring professionals ensures your home is thoroughly cleaned, meeting landlord or buyer expectations. Sun Valley Cleaners provides reliable service tailored to Mesa properties.",
+      "Hiring professionals ensures your home is thoroughly cleaned, meeting landlord or buyer expectations. Sun Valley Cleaners provides reliable service tailored to Paradise Valley properties.",
   },
   {
-    question: "When should I schedule move out cleaning in Mesa, AZ?",
+    question: "When should I schedule move out cleaning in Paradise Valley, AZ?",
     answer:
-      "It’s best to schedule trusted move out cleaning in Mesa, AZ a few days before your move date. Sun Valley Cleaners offers flexible booking to make the process stress-free.",
+      "It’s best to schedule trusted move out cleaning in Paradise Valley, AZ a few days before your move date. Sun Valley Cleaners offers flexible booking to make the process stress-free.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Trusted Move Out Cleaning in Mesa, AZ
+              Trusted Move In/Out Cleaning in Paradise Valley, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               <a
@@ -52,7 +52,7 @@ export default function Home() {
               >
                 Sun Valley Cleaners
               </a>{" "}
-              provides trusted move out cleaning in Mesa, AZ. Our team works
+              provides trusted move in/out cleaning in Paradise Valley, AZ. Our team works
               efficiently to deep clean every space, ensuring a smooth property
               transition and peace of mind for tenants and landlords alike.
             </p>
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Choose Sun Valley Cleaners for Move Out Cleaning in Mesa, AZ?
+                Why Choose Sun Valley Cleaners for Move In/Out Cleaning in Paradise Valley, AZ?
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Detailed cleaning, reliable results
@@ -85,7 +85,7 @@ export default function Home() {
                   <p className="text-lg text-black font-semibold">
                     <b>Complete Property Coverage:</b> Our cleaning checklist
                     addresses kitchens, bathrooms, bedrooms, and storage areas.
-                    Every detail is handled with care, ensuring your Mesa
+                    Every detail is handled with care, ensuring your Paradise Valley
                     property is spotless for inspections or listings.
                   </p>
                 </div>
@@ -97,11 +97,11 @@ export default function Home() {
                     <b>Improved Indoor Air Quality:</b> Our trusted move out
                     cleaning in{" "}
                     <a
-                      href="https://en.wikipedia.org/wiki/Mesa,_Arizona"
+                      href="https://en.wikipedia.org/wiki/Paradise_Valley,_Arizona"
                       target="_blank"
                       className="underline text-secondary"
                     >
-                      Mesa, AZ
+                      Paradise Valley, AZ
                     </a>{" "}
                     targets dust, allergens, and odors from vents and hidden
                     corners. This creates a fresh, healthy environment for new
@@ -131,7 +131,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="move out cleaning in Mesa home"
+              alt="move in/out cleaning in Paradise Valley home"
               className="bg-background"
             />
           </div>
@@ -143,7 +143,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Move Out Cleaning Matters in Mesa, AZ
+                Why Move In/Out Cleaning Matters in Paradise Valley, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Fresh start, better impressions
@@ -154,8 +154,8 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Helps Protect Deposits:</b> Trusted move out cleaning in
-                    Mesa, AZ ensures landlords’ cleanliness standards are met,
+                    <b>Helps Protect Deposits:</b> Trusted move in/out cleaning in
+                    Paradise Valley, AZ ensures landlords’ cleanliness standards are met,
                     preventing disputes and securing deposits for tenants.
                   </p>
                 </div>
@@ -176,7 +176,7 @@ export default function Home() {
                   <p className="text-lg text-black font-semibold">
                     <b>Boosts Property Marketability:</b> Clean and
                     fresh-smelling homes attract buyers and renters more
-                    quickly, helping properties in Mesa stand out in a
+                    quickly, helping properties in Paradise Valley stand out in a
                     competitive market.
                   </p>
                 </div>
@@ -193,7 +193,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="move out cleaning in Mesa AZ"
+              alt="move in/out cleaning in Paradise Valley AZ"
               className="bg-background"
             />
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
         {/* Why SECTION - End */}
 
         {/* FAQ SECTION - Start */}
-        <FaqSection faqs={faqs} city="Mesa, AZ" />
+        <FaqSection faqs={faqs} city="Paradise Valley, AZ" />
         {/* FAQ SECTION - End */}
       </main>
     </>

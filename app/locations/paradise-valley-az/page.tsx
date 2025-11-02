@@ -233,17 +233,11 @@ export default function Home() {
               <IconOven className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
-              title="Move-in Cleaning"
+              title="Move In/Out Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/paradise-valley-az/move-in-move-out-cleaning"
             >
               <IconBoxOpen className="size-12 text-secondary" />
-            </ServiceCard>
-            <ServiceCard
-              title="Move-out Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-              link="/locations/paradise-valley-az/move-out-cleaning"
-            >
-              <IconBox className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
               title="Event Cleaning"
