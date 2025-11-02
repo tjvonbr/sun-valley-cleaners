@@ -70,6 +70,7 @@ export default function Footer() {
           <Link
             href={location.href}
             className="flex items-center hover:underline"
+            key={location.name}
           >
             {location.name}
           </Link>
