@@ -18,7 +18,7 @@ export const navigation = {
     },
     {
       name: "Paradise Valley",
-      href: "/locations/paradise-valley",
+      href: "/locations/paradise-valley-az",
     },
     {
       name: "Chandler",
