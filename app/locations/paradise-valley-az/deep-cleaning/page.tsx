@@ -5,41 +5,33 @@ import femaleCleaner from "../../../../public/female-cleaner.svg";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import {
-  IconBed,
-  IconBox,
-  IconBoxOpen,
-  IconCircleCheck,
-  IconEvent,
-  IconOven,
-  IconSprayBottle,
-} from "@/components/ui/icons";
+import { IconCircleCheck } from "@/components/ui/icons";
 
 export const metadata = {
-  title: "Comprehensive Deep Cleaning in Mesa, AZ | Sun Valley Cleaners",
+  title: "Comprehensive Deep Cleaning in Paradise Valley, AZ | Sun Valley Cleaners",
   description:
-    "Sun Valley Cleaners offers comprehensive deep cleaning in Mesa, AZ—detailed care for kitchens, baths, and living areas. Perfect for overhauls. Call now!",
+    "Sun Valley Cleaners offers comprehensive deep cleaning in Paradise Valley, AZ—detailed care for kitchens, baths, and living areas. Perfect for overhauls. Call now!",
   alternates: {
     canonical:
-      "https://www.sunvalleycleaners.com/locations/mesa-az/deep-cleaning", // relative self URL
+      "https://www.sunvalleycleaners.com/locations/paradise-valley-az/deep-cleaning",
   },
 };
 
 const faqs = [
   {
-    question: "Is deep cleaning in Mesa, AZ suitable for large homes?",
+    question: "Is deep cleaning in Paradise Valley, AZ suitable for large homes?",
     answer:
-      "Yes, deep cleaning in Mesa, AZ can be scaled for large homes, ensuring every level and room receives the same detailed attention. Sun Valley Cleaners organizes tasks for efficiency while maintaining consistent quality from top to bottom.",
+      "Yes, deep cleaning in Paradise Valley, AZ can be scaled for large homes, ensuring every level and room receives the same detailed attention. Sun Valley Cleaners organizes tasks for efficiency while maintaining consistent quality from top to bottom.",
   },
   {
-    question: "When should I plan deep cleaning in Mesa, AZ around the holidays?",
+    question: "When should I plan deep cleaning in Paradise Valley, AZ around the holidays?",
     answer:
-      "Scheduling deep cleaning in Mesa, AZ a week or two before holidays helps prepare your home for guests, décor, and gatherings. Sun Valley Cleaners coordinates flexible timing to ensure your space is pristine when it matters most.",
+      "Scheduling deep cleaning in Paradise Valley, AZ a week or two before holidays helps prepare your home for guests, décor, and gatherings. Sun Valley Cleaners coordinates flexible timing to ensure your space is pristine when it matters most.",
   },
   {
-    question: "Can deep cleaning in Mesa, AZ help maintain new renovations?",
+    question: "Can deep cleaning in Paradise Valley, AZ help maintain new renovations?",
     answer:
-      "Absolutely, deep cleaning in Mesa, AZ removes leftover construction dust, adhesive residue, and fine debris from new renovations. Sun Valley Cleaners completes the post-project polish so your upgrades look flawless from the start.",
+      "Absolutely, deep cleaning in Paradise Valley, AZ removes leftover construction dust, adhesive residue, and fine debris from new renovations. Sun Valley Cleaners completes the post-project polish so your upgrades look flawless from the start.",
   },
 ];
 
@@ -50,7 +42,7 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Comprehensive Deep Cleaning in Mesa, AZ
+              Comprehensive Deep Cleaning in Paradise Valley, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               <a
@@ -60,7 +52,7 @@ export default function Home() {
               >
                 Sun Valley Cleaners
               </a>{" "}
-              delivers comprehensive deep cleaning in Mesa, AZ—covering every
+              delivers comprehensive deep cleaning in Paradise Valley, AZ—covering every
               surface from crown molding to baseboards. Our process is designed
               for whole-home resets, whether after a busy season, before a big
               event, or as part of an annual maintenance plan.
@@ -82,7 +74,7 @@ export default function Home() {
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
                 Why Choose Sun Valley Cleaners for Deep Cleaning Services in
-                Mesa, AZ?
+                Paradise Valley, AZ?
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Complete care, every corner
@@ -93,7 +85,7 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Full-Room Detailing:</b> Our deep cleaning in Mesa covers
+                    <b>Full-Room Detailing:</b> Our deep cleaning in Paradise Valley covers
                     walls, trim, vents, blinds, and fixtures, along with the
                     interiors of ovens, refrigerators, and cabinets. Each room
                     receives focused attention for a consistent, refreshed
@@ -105,7 +97,7 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Seasonal Deep Reset:</b> Mesa’s desert dust can build up
+                    <b>Seasonal Deep Reset:</b> Paradise Valley&apos;s desert dust can build up
                     quickly in fabrics, vents, and on flat surfaces. Our
                     comprehensive service clears these particles, improving air
                     quality and making your home easier to maintain in between
@@ -120,12 +112,12 @@ export default function Home() {
                     <b>Event & Transition Ready:</b> Whether preparing for a
                     major gathering or a move, deep cleaning in{" "}
                     <a
-                      href="https://en.wikipedia.org/wiki/Mesa,_Arizona"
+                      href="https://en.wikipedia.org/wiki/Paradise_Valley,_Arizona"
                       target="_blank"
                       className="underline text-secondary"
                     >
                       {" "}
-                      Mesa, AZ
+                      Paradise Valley, AZ
                     </a>{" "}
                     ensures every surface is polished and guest-ready. This
                     level of detailing creates lasting impressions and reduces
@@ -145,7 +137,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="deep cleaning in Mesa home"
+              alt="deep cleaning in Paradise Valley home"
               className="bg-background"
             />
           </div>
@@ -158,7 +150,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Deep Cleaning Services Matter in Mesa, AZ
+                Why Deep Cleaning Services Matter in Paradise Valley, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 More than a surface shine
@@ -170,7 +162,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-black font-semibold">
                     <b>Post-Construction Polish:</b> After renovations, deep
-                    cleaning in Mesa removes sawdust, adhesive residue, and fine
+                    cleaning in Paradise Valley removes sawdust, adhesive residue, and fine
                     debris from ledges, fixtures, and flooring to help new
                     finishes look their best from day one.
                   </p>
@@ -181,7 +173,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-black font-semibold">
                     <b>Preserving Long-Term Value:</b> Regular deep cleaning in
-                    Mesa slows wear on tile, grout, and high-use surfaces,
+                    Paradise Valley slows wear on tile, grout, and high-use surfaces,
                     helping your property maintain its appearance and condition
                     for years to come.
                   </p>
@@ -192,7 +184,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-black font-semibold">
                     <b>Comfort and Well-Being:</b> By removing allergens, dust
-                    mites, and hidden buildup, deep cleaning in Mesa supports a
+                    mites, and hidden buildup, deep cleaning in Paradise Valley supports a
                     healthier home atmosphere and a more comfortable living
                     experience for you and your guests.
                   </p>
@@ -210,7 +202,7 @@ export default function Home() {
               src={femaleCleaner}
               height="750"
               width="500"
-              alt="deep house cleaning in Mesa AZ"
+              alt="deep house cleaning in Paradise Valley AZ"
               className="bg-background"
             />
           </div>
@@ -219,7 +211,7 @@ export default function Home() {
         {/* Why SECTION - End */}
 
         {/* FAQ SECTION - Start */}
-        <FaqSection faqs={faqs} city="Mesa, AZ" />
+        <FaqSection faqs={faqs} city="Paradise Valley, AZ" />
 
         {/* FAQ SECTION - End */}
       </main>
