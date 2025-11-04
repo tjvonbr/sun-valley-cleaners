@@ -231,13 +231,14 @@ export default function Home() {
             </ServiceCard>
             <ServiceCard
               title="Move-in Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              description="Our move in cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/chandler-az/move-in-cleaning"
             >
               <IconBoxOpen className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
               title="Move-out Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              description="Our move out cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
               link="/locations/chandler-az/move-out-cleaning"
             >
               <IconBox className="size-12 text-secondary" />
