@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function BookAppointmentPage() {
   return (
@@ -27,12 +28,11 @@ export default function BookAppointmentPage() {
         src="https://sunvalleycleaners.bookingkoala.com/booknow/home_cleaning?embed=true&bar=false&banner=false"
         style={{ border: "none", height: "1000px" }}
         width="100%"
-        scrolling="no"
       ></iframe>
-      <script
+      <Script
         src="https://sunvalleycleaners.bookingkoala.com/resources/embed.js"
-        defer
-      ></script>
+        strategy="afterInteractive"
+      />
     </div>
   );
 }
