@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function ContactPage() {
   return (
@@ -37,12 +38,11 @@ export default function ContactPage() {
         src="https://sunvalleycleaners.bookingkoala.com/contact-us?embed=true"
         style={{ border: "none", height: "1000px" }}
         width="100%"
-        scrolling="no"
       ></iframe>
-      <script
+      <Script
         src="https://sunvalleycleaners.bookingkoala.com/resources/embed.js"
-        defer
-      ></script>
+        strategy="afterInteractive"
+      />
     </div>
   );
 }
