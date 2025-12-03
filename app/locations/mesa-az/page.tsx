@@ -215,8 +215,9 @@ export default function Home() {
           <h2 className="text-3xl text-black font-bold">Services Provided</h2>
           <div className="mx-auto grid justify-center gap-12 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
             <ServiceCard
-              title="Standard Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              title="Apartment Cleaning"
+              description="Our apartment cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/mesa-az/apartment-cleaning"
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>

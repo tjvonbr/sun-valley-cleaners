@@ -217,8 +217,9 @@ export default function Home() {
           <h2 className="text-3xl text-black font-bold">Services Provided</h2>
           <div className="mx-auto grid justify-center gap-12 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
             <ServiceCard
-              title="Standard Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              title="Apartment Cleaning"
+              description="Our apartment cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/locations/chandler-az/apartment-cleaning"
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
@@ -262,6 +263,13 @@ export default function Home() {
               link="/locations/chandler-az/airbnb-cleaning"
             >
               <IconBed className="size-12 text-secondary" />
+            </ServiceCard>
+            <ServiceCard
+              title="Post Construction Cleaning"
+              description="Our post construction cleaning package removes debris, dust, and residue from newly built or renovated spaces. We ensure your property is move-in ready with thorough cleaning of all surfaces!"
+              link="/locations/chandler-az/post-construction-cleaning"
+            >
+              <IconOven className="size-12 text-secondary" />
             </ServiceCard>
           </div>
         </div>

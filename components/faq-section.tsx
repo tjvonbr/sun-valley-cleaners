@@ -49,9 +49,10 @@ export default function FaqSection({
                     </button>
                   </dt>
                   <dd className="hidden pr-12 mt-2">
-                    <p className="text-base leading-7 text-gray-700">
-                      {faq.answer}
-                    </p>
+                    <p
+                      className="text-base leading-7 text-gray-700"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
                   </dd>
                 </div>
               ))}
