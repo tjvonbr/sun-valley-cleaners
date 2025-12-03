@@ -179,7 +179,7 @@ export default function Home() {
                     <b>Extends the Life of Fixtures:</b> Regular thorough
                     cleaning prevents buildup that damages surfaces, flooring,
                     and appliances. Protecting these elements saves money on
-                    repairs and maintains your apartment's appearance.
+                    repairs and maintains your apartment&apos;s appearance.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">

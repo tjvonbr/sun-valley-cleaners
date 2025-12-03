@@ -166,7 +166,7 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Desert Climate Demands Expertise:</b> Mesa's unique
+                    <b>Desert Climate Demands Expertise:</b> Mesa&apos;s unique
                     desert environment creates specific cleaning challenges.
                     Expert apartment cleaning addresses fine dust, hard water
                     stains, and sun damage that require specialized knowledge.
@@ -178,7 +178,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-black font-semibold">
                     <b>Protects Your Investment:</b> Professional cleaning
-                    preserves your apartment's condition and your belongings.
+                    preserves your apartment&apos;s condition and your belongings.
                     Expert care prevents damage from improper cleaning methods
                     and extends the life of surfaces and fixtures.
                   </p>

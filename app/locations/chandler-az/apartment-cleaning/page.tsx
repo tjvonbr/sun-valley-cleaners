@@ -27,7 +27,7 @@ export const metadata = {
 
 const faqs = [
   {
-    question: "What's included in reliable apartment cleaning in Chandler, AZ?",
+    question: "What is included in reliable apartment cleaning in Chandler, AZ?",
     answer:
       "Reliable apartment cleaning in Chandler, AZ covers kitchens, bathrooms, bedrooms, and living spaces with consistent, high-quality results. <a href='https://www.sunvalleycleaners.com/' target='_blank' class='underline text-secondary'>Sun Valley Cleaners</a> ensures every surface is sanitized, floors are spotless, and your apartment feels fresh after every visit.",
   },
@@ -166,7 +166,7 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Reduces Allergens and Dust:</b> Chandler's desert climate
+                    <b>Reduces Allergens and Dust:</b> Chandler&apos;s desert climate
                     brings fine dust and allergens into apartments regularly.
                     Professional apartment cleaning removes these particles,
                     improving air quality and reducing allergy symptoms for
