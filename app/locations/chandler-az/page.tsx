@@ -271,6 +271,13 @@ export default function Home() {
             >
               <IconOven className="size-12 text-secondary" />
             </ServiceCard>
+            <ServiceCard
+              title="Housekeeping Services"
+              description="Our housekeeping services provide regular cleaning to maintain your home's cleanliness and comfort. Flexible scheduling and dependable results every visit!"
+              link="/locations/chandler-az/housekeeping-services"
+            >
+              <IconSprayBottle className="size-12 text-secondary" />
+            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}

@@ -263,6 +263,20 @@ export default function Home() {
             >
               <IconBed className="size-12 text-secondary" />
             </ServiceCard>
+            <ServiceCard
+              title="Post Construction Cleaning"
+              description="Our post construction cleaning package removes debris, dust, and residue from your newly built or renovated space. We ensure every surface is spotless and move-in ready!"
+              link="/locations/gilbert-az/post-construction-cleaning"
+            >
+              <IconSprayBottle className="size-12 text-secondary" />
+            </ServiceCard>
+            <ServiceCard
+              title="Housekeeping Services"
+              description="Our housekeeping services provide regular cleaning to maintain your home's cleanliness and comfort. Flexible scheduling and dependable results every visit!"
+              link="/locations/gilbert-az/housekeeping-services"
+            >
+              <IconSprayBottle className="size-12 text-secondary" />
+            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}
