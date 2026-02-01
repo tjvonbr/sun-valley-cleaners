@@ -13,6 +13,9 @@ export default function HeaderNav() {
       </Link>
       <LocationsDropdown />
       <ServicesDropdown />
+      <Link href="/cleaning-checklist" className="hover:underline">
+        Checklist
+      </Link>
       <Link href="/contact" className="hover:underline">
         Contact
       </Link>

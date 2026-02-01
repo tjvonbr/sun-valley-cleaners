@@ -30,6 +30,11 @@ export default function MobileMenu() {
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
+            <Link href="/cleaning-checklist" className="w-full">
+              Checklist
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
             <Link href="/contact" className="w-full">
               Contact
             </Link>
