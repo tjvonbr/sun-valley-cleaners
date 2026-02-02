@@ -8,6 +8,7 @@ import { buttonVariants } from "./ui/button";
 import HeaderNav from "./header-nav";
 import { usePathname } from "next/navigation";
 import MobileMenu from "./mobile-menu";
+import { Phone } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname();
@@ -21,16 +22,27 @@ export default function Header() {
         width="150"
       />
       <HeaderNav />
-      <Link
-        href="/book-appointment"
-        className={cn(
-          buttonVariants({ variant: "default" }),
-          pathname === "/book-appointment" ? "invisible" : null,
-          "hidden md:flex"
-        )}
-      >
-        Book now!
-      </Link>
+      <div className="hidden md:flex items-center gap-3">
+        <a
+          href="tel:623-295-0506"
+          className={cn(
+            buttonVariants({ variant: "outline" }),
+            "gap-2"
+          )}
+        >
+          <Phone className="size-4" />
+          623-295-0506
+        </a>
+        <Link
+          href="/book-appointment"
+          className={cn(
+            buttonVariants({ variant: "default" }),
+            pathname === "/book-appointment" ? "invisible" : null,
+          )}
+        >
+          Book now!
+        </Link>
+      </div>
       <div className="md:hidden">
         <MobileMenu />
       </div>

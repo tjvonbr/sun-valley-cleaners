@@ -73,12 +73,20 @@ export default function Home() {
               any reason you&apos;re not satisfied with our cleaning service,
               we&apos;ll return and make it right at no cost to you!
             </p>
-            <Link
-              href="/book-appointment"
-              className={cn(buttonVariants({ variant: "default" }))}
-            >
-              Book an appointment today!
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/book-appointment"
+                className={cn(buttonVariants({ variant: "default" }))}
+              >
+                Book an appointment today!
+              </Link>
+              <a
+                href="tel:623-295-0506"
+                className={cn(buttonVariants({ variant: "outline" }))}
+              >
+                Call 623-295-0506
+              </a>
+            </div>
           </div>
           <Image src={icon} height="500" width="500" alt="hello" />
         </div>
