@@ -269,6 +269,20 @@ export default function Home() {
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
+            <ServiceCard
+              title="Housekeeping Services"
+              description="Our housekeeping services provide regular cleaning to maintain your home&apos;s cleanliness and comfort. Flexible scheduling and dependable results every visit!"
+              link="/locations/mesa-az/housekeeping-services"
+            >
+              <IconSprayBottle className="size-12 text-secondary" />
+            </ServiceCard>
+            <ServiceCard
+              title="Residential Cleaning"
+              description="Our residential cleaning service covers every room with thorough dusting, sanitization, and surface care. Quality results using eco-friendly products!"
+              link="/locations/mesa-az/residential-cleaning"
+            >
+              <IconOven className="size-12 text-secondary" />
+            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}

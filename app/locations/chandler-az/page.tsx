@@ -278,6 +278,13 @@ export default function Home() {
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
+            <ServiceCard
+              title="Residential Cleaning"
+              description="Our residential cleaning service covers every room with thorough dusting, sanitization, and surface care. Detailed results using eco-friendly products!"
+              link="/locations/chandler-az/residential-cleaning"
+            >
+              <IconOven className="size-12 text-secondary" />
+            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}
