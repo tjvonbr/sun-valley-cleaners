@@ -36,7 +36,7 @@ export default function FrequentlyAskedQuestions() {
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>
-          Can I customize the house cleaning service based on my specifci
+          Can I customize the house cleaning service based on my specific
           requirements?
         </AccordionTrigger>
         <AccordionContent>
