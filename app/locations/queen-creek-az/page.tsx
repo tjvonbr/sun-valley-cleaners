@@ -19,7 +19,7 @@ export default function QueenCreekPage() {
         </h1>
         <p className="max-w-[750px] text-center">
           Welcome to Sun Valley Cleaners, your trusted partner for exceptional
-          house cleaning services in Queen Creek, AZ. Whether you need a
+          house cleaning service in Queen Creek, AZ. Whether you need a
           one-time deep clean or move-related clean, or regular maintenance, Sun
           Valley Cleaners is here to make your home shine.
         </p>
