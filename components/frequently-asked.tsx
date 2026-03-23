@@ -11,7 +11,7 @@ export default function FrequentlyAskedQuestions() {
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>
-          What house cleaning services does your company provide?
+          What house cleaning service does your company provide?
         </AccordionTrigger>
         <AccordionContent>
           We offer a comprehensive range of cleaning services, including room
@@ -36,7 +36,7 @@ export default function FrequentlyAskedQuestions() {
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>
-          Can I customize the house cleaning services based on my specifci
+          Can I customize the house cleaning service based on my specifci
           requirements?
         </AccordionTrigger>
         <AccordionContent>
