@@ -2,22 +2,9 @@
 
 import Image from "next/image";
 import icon from "../../public/hero.svg";
-import femaleCleaner from "../../public/female-cleaner.svg";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import {
-  IconBed,
-  IconBox,
-  IconBoxOpen,
-  IconCheck,
-  IconCircleCheck,
-  IconEvent,
-  IconOven,
-  IconRibbon,
-  IconSprayBottle,
-} from "@/components/ui/icons";
-import CommitmentCard from "@/components/feature-card";
 import ServiceCard from "@/components/service-card";
 
 export default function Home() {

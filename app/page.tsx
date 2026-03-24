@@ -23,7 +23,7 @@ import FaqSection from "@/components/faq-section";
 export const metadata = {
   title: "#1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners",
   description:
-    "#1 House cleaning service in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+    "Looking for reliable house cleaning in Scottsdale? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com",
   },
