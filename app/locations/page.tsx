@@ -26,7 +26,7 @@ export default function Home() {
       <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
           <h1 className="text-4xl lg:text-6xl text-primary font-black">
-            Service Areas: House Cleaning Services in Maricopa County, AZ
+            Service Areas: House Cleaning Service in Maricopa County, AZ
           </h1>
           <p className="text-muted-foreground lg:text-lg">
             We stand by the quality of our work at Sun Valley Cleaners. If for

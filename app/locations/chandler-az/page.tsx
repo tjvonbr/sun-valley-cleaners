@@ -18,9 +18,9 @@ import ServiceCard from "@/components/service-card";
 
 export const metadata = {
   title:
-    "Affordable House Cleaning Services in Chandler, AZ | Sun Valley Cleaners",
+    "Affordable House Cleaning Service in Chandler, AZ | Sun Valley Cleaners",
   description:
-    "Affordable house cleaning services in Chandler, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+    "Affordable house cleaning service in Chandler, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com/locations/chandler-az",
   },
@@ -29,7 +29,7 @@ export const metadata = {
 const faqs = [
   {
     question:
-      "What is included in your house cleaning services in Chandler, AZ?",
+      "What is included in your house cleaning service in Chandler, AZ?",
     answer:
       "Our house cleaning in Chandler, AZ includes dusting, vacuuming, mopping, bathroom and kitchen sanitization, and full surface wipe-downs in all main areas.",
   },
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Affordable House Cleaning Services in Chandler, AZ
+              Affordable House Cleaning Service in Chandler, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               <a
@@ -64,7 +64,7 @@ export default function Home() {
               >
                 Sun Valley Cleaners
               </a>{" "}
-              proudly delivers affordable and reliable house cleaning services
+              proudly delivers affordable and reliable house cleaning service
               across Chandler, AZ. Whether you need routine upkeep or a one-time
               refresh, we guarantee results youll love.
             </p>
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Sun Valley Cleaners: House Cleaning Services in Chandler, AZ
+                Sun Valley Cleaners: House Cleaning Service in Chandler, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Clean homes made simple
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Chandler, AZ
+                Why House Cleaning Service Matter in Chandler, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Comfort starts with cleanliness
@@ -186,7 +186,7 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
                   <p className="text-lg text-black font-semibold">
-                    <b>Improved Hygiene Year-Round:</b> House cleaning services
+                    <b>Improved Hygiene Year-Round:</b> House cleaning service
                     in Chandler, AZ help reduce allergens and bacteria in the
                     home, especially during seasonal transitions and flu season.
                   </p>
@@ -278,13 +278,6 @@ export default function Home() {
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
-            <ServiceCard
-              title="Residential Cleaning"
-              description="Our residential cleaning service covers every room with thorough dusting, sanitization, and surface care. Detailed results using eco-friendly products!"
-              link="/locations/chandler-az/residential-cleaning"
-            >
-              <IconOven className="size-12 text-secondary" />
-            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}
@@ -318,7 +311,7 @@ export default function Home() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in chandler, house cleaning near
+                  house cleaning service in chandler, house cleaning near
                   chandler
                 </iframe>
               </div>

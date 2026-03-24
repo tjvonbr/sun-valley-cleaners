@@ -17,9 +17,9 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title: "Reliable House Cleaning Services in Mesa, AZ | Sun Valley Cleaners",
+  title: "Reliable House Cleaning Service in Mesa, AZ | Sun Valley Cleaners",
   description:
-    "Reliable house cleaning services in Mesa, AZ by Sun Valley Cleaners. Consistent results, flexible scheduling, and trusted service. Call now!",
+    "Reliable house cleaning service in Mesa, AZ by Sun Valley Cleaners. Consistent results, flexible scheduling, and trusted service. Call now!",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com/locations/mesa-az",
   },
@@ -27,7 +27,7 @@ export const metadata = {
 
 const faqs = [
   {
-    question: "What areas do your house cleaning services in Mesa, AZ cover?",
+    question: "What areas do your house cleaning service in Mesa, AZ cover?",
     answer:
       "We clean all major living areas including kitchens, bathrooms, bedrooms, and high-traffic zones in Mesa homes, using detailed checklists to ensure consistency.",
   },
@@ -38,7 +38,7 @@ const faqs = [
       "Yes, all our Mesa-based house cleaners are professionally trained, background-checked, and fully insured for your peace of mind.",
   },
   {
-    question: "Can I schedule recurring house cleaning services in Mesa, AZ?",
+    question: "Can I schedule recurring house cleaning service in Mesa, AZ?",
     answer:
       "Absolutely. We offer weekly, biweekly, and monthly plans so Mesa residents can keep their homes clean and comfortable year-round.",
   },
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Reliable House Cleaning Services in Mesa, AZ
+              Reliable House Cleaning Service in Mesa, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               <a
@@ -61,7 +61,7 @@ export default function Home() {
               >
                 Sun Valley Cleaners
               </a>{" "}
-              provides reliable house cleaning services across Mesa, AZ. Our
+              provides reliable house cleaning service across Mesa, AZ. Our
               consistent quality and attention to detail make it easy to keep
               your home fresh, safe, and comfortable.
             </p>
@@ -81,7 +81,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Sun Valley Cleaners: House Cleaning Services in Mesa, AZ
+                Sun Valley Cleaners: House Cleaning Service in Mesa, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Trusted cleaning, tailored for you
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Mesa, AZ
+                Why House Cleaning Service Matter in Mesa, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Clean living, every season
@@ -269,20 +269,6 @@ export default function Home() {
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
-            <ServiceCard
-              title="Housekeeping Services"
-              description="Our housekeeping services provide regular cleaning to maintain your home&apos;s cleanliness and comfort. Flexible scheduling and dependable results every visit!"
-              link="/locations/mesa-az/housekeeping-services"
-            >
-              <IconSprayBottle className="size-12 text-secondary" />
-            </ServiceCard>
-            <ServiceCard
-              title="Residential Cleaning"
-              description="Our residential cleaning service covers every room with thorough dusting, sanitization, and surface care. Quality results using eco-friendly products!"
-              link="/locations/mesa-az/residential-cleaning"
-            >
-              <IconOven className="size-12 text-secondary" />
-            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}
@@ -301,7 +287,7 @@ export default function Home() {
                   Find Us
                 </h2>
                 <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-                  Sun Valley Cleaners delivers reliable house cleaning services
+                  Sun Valley Cleaners delivers reliable house cleaning service
                   in Mesa, AZ. Our local team proudly serves homes across the
                   city, offering flexible schedules and dependable service
                   designed to keep your home spotless no matter the season.
@@ -316,7 +302,7 @@ export default function Home() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in mesa, house cleaning near mesa
+                  house cleaning service in mesa, house cleaning near mesa
                 </iframe>
               </div>
             </div>

@@ -17,9 +17,9 @@ import ServiceCard from "@/components/service-card";
 
 export const metadata = {
   title:
-    "Top-Rated House Cleaning Services in Arcadia, AZ | Sun Valley Cleaners",
+    "Top-Rated House Cleaning Service in Arcadia, AZ | Sun Valley Cleaners",
   description:
-    "Top-rated house cleaning services in Arcadia, AZ by Sun Valley Cleaners. Spotless results, reliable service, and guaranteed satisfaction. Call now!",
+    "Top-rated house cleaning service in Arcadia, AZ by Sun Valley Cleaners. Spotless results, reliable service, and guaranteed satisfaction. Call now!",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com/locations/arcadia-az",
   },
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Top-Rated House Cleaning Services in Arcadia, AZ
+              Top-Rated House Cleaning Service in Arcadia, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               At{" "}
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why Choose Sun Valley Cleaners for House Cleaning Services in
+                Why Choose Sun Valley Cleaners for House Cleaning Service in
                 Arcadia, AZ?
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
@@ -105,7 +105,7 @@ export default function Home() {
                       Arcadia, AZ
                     </a>
                     , ensuring convenience without compromising quality in our
-                    house cleaning services.
+                    house cleaning service.
                   </p>
                 </div>
                 <div className="flex items-start">
@@ -125,7 +125,7 @@ export default function Home() {
                   <p className="text-lg text-black font-semibold">
                     <b>Tailored Cleaning for Arcadia Homes:</b> We tackle dust
                     and debris common in desert climates with localized methods
-                    that make our house cleaning services in Arcadia, AZ extra
+                    that make our house cleaning service in Arcadia, AZ extra
                     effective.
                   </p>
                 </div>
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Arcadia, AZ
+                Why House Cleaning Service Matter in Arcadia, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Clean homes, healthy lives
@@ -276,7 +276,7 @@ export default function Home() {
                   Find Us
                 </h2>
                 <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
-                  Looking for top-rated house cleaning services in Arcadia, AZ?
+                  Looking for a top-rated house cleaning service in Arcadia, AZ?
                   Our team is proud to serve local residents with thorough,
                   reliable cleaning solutions. Whether you are near downtown or
                   in the suburbs, we’re ready to help you enjoy a spotless home
@@ -292,7 +292,7 @@ export default function Home() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in arcadia, house cleaning near
+                  house cleaning service in arcadia, house cleaning near
                   arcadia
                 </iframe>
               </div>

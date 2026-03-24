@@ -17,9 +17,9 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title: "Trusted House Cleaning Services in Gilbert, AZ | Sun Valley Cleaners",
+  title: "Trusted House Cleaning Service in Gilbert, AZ | Sun Valley Cleaners",
   description:
-    "Trusted house cleaning services in Gilbert, AZ by Sun Valley Cleaners. Detailed cleaning, timely service, and guaranteed satisfaction. Call now!",
+    "Trusted house cleaning service in Gilbert, AZ by Sun Valley Cleaners. Detailed cleaning, timely service, and guaranteed satisfaction. Call now!",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com/locations/gilbert-az",
   },
@@ -28,9 +28,9 @@ export const metadata = {
 const faqs = [
   {
     question:
-      "What makes your house cleaning services in Gilbert, AZ stand out?",
+      "What makes your house cleaning service in Gilbert, AZ stand out?",
     answer:
-      "Our Gilbert, AZ house cleaning services stand out through consistent attention to detail, eco-friendly products, and a satisfaction guarantee backed by trained professionals.",
+      "Our Gilbert, AZ house cleaning service stand out through consistent attention to detail, eco-friendly products, and a satisfaction guarantee backed by trained professionals.",
   },
   {
     question: "How can regular house cleaning benefit my Gilbert home?",
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              Trusted House Cleaning Services in Gilbert, AZ
+              Trusted House Cleaning Service in Gilbert, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               <a
@@ -62,7 +62,7 @@ export default function Home() {
               >
                 Sun Valley Cleaners
               </a>{" "}
-              proudly delivers trusted house cleaning services throughout
+              proudly delivers trusted house cleaning service throughout
               Gilbert, AZ. We provide thorough, on-time cleanings designed to
               keep your home fresh, healthy, and stress-free.
             </p>
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why choose Sun Valley Cleaners for House Cleaning Services in
+                Why choose Sun Valley Cleaners for House Cleaning Service in
                 Gilbert, AZ?
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
               <h2 className="text-3xl lg:text-5xl text-black font-bold">
-                Why House Cleaning Services Matter in Gilbert, AZ
+                Why House Cleaning Service Matter in Gilbert, AZ
               </h2>
               <p className="text-sm lg:text-lg text-slate-400">
                 Clean space, clear peace
@@ -277,13 +277,6 @@ export default function Home() {
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
-            <ServiceCard
-              title="Residential Cleaning"
-              description="Our residential cleaning service covers every room with thorough dusting, sanitization, and surface care. Comprehensive results using eco-friendly products!"
-              link="/locations/gilbert-az/residential-cleaning"
-            >
-              <IconOven className="size-12 text-secondary" />
-            </ServiceCard>
           </div>
         </div>
         {/* Services Section - End */}
@@ -318,7 +311,7 @@ export default function Home() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 >
-                  house cleaning services in gilbert, house cleaning near
+                  house cleaning service in gilbert, house cleaning near
                   gilbert
                 </iframe>
               </div>
