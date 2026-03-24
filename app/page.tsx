@@ -21,9 +21,9 @@ import Head from "next/head";
 import FaqSection from "@/components/faq-section";
 
 export const metadata = {
-  title: "#1 House Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners",
+  title: "#1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners",
   description:
-    "#1 House cleaning services in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+    "#1 House cleaning service in Scottsdale, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com",
   },
@@ -32,9 +32,9 @@ export const metadata = {
 const faqs = [
   {
     question:
-      "What is included in your house cleaning services in Scottsdale, AZ?",
+      "What is included in your house cleaning service in Scottsdale, AZ?",
     answer:
-      "Our house cleaning in Scottsdale, AZ includes dusting, vacuuming, mopping, bathroom and kitchen sanitization, and full surface wipe-downs in all main areas.",
+      "Our house cleaning service in Scottsdale, AZ includes dusting, vacuuming, mopping, bathroom and kitchen sanitization, and full surface wipe-downs in all main areas.",
   },
   {
     question:
@@ -55,18 +55,18 @@ export default function Home() {
     <>
       <Head>
         <title>
-          #1 House Cleaning Services in Scottsdale, AZ | Sun Valley Cleaners
+          #1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners
         </title>
         <meta
           name="description"
-          content="Sun Valley Cleaners offers #1 house cleaning services in Scottsdale, AZ. Reliable, detailed, and satisfaction-guaranteed for your home. Call now!"
+          content="Sun Valley Cleaners offers #1 house cleaning service in Scottsdale, AZ. Reliable, detailed, and satisfaction-guaranteed for your home. Call now!"
         />
       </Head>
       <main className="flex min-h-screen flex-col items-center">
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <h1 className="text-4xl lg:text-6xl text-primary font-black">
-              #1 House Cleaning Services in Scottsdale, AZ
+              #1 House Cleaning Service in Scottsdale, AZ
             </h1>
             <p className="text-muted-foreground lg:text-lg">
               We stand by the quality of our work at Sun Valley Cleaners. If for
