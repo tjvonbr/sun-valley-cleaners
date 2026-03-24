@@ -15,7 +15,7 @@ export const metadata = {
   description:
     "Looking for reliable house cleaning in Queen Creek? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com",
+    canonical: "https://www.sunvalleycleaners.com/locations/queen-creek-az",
   },
 };
 

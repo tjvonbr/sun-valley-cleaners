@@ -7,6 +7,15 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ServiceCard from "@/components/service-card";
 
+export const metadata = {
+  title: "#1 House Cleaning Service in Maricopa County, AZ | Sun Valley Cleaners",
+  description:
+    "Looking for reliable house cleaning in Maricopa County? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com/locations",
+  },
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
