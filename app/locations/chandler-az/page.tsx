@@ -17,12 +17,11 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title:
-    "Affordable House Cleaning Service in Chandler, AZ | Sun Valley Cleaners",
+  title: "#1 House Cleaning Service in Chandler, AZ | Sun Valley Cleaners",
   description:
-    "Affordable house cleaning service in Chandler, AZ by Sun Valley Cleaners. Prompt, spotless results backed by a satisfaction guarantee. Call now!",
+    "Looking for reliable house cleaning in Chandler? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/chandler-az",
+    canonical: "https://www.sunvalleycleaners.com",
   },
 };
 

@@ -10,6 +10,15 @@ import {
   IconSprayBottle,
 } from "@/components/ui/icons";
 
+export const metadata = {
+  title: "#1 House Cleaning Service in Tempe, AZ | Sun Valley Cleaners",
+  description:
+    "Looking for reliable house cleaning in Tempe? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com",
+  },
+};
+
 export default function TempePage() {
   return (
     <div className="min-h-screen w-full my-16 px-5 flex flex-col items-center">

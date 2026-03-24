@@ -16,12 +16,11 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title:
-    "Top-Rated House Cleaning Service in Arcadia, AZ | Sun Valley Cleaners",
+  title: "#1 House Cleaning Service in Arcadia, AZ | Sun Valley Cleaners",
   description:
-    "Top-rated house cleaning service in Arcadia, AZ by Sun Valley Cleaners. Spotless results, reliable service, and guaranteed satisfaction. Call now!",
+    "Looking for reliable house cleaning in Arcadia? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/arcadia-az",
+    canonical: "https://www.sunvalleycleaners.com",
   },
 };
 

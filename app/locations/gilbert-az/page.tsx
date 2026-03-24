@@ -17,11 +17,11 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title: "Trusted House Cleaning Service in Gilbert, AZ | Sun Valley Cleaners",
+  title: "#1 House Cleaning Service in Gilbert, AZ | Sun Valley Cleaners",
   description:
-    "Trusted house cleaning service in Gilbert, AZ by Sun Valley Cleaners. Detailed cleaning, timely service, and guaranteed satisfaction. Call now!",
+    "Looking for reliable house cleaning in Gilbert? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/gilbert-az",
+    canonical: "https://www.sunvalleycleaners.com",
   },
 };
 

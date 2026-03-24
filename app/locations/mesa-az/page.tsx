@@ -17,11 +17,11 @@ import {
 import ServiceCard from "@/components/service-card";
 
 export const metadata = {
-  title: "Reliable House Cleaning Service in Mesa, AZ | Sun Valley Cleaners",
+  title: "#1 House Cleaning Service in Mesa, AZ | Sun Valley Cleaners",
   description:
-    "Reliable house cleaning service in Mesa, AZ by Sun Valley Cleaners. Consistent results, flexible scheduling, and trusted service. Call now!",
+    "Looking for reliable house cleaning in Mesa? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
   alternates: {
-    canonical: "https://www.sunvalleycleaners.com/locations/mesa-az",
+    canonical: "https://www.sunvalleycleaners.com",
   },
 };
 
