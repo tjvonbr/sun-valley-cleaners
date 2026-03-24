@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import icon from "../../public/hero.svg";
 import Link from "next/link";
