@@ -14,6 +14,7 @@ import {
   IconOven,
   IconSprayBottle,
 } from "@/components/ui/icons";
+import AlsoAvailableSection from "@/components/also-available-section";
 
 export const metadata = {
   title: "Comprehensive Deep Cleaning in Mesa, AZ | Sun Valley Cleaners",
@@ -222,6 +223,22 @@ export default function Home() {
         <FaqSection faqs={faqs} city="Mesa, AZ" />
 
         {/* FAQ SECTION - End */}
+
+        <AlsoAvailableSection
+          serviceName="Deep Cleaning"
+          areas={[
+            { name: "Phoenix", href: "/locations/phoenix-az/deep-cleaning" },
+            { name: "Chandler", href: "/locations/chandler-az/deep-cleaning" },
+            { name: "Gilbert", href: "/locations/gilbert-az/deep-cleaning" },
+            { name: "Arcadia", href: "/locations/arcadia-az/deep-cleaning" },
+            { name: "Paradise Valley", href: "/locations/paradise-valley-az/deep-cleaning" },
+          ]}
+          relatedServices={[
+            { name: "standard cleaning", href: "/services/house-cleaning" },
+            { name: "move-in/move-out cleaning", href: "/services/move-cleaning" },
+            { name: "Airbnb cleaning", href: "/services/airbnb-cleaning" },
+          ]}
+        />
       </main>
     </>
   );

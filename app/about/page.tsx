@@ -1,5 +1,6 @@
 import FrequentlyAskedQuestions from "@/components/frequently-asked";
 import Image from "next/image";
+import Link from "next/link";
 import image from "../../public/about_us.svg";
 
 export const metadata = {
@@ -32,6 +33,54 @@ export default function AboutPage() {
         </div>
         <Image src={image} height="500" width="500" alt="hello" />
       </div>
+      <div className="w-full max-w-4xl px-8 py-12 flex flex-col items-center space-y-6 text-center">
+        <h2 className="text-3xl lg:text-5xl text-background font-bold">
+          Our Services
+        </h2>
+        <p className="text-background/80 max-w-2xl">
+          We offer a range of professional cleaning services to meet your
+          needs, including{" "}
+          <Link href="/services/house-cleaning" className="underline text-background">
+            standard cleaning
+          </Link>
+          ,{" "}
+          <Link href="/services/deep-cleaning" className="underline text-background">
+            deep cleaning
+          </Link>
+          ,{" "}
+          <Link href="/services/move-cleaning" className="underline text-background">
+            move-in/move-out cleaning
+          </Link>
+          , and{" "}
+          <Link href="/services/airbnb-cleaning" className="underline text-background">
+            Airbnb cleaning
+          </Link>
+          . View our{" "}
+          <Link href="/cleaning-checklist" className="underline text-background">
+            cleaning checklist
+          </Link>{" "}
+          to see exactly what each service includes, or{" "}
+          <Link href="/contact" className="underline text-background">
+            contact us
+          </Link>{" "}
+          for a free quote.
+        </p>
+        <p className="text-background/80 max-w-2xl">
+          We proudly serve{" "}
+          <Link href="/locations/phoenix-az" className="underline text-background">Phoenix</Link>,{" "}
+          <Link href="/locations/scottsdale-az" className="underline text-background">Scottsdale</Link>,{" "}
+          <Link href="/locations/chandler-az" className="underline text-background">Chandler</Link>,{" "}
+          <Link href="/locations/gilbert-az" className="underline text-background">Gilbert</Link>,{" "}
+          <Link href="/locations/mesa-az" className="underline text-background">Mesa</Link>,{" "}
+          <Link href="/locations/tempe-az" className="underline text-background">Tempe</Link>,{" "}
+          and other communities across Maricopa County. Visit our{" "}
+          <Link href="/locations" className="underline text-background">
+            service areas page
+          </Link>{" "}
+          to find cleaning near you.
+        </p>
+      </div>
+
       <div className="w-1/2 py-12 flex flex-col items-center space-y-8">
         <h2 className="text-center text-3xl lg:text-5xl text-background font-bold">
           Frequently Asked Questions

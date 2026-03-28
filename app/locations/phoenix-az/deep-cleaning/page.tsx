@@ -15,6 +15,7 @@ import {
   IconSprayBottle,
 } from "@/components/ui/icons";
 import ServiceCard from "@/components/service-card";
+import AlsoAvailableSection from "@/components/also-available-section";
 
 export const metadata = {
   title: "Detailed Deep Cleaning Services in Phoenix, AZ | Sun Valley Cleaners",
@@ -214,6 +215,22 @@ export default function Home() {
         <FaqSection faqs={faqs} city="Phoenix, AZ" />
 
         {/* FAQ SECTION - End */}
+
+        <AlsoAvailableSection
+          serviceName="Deep Cleaning"
+          areas={[
+            { name: "Chandler", href: "/locations/chandler-az/deep-cleaning" },
+            { name: "Gilbert", href: "/locations/gilbert-az/deep-cleaning" },
+            { name: "Mesa", href: "/locations/mesa-az/deep-cleaning" },
+            { name: "Arcadia", href: "/locations/arcadia-az/deep-cleaning" },
+            { name: "Paradise Valley", href: "/locations/paradise-valley-az/deep-cleaning" },
+          ]}
+          relatedServices={[
+            { name: "standard cleaning", href: "/services/house-cleaning" },
+            { name: "move-in/move-out cleaning", href: "/services/move-cleaning" },
+            { name: "Airbnb cleaning", href: "/services/airbnb-cleaning" },
+          ]}
+        />
       </main>
     </>
   );

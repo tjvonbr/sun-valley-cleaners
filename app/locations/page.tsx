@@ -88,6 +88,66 @@ export default function Home() {
               alt="Mesa, AZ Cleaning Services"
             />
           </ServiceCard>
+          <ServiceCard
+            title="Scottsdale, AZ"
+            description=""
+            link="/locations/scottsdale-az"
+          >
+            <Image
+              src="/images/mesa-az.jpeg"
+              width={400}
+              height={450}
+              alt="Scottsdale, AZ Cleaning Services"
+            />
+          </ServiceCard>
+          <ServiceCard
+            title="Tempe, AZ"
+            description=""
+            link="/locations/tempe-az"
+          >
+            <Image
+              src="/images/mesa-az.jpeg"
+              width={400}
+              height={450}
+              alt="Tempe, AZ Cleaning Services"
+            />
+          </ServiceCard>
+          <ServiceCard
+            title="Queen Creek, AZ"
+            description=""
+            link="/locations/queen-creek-az"
+          >
+            <Image
+              src="/images/mesa-az.jpeg"
+              width={400}
+              height={450}
+              alt="Queen Creek, AZ Cleaning Services"
+            />
+          </ServiceCard>
+          <ServiceCard
+            title="Arcadia, AZ"
+            description=""
+            link="/locations/arcadia-az"
+          >
+            <Image
+              src="/images/mesa-az.jpeg"
+              width={400}
+              height={450}
+              alt="Arcadia, AZ Cleaning Services"
+            />
+          </ServiceCard>
+          <ServiceCard
+            title="Paradise Valley, AZ"
+            description=""
+            link="/locations/paradise-valley-az"
+          >
+            <Image
+              src="/images/mesa-az.jpeg"
+              width={400}
+              height={450}
+              alt="Paradise Valley, AZ Cleaning Services"
+            />
+          </ServiceCard>
         </div>
       </div>
     </main>

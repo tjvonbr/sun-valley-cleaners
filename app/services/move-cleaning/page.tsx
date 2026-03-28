@@ -1,6 +1,8 @@
 import Image from "next/image";
 import locationImg from "/public/vacuum-woman.svg";
 import ServiceCard from "@/components/service-card";
+import ServiceAreasSection from "@/components/service-areas-section";
+import Link from "next/link";
 import { IconBox, IconBoxOpen, IconOven } from "@/components/ui/icons";
 
 export const metadata = {
@@ -45,6 +47,39 @@ export default function MoveCleanPage() {
           <IconBox className="size-12 text-secondary" />
         </ServiceCard>
       </div>
+
+      <div className="max-w-2xl mt-8 text-center text-slate-500">
+        <p>
+          Once you&apos;re settled in, keep your new home fresh with our{" "}
+          <Link href="/services/house-cleaning" className="underline text-secondary">
+            standard cleaning service
+          </Link>
+          . Need a thorough top-to-bottom clean? Try our{" "}
+          <Link href="/services/deep-cleaning" className="underline text-secondary">
+            deep cleaning service
+          </Link>
+          . See exactly what&apos;s included in our{" "}
+          <Link href="/cleaning-checklist" className="underline text-secondary">
+            cleaning checklist
+          </Link>
+          .
+        </p>
+      </div>
+
+      <ServiceAreasSection
+        serviceName="Move-in/Move-out Cleaning"
+        areas={[
+          { name: "Phoenix", href: "/locations/phoenix-az/move-in-cleaning" },
+          { name: "Chandler", href: "/locations/chandler-az/move-in-cleaning" },
+          { name: "Gilbert", href: "/locations/gilbert-az/move-in-cleaning" },
+          { name: "Mesa", href: "/locations/mesa-az/move-in-cleaning" },
+          { name: "Arcadia", href: "/locations/arcadia-az/move-in-move-out-cleaning" },
+          { name: "Paradise Valley", href: "/locations/paradise-valley-az/move-in-move-out-cleaning" },
+          { name: "Scottsdale", href: "/locations/scottsdale-az" },
+          { name: "Tempe", href: "/locations/tempe-az" },
+          { name: "Queen Creek", href: "/locations/queen-creek-az" },
+        ]}
+      />
     </div>
   );
 }

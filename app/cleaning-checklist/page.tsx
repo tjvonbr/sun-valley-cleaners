@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import CleaningChecklist from "@/components/cleaning-checklist";
 
 export const metadata: Metadata = {
@@ -23,7 +24,25 @@ export default function CleaningChecklistPage() {
 
         <CleaningChecklist />
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-y-4">
+          <p className="text-background/80 max-w-2xl mx-auto">
+            Learn more about each service:{" "}
+            <Link href="/services/house-cleaning" className="underline text-background">
+              Standard Cleaning
+            </Link>
+            {" | "}
+            <Link href="/services/deep-cleaning" className="underline text-background">
+              Deep Cleaning
+            </Link>
+            {" | "}
+            <Link href="/services/move-cleaning" className="underline text-background">
+              Move-in/Move-out Cleaning
+            </Link>
+            {" | "}
+            <Link href="/services/airbnb-cleaning" className="underline text-background">
+              Airbnb Cleaning
+            </Link>
+          </p>
           <p className="text-background mb-4">
             Ready to book your cleaning?
           </p>
