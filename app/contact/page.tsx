@@ -56,14 +56,13 @@ export default function ContactPage() {
           Phone: (623) 295-0506
         </div>
         <p className="text-xs text-muted-foreground">
-          If you cannot access the form below for whatever reason, please click{" "}
+          If you cannot access the form below for whatever reason, please{" "}
           <Link
             href="https://sunvalleycleaners.bookingkoala.com/contact-us"
             className="underline"
           >
-            here
-          </Link>{" "}
-          to book your appointment on our provider&apos;s website!
+            contact us on our provider&apos;s website
+          </Link>.
         </p>
       </div>
       <iframe

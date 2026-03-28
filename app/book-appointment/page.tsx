@@ -23,14 +23,13 @@ export default function BookAppointmentPage() {
           please call (623) 295-0506 and we&apos;ll get you setup!
         </p>
         <p className="text-xs text-muted-foreground">
-          If you cannot access the form below for whatever reason, please click{" "}
+          If you cannot access the form below for whatever reason, please{" "}
           <Link
             href="https://sunvalleycleaners.bookingkoala.com/booknow"
             className="underline"
           >
-            here
-          </Link>{" "}
-          to book your appointment on our provider&apos;s website!
+            book your appointment on our provider&apos;s website
+          </Link>.
         </p>
       </div>
       <iframe
