@@ -262,6 +262,18 @@ export default function Home() {
         </div>
         {/* Services Section - End */}
 
+        {/* Service Links */}
+        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-white">
+          <h2 className="text-3xl text-black font-bold mb-4">Learn More About Our Services</h2>
+          <p className="max-w-2xl text-slate-500">
+            Explore our full range of cleaning services:{" "}
+            <Link href="/services/house-cleaning" className="underline text-secondary">Standard Cleaning</Link>,{" "}
+            <Link href="/services/deep-cleaning" className="underline text-secondary">Deep Cleaning</Link>,{" "}
+            <Link href="/services/move-cleaning" className="underline text-secondary">Move-in/Move-out Cleaning</Link>, and{" "}
+            <Link href="/services/airbnb-cleaning" className="underline text-secondary">Airbnb Cleaning</Link>.{" "}
+            View our <Link href="/cleaning-checklist" className="underline text-secondary">cleaning checklist</Link> to see what each service includes.
+          </p>
+        </div>
         {/* FAQ SECTION - Start */}
         <FaqSection faqs={faqs} city="Paradise Valley, AZ" />
 

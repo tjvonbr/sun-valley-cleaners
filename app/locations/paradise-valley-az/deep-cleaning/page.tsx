@@ -6,6 +6,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { IconCircleCheck } from "@/components/ui/icons";
+import AlsoAvailableSection from "@/components/also-available-section";
 
 export const metadata = {
   title: "Comprehensive Deep Cleaning in Paradise Valley, AZ | Sun Valley Cleaners",
@@ -214,6 +215,22 @@ export default function Home() {
         <FaqSection faqs={faqs} city="Paradise Valley, AZ" />
 
         {/* FAQ SECTION - End */}
+
+        <AlsoAvailableSection
+          serviceName="Deep Cleaning"
+          areas={[
+            { name: "Phoenix", href: "/locations/phoenix-az/deep-cleaning" },
+            { name: "Chandler", href: "/locations/chandler-az/deep-cleaning" },
+            { name: "Gilbert", href: "/locations/gilbert-az/deep-cleaning" },
+            { name: "Mesa", href: "/locations/mesa-az/deep-cleaning" },
+            { name: "Arcadia", href: "/locations/arcadia-az/deep-cleaning" },
+          ]}
+          relatedServices={[
+            { name: "standard cleaning", href: "/services/house-cleaning" },
+            { name: "move-in/move-out cleaning", href: "/services/move-cleaning" },
+            { name: "Airbnb cleaning", href: "/services/airbnb-cleaning" },
+          ]}
+        />
       </main>
     </>
   );

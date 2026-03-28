@@ -1,6 +1,8 @@
 import Image from "next/image";
 import locationImg from "/public/female-cleaner.svg";
 import ServiceCard from "@/components/service-card";
+import ServiceAreasSection from "@/components/service-areas-section";
+import Link from "next/link";
 import { IconSprayBottle } from "@/components/ui/icons";
 
 export const metadata = {
@@ -39,6 +41,39 @@ export default function StandardCleanPage() {
           <IconSprayBottle className="size-12 text-secondary" />
         </ServiceCard>
       </div>
+
+      <div className="max-w-2xl mt-8 text-center text-slate-500">
+        <p>
+          Looking for a deeper clean? Check out our{" "}
+          <Link href="/services/deep-cleaning" className="underline text-secondary">
+            deep cleaning service
+          </Link>
+          . Moving soon? Our{" "}
+          <Link href="/services/move-cleaning" className="underline text-secondary">
+            move-in/move-out cleaning
+          </Link>{" "}
+          has you covered. Want to see exactly what we clean?{" "}
+          <Link href="/cleaning-checklist" className="underline text-secondary">
+            View our cleaning checklist
+          </Link>
+          .
+        </p>
+      </div>
+
+      <ServiceAreasSection
+        serviceName="Standard Cleaning"
+        areas={[
+          { name: "Phoenix", href: "/locations/phoenix-az" },
+          { name: "Scottsdale", href: "/locations/scottsdale-az" },
+          { name: "Chandler", href: "/locations/chandler-az" },
+          { name: "Gilbert", href: "/locations/gilbert-az" },
+          { name: "Mesa", href: "/locations/mesa-az" },
+          { name: "Tempe", href: "/locations/tempe-az" },
+          { name: "Arcadia", href: "/locations/arcadia-az" },
+          { name: "Paradise Valley", href: "/locations/paradise-valley-az" },
+          { name: "Queen Creek", href: "/locations/queen-creek-az" },
+        ]}
+      />
     </div>
   );
 }

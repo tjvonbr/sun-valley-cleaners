@@ -167,40 +167,78 @@ export default function Home() {
             <ServiceCard
               title="Standard Cleaning"
               description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              link="/services/house-cleaning"
             >
               <IconSprayBottle className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
               title="Deep Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              description="Our deep cleaning package goes beyond the surface to tackle buildup in hard-to-reach areas, inside appliances, and behind furniture for a thorough, top-to-bottom clean."
+              link="/services/deep-cleaning"
             >
               <IconOven className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
-              title="Move-in Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              title="Move-in/Move-out Cleaning"
+              description="Make your move stress-free with our comprehensive move-in and move-out cleaning service. We leave every room spotless so you can focus on settling in or getting your deposit back."
+              link="/services/move-cleaning"
             >
               <IconBoxOpen className="size-12 text-secondary" />
             </ServiceCard>
             <ServiceCard
-              title="Move-out Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-            >
-              <IconBox className="size-12 text-secondary" />
-            </ServiceCard>
-            <ServiceCard
-              title="Event Cleaning"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+              title="Airbnb Cleaning"
+              description="Keep your short-term rental guest-ready with our reliable Airbnb cleaning service. We handle quick turnovers, linen changes, and thorough sanitization for every booking."
+              link="/services/airbnb-cleaning"
             >
               <IconEvent className="size-12 text-secondary" />
             </ServiceCard>
-            <ServiceCard
-              title="Linen Service"
-              description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-            >
-              <IconBed className="size-12 text-secondary" />
-            </ServiceCard>
           </div>
+        </div>
+
+        {/* Service Areas Section */}
+        <div className="py-12 px-5 w-full flex flex-col items-center space-y-6 text-center bg-background">
+          <h2 className="text-3xl text-black font-bold">Service Areas</h2>
+          <p className="max-w-2xl text-slate-500">
+            Sun Valley Cleaners proudly serves homeowners across the Phoenix
+            metro area. Visit our{" "}
+            <Link href="/locations" className="underline text-secondary">
+              service areas page
+            </Link>{" "}
+            to find cleaning services near you.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/locations/phoenix-az" className="underline text-secondary font-semibold">Phoenix</Link>
+            <Link href="/locations/scottsdale-az" className="underline text-secondary font-semibold">Scottsdale</Link>
+            <Link href="/locations/chandler-az" className="underline text-secondary font-semibold">Chandler</Link>
+            <Link href="/locations/gilbert-az" className="underline text-secondary font-semibold">Gilbert</Link>
+            <Link href="/locations/mesa-az" className="underline text-secondary font-semibold">Mesa</Link>
+            <Link href="/locations/tempe-az" className="underline text-secondary font-semibold">Tempe</Link>
+            <Link href="/locations/arcadia-az" className="underline text-secondary font-semibold">Arcadia</Link>
+            <Link href="/locations/paradise-valley-az" className="underline text-secondary font-semibold">Paradise Valley</Link>
+            <Link href="/locations/queen-creek-az" className="underline text-secondary font-semibold">Queen Creek</Link>
+          </div>
+        </div>
+
+        {/* About & Checklist Links */}
+        <div className="py-12 px-5 w-full flex flex-col items-center space-y-6 text-center bg-white">
+          <h2 className="text-3xl text-black font-bold">Why Sun Valley Cleaners?</h2>
+          <p className="max-w-2xl text-slate-500">
+            We are committed to delivering the highest quality cleaning
+            services in the Scottsdale and Phoenix metro area.{" "}
+            <Link href="/about" className="underline text-secondary">
+              Learn more about our team
+            </Link>{" "}
+            and our dedication to customer satisfaction. Want to know exactly
+            what we clean?{" "}
+            <Link href="/cleaning-checklist" className="underline text-secondary">
+              View our detailed cleaning checklist
+            </Link>{" "}
+            to see what each service includes. Ready to get started?{" "}
+            <Link href="/contact" className="underline text-secondary">
+              Contact us
+            </Link>{" "}
+            for a free quote.
+          </p>
         </div>
 
         {/* FAQ SECTION - Start */}

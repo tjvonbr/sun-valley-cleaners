@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import locationImg from "/public/location-female-cleaner.svg";
 import ServiceCard from "@/components/service-card";
 import {
@@ -40,39 +41,48 @@ export default function QueenCreekPage() {
         <ServiceCard
           title="Standard Cleaning"
           description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+          link="/services/house-cleaning"
         >
           <IconSprayBottle className="size-12 text-secondary" />
         </ServiceCard>
         <ServiceCard
           title="Deep Cleaning"
-          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+          description="Our deep cleaning package goes beyond the surface to tackle buildup in hard-to-reach areas, inside appliances, and behind furniture for a thorough, top-to-bottom clean."
+          link="/services/deep-cleaning"
         >
           <IconOven className="size-12 text-secondary" />
         </ServiceCard>
         <ServiceCard
-          title="Move-in Cleaning"
-          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+          title="Move-in/Move-out Cleaning"
+          description="Make your move stress-free with our comprehensive move-in and move-out cleaning service, leaving every room spotless."
+          link="/services/move-cleaning"
         >
           <IconBoxOpen className="size-12 text-secondary" />
         </ServiceCard>
         <ServiceCard
-          title="Move-out Cleaning"
-          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-        >
-          <IconBox className="size-12 text-secondary" />
-        </ServiceCard>
-        <ServiceCard
-          title="Event Cleaning"
-          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
+          title="Airbnb Cleaning"
+          description="Keep your short-term rental guest-ready with our reliable Airbnb cleaning service, including quick turnovers and thorough sanitization."
+          link="/services/airbnb-cleaning"
         >
           <IconEvent className="size-12 text-secondary" />
         </ServiceCard>
-        <ServiceCard
-          title="Linen Service"
-          description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
-        >
-          <IconBed className="size-12 text-secondary" />
-        </ServiceCard>
+      </div>
+
+      <div className="max-w-2xl mt-12 text-center text-slate-500">
+        <p>
+          We also serve nearby areas including{" "}
+          <Link href="/locations/phoenix-az" className="underline text-secondary">Phoenix</Link>,{" "}
+          <Link href="/locations/chandler-az" className="underline text-secondary">Chandler</Link>,{" "}
+          <Link href="/locations/gilbert-az" className="underline text-secondary">Gilbert</Link>,{" "}
+          <Link href="/locations/mesa-az" className="underline text-secondary">Mesa</Link>,{" "}
+          <Link href="/locations/scottsdale-az" className="underline text-secondary">Scottsdale</Link>, and{" "}
+          <Link href="/locations/tempe-az" className="underline text-secondary">Tempe</Link>.{" "}
+          View our{" "}
+          <Link href="/cleaning-checklist" className="underline text-secondary">
+            cleaning checklist
+          </Link>{" "}
+          to see what each service includes.
+        </p>
       </div>
     </div>
   );

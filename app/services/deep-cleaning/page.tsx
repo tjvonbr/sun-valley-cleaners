@@ -1,6 +1,8 @@
 import Image from "next/image";
 import locationImg from "/public/deep-clean.svg";
 import ServiceCard from "@/components/service-card";
+import ServiceAreasSection from "@/components/service-areas-section";
+import Link from "next/link";
 import { IconOven } from "@/components/ui/icons";
 
 export const metadata = {
@@ -39,6 +41,39 @@ export default function DeepCleanPage() {
           <IconOven className="size-12 text-secondary" />
         </ServiceCard>
       </div>
+
+      <div className="max-w-2xl mt-8 text-center text-slate-500">
+        <p>
+          Need regular upkeep instead? Our{" "}
+          <Link href="/services/house-cleaning" className="underline text-secondary">
+            standard cleaning service
+          </Link>{" "}
+          keeps your home fresh between deep cleans. Planning a move? Check out our{" "}
+          <Link href="/services/move-cleaning" className="underline text-secondary">
+            move-in/move-out cleaning
+          </Link>
+          . See exactly what&apos;s included in our{" "}
+          <Link href="/cleaning-checklist" className="underline text-secondary">
+            cleaning checklist
+          </Link>
+          .
+        </p>
+      </div>
+
+      <ServiceAreasSection
+        serviceName="Deep Cleaning"
+        areas={[
+          { name: "Phoenix", href: "/locations/phoenix-az/deep-cleaning" },
+          { name: "Chandler", href: "/locations/chandler-az/deep-cleaning" },
+          { name: "Gilbert", href: "/locations/gilbert-az/deep-cleaning" },
+          { name: "Mesa", href: "/locations/mesa-az/deep-cleaning" },
+          { name: "Arcadia", href: "/locations/arcadia-az/deep-cleaning" },
+          { name: "Paradise Valley", href: "/locations/paradise-valley-az/deep-cleaning" },
+          { name: "Scottsdale", href: "/locations/scottsdale-az" },
+          { name: "Tempe", href: "/locations/tempe-az" },
+          { name: "Queen Creek", href: "/locations/queen-creek-az" },
+        ]}
+      />
     </div>
   );
 }

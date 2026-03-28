@@ -6,6 +6,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { IconCircleCheck } from "@/components/ui/icons";
+import AlsoAvailableSection from "@/components/also-available-section";
 
 export const metadata = {
   title: "Premium Airbnb Cleaning in Phoenix, AZ | Sun Valley Cleaners",
@@ -209,6 +210,22 @@ export default function Home() {
         {/* FAQ SECTION - Start */}
         <FaqSection faqs={faqs} city="Phoenix, AZ" />
         {/* FAQ SECTION - End */}
+
+        <AlsoAvailableSection
+          serviceName="Airbnb Cleaning"
+          areas={[
+            { name: "Chandler", href: "/locations/chandler-az/airbnb-cleaning" },
+            { name: "Gilbert", href: "/locations/gilbert-az/airbnb-cleaning" },
+            { name: "Mesa", href: "/locations/mesa-az/airbnb-cleaning" },
+            { name: "Arcadia", href: "/locations/arcadia-az/airbnb-cleaning" },
+            { name: "Paradise Valley", href: "/locations/paradise-valley-az/airbnb-cleaning" },
+          ]}
+          relatedServices={[
+            { name: "standard cleaning", href: "/services/house-cleaning" },
+            { name: "deep cleaning", href: "/services/deep-cleaning" },
+            { name: "move-in/move-out cleaning", href: "/services/move-cleaning" },
+          ]}
+        />
       </main>
     </>
   );

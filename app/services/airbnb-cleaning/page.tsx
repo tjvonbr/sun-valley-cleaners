@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FaqSection from "@/components/faq-section";
+import ServiceAreasSection from "@/components/service-areas-section";
 import icon from "/public/hero.svg";
 import femaleCleaner from "/public/female-cleaner.svg";
 import Link from "next/link";
@@ -197,6 +198,45 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {/* Cross-links to other services */}
+        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-white">
+          <p className="max-w-2xl text-slate-500">
+            We also offer{" "}
+            <Link href="/services/house-cleaning" className="underline text-secondary">
+              standard cleaning
+            </Link>
+            ,{" "}
+            <Link href="/services/deep-cleaning" className="underline text-secondary">
+              deep cleaning
+            </Link>
+            , and{" "}
+            <Link href="/services/move-cleaning" className="underline text-secondary">
+              move-in/move-out cleaning
+            </Link>{" "}
+            services. See what&apos;s included in our{" "}
+            <Link href="/cleaning-checklist" className="underline text-secondary">
+              cleaning checklist
+            </Link>
+            .
+          </p>
+        </div>
+
+        {/* Service Areas */}
+        <ServiceAreasSection
+          serviceName="Airbnb Cleaning"
+          areas={[
+            { name: "Phoenix", href: "/locations/phoenix-az/airbnb-cleaning" },
+            { name: "Chandler", href: "/locations/chandler-az/airbnb-cleaning" },
+            { name: "Gilbert", href: "/locations/gilbert-az/airbnb-cleaning" },
+            { name: "Mesa", href: "/locations/mesa-az/airbnb-cleaning" },
+            { name: "Arcadia", href: "/locations/arcadia-az/airbnb-cleaning" },
+            { name: "Paradise Valley", href: "/locations/paradise-valley-az/airbnb-cleaning" },
+            { name: "Scottsdale", href: "/locations/scottsdale-az" },
+            { name: "Tempe", href: "/locations/tempe-az" },
+            { name: "Queen Creek", href: "/locations/queen-creek-az" },
+          ]}
+        />
 
         {/* FAQ SECTION */}
         <FaqSection faqs={faqs} city="Scottsdale, AZ" />

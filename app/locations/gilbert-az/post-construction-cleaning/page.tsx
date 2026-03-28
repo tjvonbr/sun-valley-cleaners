@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FaqSection from "@/components/faq-section";
+import AlsoAvailableSection from "@/components/also-available-section";
 import icon from "/public/hero.svg";
 import femaleCleaner from "../../../../public/female-cleaner.svg";
 import Link from "next/link";
@@ -224,6 +225,21 @@ export default function Home() {
         {/* FAQ SECTION - Start */}
         <FaqSection faqs={faqs} city="Gilbert, AZ" />
         {/* FAQ SECTION - End */}
+
+        <AlsoAvailableSection
+          serviceName="Post-Construction Cleaning"
+          areas={[
+            { name: "Phoenix, AZ", href: "/locations/phoenix-az/post-construction-cleaning" },
+            { name: "Chandler, AZ", href: "/locations/chandler-az/post-construction-cleaning" },
+            { name: "Mesa, AZ", href: "/locations/mesa-az/post-construction-cleaning" },
+          ]}
+          relatedServices={[
+            { name: "standard cleaning", href: "/services/house-cleaning" },
+            { name: "deep cleaning", href: "/services/deep-cleaning" },
+            { name: "move-in/move-out cleaning", href: "/services/move-cleaning" },
+            { name: "Airbnb cleaning", href: "/services/airbnb-cleaning" },
+          ]}
+        />
       </main>
     </>
   );

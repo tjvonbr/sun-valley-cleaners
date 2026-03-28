@@ -23,6 +23,29 @@ export default function ContactPage() {
           can fill out the form below. Whichever way you choose, we promise to
           get back to you soon!
         </p>
+        <p className="text-muted-foreground text-sm">
+          Looking for a specific service? Check out our{" "}
+          <Link href="/services/house-cleaning" className="underline text-secondary">
+            standard cleaning
+          </Link>
+          ,{" "}
+          <Link href="/services/deep-cleaning" className="underline text-secondary">
+            deep cleaning
+          </Link>
+          ,{" "}
+          <Link href="/services/move-cleaning" className="underline text-secondary">
+            move-in/move-out cleaning
+          </Link>
+          , and{" "}
+          <Link href="/services/airbnb-cleaning" className="underline text-secondary">
+            Airbnb cleaning
+          </Link>
+          {" "}pages, or{" "}
+          <Link href="/book-appointment" className="underline text-secondary">
+            book an appointment
+          </Link>{" "}
+          directly.
+        </p>
         <div className="flex flex-col items-start text-primary font-semibold">
           <p>
             Email:{" "}
