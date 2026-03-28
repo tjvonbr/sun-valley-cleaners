@@ -1,7 +1,7 @@
 import Image from "next/image";
 import FaqSection from "@/components/faq-section";
-import icon from "../../../../public/hero.svg";
-import femaleCleaner from "../../../../public/female-cleaner.svg";
+import icon from "/public/hero.svg";
+import femaleCleaner from "/public/female-cleaner.svg";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
