@@ -2,6 +2,15 @@ import FrequentlyAskedQuestions from "@/components/frequently-asked";
 import Image from "next/image";
 import image from "../../public/about_us.svg";
 
+export const metadata = {
+  title: "#1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners",
+  description:
+    "Looking for reliable house cleaning in Scottsdale? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
+  alternates: {
+    canonical: "https://www.sunvalleycleaners.com/about",
+  },
+};
+
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-primary">
