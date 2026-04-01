@@ -2,9 +2,9 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata = {
-  title: "#1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners",
+  title: "Contact Sun Valley Cleaners | Scottsdale, AZ House Cleaning",
   description:
-    "Looking for reliable house cleaning in Scottsdale? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
+    "Get in touch with Sun Valley Cleaners for house cleaning in Scottsdale and the greater Phoenix area. Call, email, or send us a message for a free estimate.",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com/contact",
   },
