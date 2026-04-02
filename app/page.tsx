@@ -1,12 +1,8 @@
 import Image from "next/image";
-import icon from "../public/hero.svg";
-import femaleCleaner from "../public/female-cleaner.svg";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
-  IconBed,
-  IconBox,
   IconBoxOpen,
   IconCheck,
   IconCircleCheck,
@@ -17,7 +13,6 @@ import {
 } from "@/components/ui/icons";
 import CommitmentCard from "@/components/feature-card";
 import ServiceCard from "@/components/service-card";
-import Head from "next/head";
 import FaqSection from "@/components/faq-section";
 
 export const metadata = {
@@ -52,16 +47,6 @@ const faqs = [
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>
-          #1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners
-        </title>
-        <meta
-          name="description"
-          content="Sun Valley Cleaners offers #1 house cleaning service in Scottsdale, AZ. Reliable, detailed, and satisfaction-guaranteed for your home. Call now!"
-        />
-      </Head>
       <main className="flex min-h-screen flex-col items-center">
         <div className="px-16 md:px-0 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center md:max-w-[80rem]">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
@@ -88,7 +73,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Image src={icon} height="500" width="500" alt="hello" />
+          <Image src="/hero.svg" height="500" width="500" alt="Professional house cleaning service in Scottsdale, AZ" />
         </div>
         <div className="px-16 py-12 w-full flex flex-col md:flex-row justify-center items-center  bg-secondary text-white">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row justify-between  w-full">
@@ -152,10 +137,10 @@ export default function Home() {
             </div>
 
             <Image
-              src={femaleCleaner}
+              src="/female-cleaner.svg"
               height="750"
               width="500"
-              alt="hello"
+              alt="Professional cleaner committed to quality and customer satisfaction"
               className="bg-background"
             />
           </div>
@@ -246,6 +231,5 @@ export default function Home() {
 
         {/* FAQ SECTION - End */}
       </main>
-    </>
   );
 }
