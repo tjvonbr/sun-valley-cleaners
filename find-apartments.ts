@@ -1,8 +1,7 @@
-const AIRTABLE_TOKEN =
-  "patSQ18jLOinSbb18.6d908d637ad99a048b9c57f70a5d4c69ce991a9994610c3859e59105f69a7064";
-const AIRTABLE_BASE_ID = "app0ZEtycmvW7AGFE";
-const AIRTABLE_TABLE_ID = "tblKfMcsPSRqndlAN";
-const GOOGLE_API_KEY = "AIzaSyCxuY4lnm8f-ggqvfqbTmaP-Re4cxHJJNI";
+const AIRTABLE_TOKEN = process.env.AIRTABLE_TOKEN!;
+const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID!;
+const AIRTABLE_TABLE_ID = process.env.AIRTABLE_TABLE_ID!;
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY!;
 
 const FIVE_MILES_METERS = 8047;
 
