@@ -29,8 +29,14 @@ export default function Footer() {
           href="/book-appointment"
           className="flex items-center hover:underline"
         >
-          
+
           Get a Quote
+        </Link>
+        <Link
+          href="/terms-of-service"
+          className="flex items-center hover:underline"
+        >
+          Terms of Service
         </Link>
       </div>
       <div className="flex flex-col items-start">
