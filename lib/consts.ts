@@ -63,6 +63,10 @@ export const navigation: NavigationItems = {
       href: "/services/deep-cleaning",
     },
     {
+      name: "Move-in Cleaning",
+      href: "/services/move-in-cleaning"
+    },
+    {
       name: "Move-in/Move-out Cleaning",
       href: "/services/move-cleaning",
     },
