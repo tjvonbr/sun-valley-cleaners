@@ -7,6 +7,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/services/move-cleaning',
+        destination: '/services/move-in-cleaning',
+        permanent: true,
+      },
     ]
   }
 };
