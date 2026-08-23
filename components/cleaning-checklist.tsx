@@ -436,11 +436,11 @@ export default function CleaningChecklist() {
       </div>
 
       {/* Table */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-card rounded-lg shadow-lg overflow-hidden">
         <table className="w-full">
           <thead>
             <tr className="border-b">
-              <th className="text-left py-4 px-6 font-medium text-gray-600"></th>
+              <th className="text-left py-4 px-6 font-medium text-muted-foreground"></th>
               <th className="py-4 px-3 font-medium text-primary text-center text-sm">
                 Standard Clean
               </th>
@@ -455,7 +455,7 @@ export default function CleaningChecklist() {
           <tbody>
             {checklistData[activeTab].items.map((item, index) => (
               <tr key={index} className="border-b last:border-b-0">
-                <td className="py-4 px-6 text-gray-700">{item.task}</td>
+                <td className="py-4 px-6 text-muted-foreground">{item.task}</td>
                 <td className="py-4 px-3 text-center">
                   {item.standard ? (
                     <Check className="inline-block w-5 h-5 text-green-500" />

@@ -13,7 +13,7 @@ export default function CleaningChecklistPage() {
     <div className="flex min-h-screen flex-col items-center bg-primary">
       <div className="px-4 lg:px-16 py-10 lg:py-20 w-full">
         <div className="text-center mb-12">
-          <h1 className="text-4xl lg:text-6xl text-slate-200 font-black mb-4">
+          <h1 className="text-4xl lg:text-6xl text-primary-foreground font-black mb-4">
             Cleaning Checklist
           </h1>
           <p className="text-background text-lg max-w-2xl mx-auto">

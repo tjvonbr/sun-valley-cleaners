@@ -48,7 +48,7 @@ export default function MoveCleanPage() {
         </ServiceCard>
       </div>
 
-      <div className="max-w-2xl mt-8 text-center text-slate-500">
+      <div className="max-w-2xl mt-8 text-center text-muted-foreground">
         <p>
           Once you&apos;re settled in, keep your new home fresh with our{" "}
           <Link href="/services/house-cleaning" className="underline text-secondary">

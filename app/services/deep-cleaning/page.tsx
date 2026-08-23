@@ -34,7 +34,7 @@ export default function DeepCleanPage() {
       </div>
       <div className="max-w-[500px]">
         <ServiceCard
-          className="bg-white border rounded-md"
+          className="bg-card border rounded-md"
           title="Deep Cleaning"
           description="Our standard cleaning package includes dusting, vacuuming, sweeping, and mopping of common areas, plus a thorough cleaning and sanitizing of your kitchen and bathrooms. Keep your home fresh and tidy with our regular maintenance service!"
         >
@@ -42,7 +42,7 @@ export default function DeepCleanPage() {
         </ServiceCard>
       </div>
 
-      <div className="max-w-2xl mt-8 text-center text-slate-500">
+      <div className="max-w-2xl mt-8 text-center text-muted-foreground">
         <p>
           Need regular upkeep instead? Our{" "}
           <Link href="/services/house-cleaning" className="underline text-secondary">

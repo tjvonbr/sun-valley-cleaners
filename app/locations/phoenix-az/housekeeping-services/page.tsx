@@ -85,14 +85,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Housekeeping Services in
                 Phoenix, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Reliable. Consistent. Always Fresh.
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -100,7 +100,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Customized Cleaning Plans:</b> Our reliable housekeeping
                     services in Phoenix, AZ are tailored to your home&apos;s layout
                     and your family&apos;s preferences. We adapt our approach to
@@ -111,7 +111,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Dependable Scheduling:</b> We understand busy Phoenix
                     lifestyles require flexibility. Our housekeeping team arrives
                     on time and works efficiently to minimize disruption while
@@ -122,7 +122,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Trained and Trusted Staff in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Phoenix,_Arizona"
@@ -156,13 +156,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Housekeeping Services Matter in Phoenix, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 A clean home, a peaceful life
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -170,7 +170,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Combat Desert Dust:</b> Phoenix&apos;s desert climate brings
                     constant dust into homes. Regular housekeeping services keep
                     surfaces clean and reduce allergens for healthier indoor
@@ -181,7 +181,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>More Time for What Matters:</b> Outsourcing housekeeping
                     frees up valuable hours for family, hobbies, and relaxation.
                     Let our reliable team handle the cleaning while you enjoy
@@ -192,7 +192,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Maintain Home Value:</b> Consistent housekeeping prevents
                     buildup and wear on surfaces, flooring, and fixtures.
                     Regular care preserves your home&apos;s condition and protects

@@ -79,14 +79,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Post Construction Cleaning in
                 Phoenix, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Complete. Professional. Move-in Ready.
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -94,7 +94,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Full Debris and Dust Removal:</b> Our comprehensive post
                     construction cleaning in Phoenix, AZ eliminates all
                     construction debris, fine dust particles, and leftover
@@ -106,7 +106,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Surface Protection and Care:</b> We understand new
                     construction materials require careful handling. Our Phoenix
                     team uses appropriate cleaning methods for each surface type
@@ -117,7 +117,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Builder and Contractor Partnerships:</b> We work with
                     Phoenix builders and contractors to meet project timelines.
                     Our reliable scheduling and efficient service help ensure
@@ -145,13 +145,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Post Construction Cleaning Matters in Phoenix, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 From construction site to dream home
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -159,7 +159,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Protects Indoor Air Quality in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Phoenix,_Arizona"
@@ -177,7 +177,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Reveals True Craftsmanship:</b> Construction residue
                     hides the beauty of new finishes, fixtures, and surfaces.
                     Professional cleaning reveals the true quality of
@@ -188,7 +188,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Prevents Long-Term Damage:</b> Construction dust and
                     debris can scratch surfaces and clog HVAC systems if not
                     properly removed. Thorough post construction cleaning

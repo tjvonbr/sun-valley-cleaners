@@ -77,13 +77,13 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Sun Valley Cleaners: House Cleaning Service in Mesa, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Trusted cleaning, tailored for you
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -91,7 +91,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Reliable Scheduling:</b> Our Mesa cleaning services run
                     on-time, every time. Whether you are home or away, you can
                     count on punctuality and consistency with every visit.
@@ -101,7 +101,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Complete Room Coverage:</b> We clean top-to-bottom,
                     including under furniture, behind fixtures, and in
                     often-missed areas—ensuring every inch of your Mesa home
@@ -112,7 +112,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Transparent, Flat-Rate Pricing:</b> Our Mesa clients
                     enjoy clear, flat-rate pricing without surprise charges—just
                     reliable service you can trust on any budget.
@@ -140,13 +140,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why House Cleaning Service Matter in Mesa, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Clean living, every season
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -154,7 +154,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Dry Climate Challenges:</b> Mesas dry, dusty environment
                     demands frequent interior cleaning. Regular service helps
                     control allergens and dust buildup across
@@ -173,7 +173,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Improved Indoor Air Quality:</b> House cleaning in Mesa
                     helps reduce airborne particles from dust and pollen,
                     supporting respiratory health and home hygiene.
@@ -183,7 +183,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Maintaining Clean Spaces Year-Round:</b> From summer heat
                     to monsoon season, keeping your Mesa home clean and
                     guest-ready is easier with a regular cleaning plan.
@@ -211,8 +211,8 @@ export default function Home() {
         {/* Why SECTION - End */}
 
         {/* Services Section - Start */}
-        <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-white">
-          <h2 className="text-3xl text-black font-bold">Services Provided</h2>
+        <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-card">
+          <h2 className="text-3xl text-foreground font-bold">Services Provided</h2>
           <div className="mx-auto grid justify-center gap-12 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
             <ServiceCard
               title="Apartment Cleaning"
@@ -274,9 +274,9 @@ export default function Home() {
         {/* Services Section - End */}
 
         {/* Service Links */}
-        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-white">
-          <h2 className="text-3xl text-black font-bold mb-4">Learn More About Our Services</h2>
-          <p className="max-w-2xl text-slate-500">
+        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-card">
+          <h2 className="text-3xl text-foreground font-bold mb-4">Learn More About Our Services</h2>
+          <p className="max-w-2xl text-muted-foreground">
             Explore our full range of cleaning services:{" "}
             <Link href="/services/house-cleaning" className="underline text-secondary">Standard Cleaning</Link>,{" "}
             <Link href="/services/deep-cleaning" className="underline text-secondary">Deep Cleaning</Link>,{" "}
@@ -291,14 +291,14 @@ export default function Home() {
         {/* FAQ SECTION - End */}
 
         {/* Map SECTION - Start*/}
-        <div className="px-8 py-12 w-full bg-white">
-          <section id="map" className="bg-white">
+        <div className="px-8 py-12 w-full bg-card">
+          <section id="map" className="bg-card">
             <div className="max-w-md px-6 mx-auto pb-28 sm:max-w-3xl lg:max-w-7xl lg:px-8">
               <div className="flex flex-col justify-center text-center">
-                <h2 className="mt-2 text-4xl font-bold tracking-tight text-black">
+                <h2 className="mt-2 text-4xl font-bold tracking-tight text-foreground">
                   Find Us
                 </h2>
-                <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
+                <p className="pb-10 mx-auto mt-5 text-xl text-foreground max-w-prose">
                   Sun Valley Cleaners delivers reliable house cleaning service
                   in Mesa, AZ. Our local team proudly serves homes across the
                   city, offering flexible schedules and dependable service

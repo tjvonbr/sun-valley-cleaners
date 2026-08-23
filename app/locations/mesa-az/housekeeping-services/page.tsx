@@ -85,14 +85,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Housekeeping Services in
                 Mesa, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Dependable. Detailed. Always Consistent.
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -100,7 +100,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Personalized Cleaning Routines in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Mesa,_Arizona"
@@ -118,7 +118,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Convenient Scheduling Options:</b> We work around busy Mesa
                     lifestyles with flexible booking times. Our team arrives
                     punctually and completes every task efficiently without
@@ -129,7 +129,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Vetted and Trained Professionals:</b> Our housekeepers
                     undergo thorough background checks and professional training.
                     Mesa families can count on our team for reliable, high-quality
@@ -157,13 +157,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Housekeeping Services Matter in Mesa, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Consistent care for comfortable living
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -171,7 +171,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Manage Desert Dust Buildup:</b> Mesa&apos;s arid climate
                     means dust settles quickly on every surface. Dependable
                     housekeeping removes particles regularly to maintain cleaner
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Free Up Your Weekends:</b> Professional housekeeping
                     gives Mesa residents more time for family activities and
                     relaxation. Let our dependable team handle the cleaning while
@@ -193,7 +193,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Preserve Home Condition:</b> Regular housekeeping prevents
                     grime buildup and premature wear on surfaces. Consistent care
                     helps maintain your Mesa home&apos;s appearance and long-term

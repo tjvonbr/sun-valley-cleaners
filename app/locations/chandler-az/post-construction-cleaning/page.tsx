@@ -79,14 +79,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Post Construction Cleaning in
                 Chandler, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Meticulous. Thorough. Precise.
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -94,7 +94,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Inch-by-Inch Inspection:</b> Our detailed post
                     construction cleaning in Chandler, AZ includes systematic
                     inspection and cleaning of every surface. We check and clean
@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Specialized Residue Removal:</b> Construction leaves
                     behind adhesives, paint splatters, and grout haze. Our
                     Chandler team uses specialized techniques to remove these
@@ -116,7 +116,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Final Walk-Through Ready:</b> We prepare your Chandler
                     property for final inspections and walk-throughs. Our
                     detailed cleaning ensures every surface meets the highest
@@ -144,13 +144,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Post Construction Cleaning Matters in Chandler, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Details define the finished product
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -158,7 +158,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Showcases Quality Construction:</b> Detailed post
                     construction cleaning in Chandler, AZ reveals the true
                     beauty of new construction work. Clean surfaces and
@@ -170,7 +170,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Creates Healthy Indoor Environment in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Chandler,_Arizona"
@@ -188,7 +188,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Preserves New Finishes:</b> Leaving construction residue
                     on surfaces can cause permanent damage over time. Prompt,
                     detailed cleaning protects your investment and maintains the

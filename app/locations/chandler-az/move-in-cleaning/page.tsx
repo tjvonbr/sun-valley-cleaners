@@ -83,14 +83,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Move In Cleaning in Chandler,
                 AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Reliable. Detail-Oriented. Fresh.
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -98,7 +98,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Precision Cleaning for New Residents:</b> Our move in
                     cleaning in Chandler, AZ ensures that every room, from
                     bedrooms to bathrooms, is thoroughly sanitized and ready for
@@ -110,7 +110,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Flexible Scheduling and Timely Service:</b> We understand
                     moving schedules can change quickly. Sun Valley Cleaners
                     provides adaptable booking options to fit your timeline,
@@ -121,7 +121,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Trained Local Cleaning Experts:</b> Our Chandler-based
                     professionals use advanced tools and eco-safe products to
                     clean efficiently. With experience in Arizona homes, we know
@@ -150,13 +150,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Move In Cleaning Matters in Chandler, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Clean start, confident move
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -164,7 +164,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Protects Your Family’s Health:</b> Move in cleaning in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Chandler,_Arizona"
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Enhances Move-In Efficiency:</b> Arriving to a clean home
                     makes unpacking faster and easier. With professional move in
                     cleaning, you can immediately settle in without worrying
@@ -193,7 +193,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Preserves Surfaces and Fixtures:</b> Removing dirt and
                     buildup early helps prevent scratches and discoloration on
                     counters, tiles, and floors. Regular deep cleaning also

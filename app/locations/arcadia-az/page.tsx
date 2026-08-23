@@ -77,14 +77,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for House Cleaning Service in
                 Arcadia, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Premium solutions for busy homes
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -93,7 +93,7 @@ export default function Home() {
                     <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
                   </div>
 
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Flexible Appointments:</b> We offer adjustable scheduling
                     options for homeowners across{" "}
                     <a
@@ -111,7 +111,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Professional and Respectful Staff:</b> Our trained
                     cleaners handle your Arcadia home with care, ensuring every
                     visit is courteous, efficient, and up to standard.
@@ -121,7 +121,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 mr-3 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Tailored Cleaning for Arcadia Homes:</b> We tackle dust
                     and debris common in desert climates with localized methods
                     that make our house cleaning service in Arcadia, AZ extra
@@ -150,13 +150,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why House Cleaning Service Matter in Arcadia, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Clean homes, healthy lives
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -164,7 +164,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Combating Desert Dust:</b> Arcadia homes are regularly
                     exposed to dust storms and dry air. Routine house cleaning
                     helps reduce allergens and maintain better air quality
@@ -175,7 +175,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Healthier Living Conditions:</b> Regular house cleaning
                     in Arcadia, AZ minimizes the spread of germs, pollen, and
                     pet dander—especially important during allergy season and
@@ -186,7 +186,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Boosting Home Value:</b> A clean, well-maintained
                     interior adds long-term value to your home, especially in a
                     competitive real estate market like Arcadia, AZ.
@@ -214,8 +214,8 @@ export default function Home() {
         {/* Why SECTION - End */}
 
         {/* Services Section - Start */}
-        <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-white">
-          <h2 className="text-3xl text-black font-bold">Services Provided</h2>
+        <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-card">
+          <h2 className="text-3xl text-foreground font-bold">Services Provided</h2>
           <div className="mx-auto grid justify-center gap-12 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
             <ServiceCard
               title="Standard Cleaning"
@@ -262,9 +262,9 @@ export default function Home() {
         {/* Services Section - End */}
 
         {/* Service Links */}
-        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-white">
-          <h2 className="text-3xl text-black font-bold mb-4">Learn More About Our Services</h2>
-          <p className="max-w-2xl text-slate-500">
+        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-card">
+          <h2 className="text-3xl text-foreground font-bold mb-4">Learn More About Our Services</h2>
+          <p className="max-w-2xl text-muted-foreground">
             Explore our full range of cleaning services:{" "}
             <Link href="/services/house-cleaning" className="underline text-secondary">Standard Cleaning</Link>,{" "}
             <Link href="/services/deep-cleaning" className="underline text-secondary">Deep Cleaning</Link>,{" "}
@@ -279,14 +279,14 @@ export default function Home() {
         {/* FAQ SECTION - End */}
 
         {/* Map SECTION - Start*/}
-        <div className="px-8 py-12 w-full bg-white">
-          <section id="map" className="bg-white">
+        <div className="px-8 py-12 w-full bg-card">
+          <section id="map" className="bg-card">
             <div className="max-w-md px-6 mx-auto pb-28 sm:max-w-3xl lg:max-w-7xl lg:px-8">
               <div className="flex flex-col justify-center text-center">
-                <h2 className="mt-2 text-4xl font-bold tracking-tight text-black">
+                <h2 className="mt-2 text-4xl font-bold tracking-tight text-foreground">
                   Find Us
                 </h2>
-                <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
+                <p className="pb-10 mx-auto mt-5 text-xl text-foreground max-w-prose">
                   Looking for a top-rated house cleaning service in Arcadia, AZ?
                   Our team is proud to serve local residents with thorough,
                   reliable cleaning solutions. Whether you are near downtown or

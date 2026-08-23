@@ -17,8 +17,8 @@ export default function AlsoAvailableSection({
   relatedServices,
 }: AlsoAvailableSectionProps) {
   return (
-    <div className="py-12 px-5 w-full flex flex-col items-center space-y-6 text-center bg-white">
-      <h2 className="text-3xl text-black font-bold">
+    <div className="py-12 px-5 w-full flex flex-col items-center space-y-6 text-center bg-card">
+      <h2 className="text-3xl text-foreground font-bold">
         {serviceName} Also Available In
       </h2>
       <div className="flex flex-wrap justify-center gap-4">
@@ -34,7 +34,7 @@ export default function AlsoAvailableSection({
       </div>
       {relatedServices && relatedServices.length > 0 && (
         <div className="mt-4">
-          <p className="text-slate-500">
+          <p className="text-muted-foreground">
             Looking for a different service? Check out our{" "}
             {relatedServices.map((service, index) => (
               <span key={service.href}>

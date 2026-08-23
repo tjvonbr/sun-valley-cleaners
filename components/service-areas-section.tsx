@@ -15,11 +15,11 @@ export default function ServiceAreasSection({
   areas,
 }: ServiceAreasSectionProps) {
   return (
-    <div className="py-12 px-5 w-full flex flex-col items-center space-y-6 text-center bg-white">
-      <h2 className="text-3xl text-black font-bold">
+    <div className="py-12 px-5 w-full flex flex-col items-center space-y-6 text-center bg-card">
+      <h2 className="text-3xl text-foreground font-bold">
         {serviceName} Service Areas
       </h2>
-      <p className="max-w-2xl text-slate-500">
+      <p className="max-w-2xl text-muted-foreground">
         Our {serviceName.toLowerCase()} service is available across the Phoenix
         metro area. Select your city to learn more about local availability.
       </p>
