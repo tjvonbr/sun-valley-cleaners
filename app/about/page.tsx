@@ -17,7 +17,7 @@ export default function AboutPage() {
     <div className="flex min-h-screen flex-col items-center bg-primary">
       <div className="px-16 py-10 lg:py-20 w-full flex flex-col lg:flex-row items-center">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
-          <h1 className="text-4xl lg:text-6xl text-slate-200 font-black">
+          <h1 className="text-4xl lg:text-6xl text-primary-foreground font-black">
             Our Commitment To Our Customers
           </h1>
           <p className="text-background">

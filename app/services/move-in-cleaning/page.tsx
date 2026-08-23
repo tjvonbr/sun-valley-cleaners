@@ -201,7 +201,7 @@ export default function MoveInCleanPage() {
 
       {/* Intent confirmation */}
       <div className="w-full px-5 max-w-3xl text-center py-6">
-        <p className="text-lg text-slate-600">
+        <p className="text-lg text-muted-foreground">
           Closing today? Keys in hand and movers booked for the weekend? If
           your new Scottsdale home is sitting empty right now — and not quite
           as clean as it looked during the final walkthrough — you&apos;re in
@@ -213,12 +213,12 @@ export default function MoveInCleanPage() {
       </div>
 
       {/* What the last owners left behind */}
-      <div className="w-full px-5 py-12 bg-white flex flex-col items-center">
+      <div className="w-full px-5 py-12 bg-card flex flex-col items-center">
         <div className="max-w-3xl">
-          <h2 className="text-3xl text-black font-bold text-center mb-2">
+          <h2 className="text-3xl text-foreground font-bold text-center mb-2">
             What the Last Owners Left Behind
           </h2>
-          <p className="text-slate-500 text-center mb-6">
+          <p className="text-muted-foreground text-center mb-6">
             Every home we clean before a move-in has a few things in common,
             no matter how nice it looked on your walkthrough:
           </p>
@@ -228,11 +228,11 @@ export default function MoveInCleanPage() {
                 <div className="flex-shrink-0 pt-1">
                   <IconCircleCheck className="w-5 h-5 text-secondary" />
                 </div>
-                <p className="text-black">{item}</p>
+                <p className="text-foreground">{item}</p>
               </li>
             ))}
           </ul>
-          <p className="font-semibold text-black text-center">
+          <p className="font-semibold text-foreground text-center">
             None of it shows up in listing photos, and every item on that
             list is only reachable while the house is empty. Once your
             furniture, rugs, and boxes are in place, most of it never gets
@@ -249,7 +249,7 @@ export default function MoveInCleanPage() {
         <div className="grid gap-8 sm:grid-cols-2">
           {included.map((group) => (
             <div key={group.room}>
-              <h3 className="text-xl font-bold text-black mb-3">
+              <h3 className="text-xl font-bold text-foreground mb-3">
                 {group.room}
               </h3>
               <ul className="space-y-2">
@@ -258,14 +258,14 @@ export default function MoveInCleanPage() {
                     <div className="flex-shrink-0 pt-1">
                       <IconCircleCheck className="w-4 h-4 text-secondary" />
                     </div>
-                    <p className="text-slate-600 text-sm">{item}</p>
+                    <p className="text-muted-foreground text-sm">{item}</p>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
-        <p className="text-center text-slate-500 mt-8">
+        <p className="text-center text-muted-foreground mt-8">
           For the full room-by-room breakdown across every service, see our{" "}
           <Link href="/cleaning-checklist" className="underline text-secondary">
             cleaning checklist
@@ -275,20 +275,20 @@ export default function MoveInCleanPage() {
       </div>
 
       {/* Pricing */}
-      <div className="w-full px-5 py-12 bg-white flex flex-col items-center">
+      <div className="w-full px-5 py-12 bg-card flex flex-col items-center">
         <div className="max-w-2xl w-full">
-          <h2 className="text-3xl text-black font-bold text-center mb-6">
+          <h2 className="text-3xl text-foreground font-bold text-center mb-6">
             Pricing
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b-2 border-primary">
-                  <th className="py-3 text-black">Home Size</th>
-                  <th className="py-3 text-black">Move-In Clean</th>
+                  <th className="py-3 text-foreground">Home Size</th>
+                  <th className="py-3 text-foreground">Move-In Clean</th>
                 </tr>
               </thead>
-              <tbody className="text-slate-600">
+              <tbody className="text-muted-foreground">
                 <tr className="border-b">
                   <td className="py-3">Under 1,500 sq ft</td>
                   <td className="py-3">$—</td>
@@ -308,7 +308,7 @@ export default function MoveInCleanPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-slate-500 mt-4 text-center">
+          <p className="text-sm text-muted-foreground mt-4 text-center">
             What changes the price: the condition of the home, number of
             bathrooms, and add-ons like interior windows, garage cleaning, or
             a pool bath. Call (623) 295-0506 for an exact quote.
@@ -321,7 +321,7 @@ export default function MoveInCleanPage() {
         <h2 className="text-3xl text-primary font-bold mb-4">
           Move-In Cleaning vs. Deep Cleaning
         </h2>
-        <p className="text-slate-600">
+        <p className="text-muted-foreground">
           A{" "}
           <Link href="/services/deep-cleaning" className="underline text-secondary">
             deep cleaning
@@ -337,9 +337,9 @@ export default function MoveInCleanPage() {
       </div>
 
       {/* How it works */}
-      <div className="w-full px-5 py-12 bg-white flex flex-col items-center">
+      <div className="w-full px-5 py-12 bg-card flex flex-col items-center">
         <div className="max-w-3xl w-full">
-          <h2 className="text-3xl text-black font-bold text-center mb-8">
+          <h2 className="text-3xl text-foreground font-bold text-center mb-8">
             How It Works
           </h2>
           <div className="grid gap-8 sm:grid-cols-2">
@@ -362,10 +362,10 @@ export default function MoveInCleanPage() {
               },
             ].map((s) => (
               <div key={s.step}>
-                <h3 className="text-lg font-bold text-black mb-1">
+                <h3 className="text-lg font-bold text-foreground mb-1">
                   {s.step}
                 </h3>
-                <p className="text-slate-600 text-sm">{s.text}</p>
+                <p className="text-muted-foreground text-sm">{s.text}</p>
               </div>
             ))}
           </div>
@@ -379,8 +379,8 @@ export default function MoveInCleanPage() {
         </h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-bold text-black mb-1">Hard Water</h3>
-            <p className="text-slate-600">
+            <h3 className="text-xl font-bold text-foreground mb-1">Hard Water</h3>
+            <p className="text-muted-foreground">
               Scottsdale&apos;s mineral-heavy water leaves scale on glass
               shower doors, fixtures, and sink basins that ordinary cleaning
               won&apos;t touch. We use descaling products built for that
@@ -389,18 +389,18 @@ export default function MoveInCleanPage() {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-black mb-1">Desert Dust</h3>
-            <p className="text-slate-600">
+            <h3 className="text-xl font-bold text-foreground mb-1">Desert Dust</h3>
+            <p className="text-muted-foreground">
               A home that&apos;s sat vacant between owners collects fine
               desert dust in vent registers, window sills, and ceiling fan
               blades. We clear all of it out before you unpack, not after.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-black mb-1">
+            <h3 className="text-xl font-bold text-foreground mb-1">
               Gated Communities
             </h3>
-            <p className="text-slate-600">
+            <p className="text-muted-foreground">
               We regularly clean homes in DC Ranch, Grayhawk, Silverleaf, and
               Troon, and we handle gate registration and lockbox access
               directly with the HOA or listing agent — nobody needs to meet
@@ -414,9 +414,9 @@ export default function MoveInCleanPage() {
       </div>
 
       {/* Reviews */}
-      <div className="w-full px-5 py-12 bg-white flex flex-col items-center">
+      <div className="w-full px-5 py-12 bg-card flex flex-col items-center">
         <div className="max-w-3xl w-full text-center">
-          <h2 className="text-3xl text-black font-bold mb-8">
+          <h2 className="text-3xl text-foreground font-bold mb-8">
             What Scottsdale Homeowners Say
           </h2>
           {/*
@@ -426,7 +426,7 @@ export default function MoveInCleanPage() {
           <div className="grid gap-6 sm:grid-cols-3">
             {[1, 2, 3].map((i) => (
               <div key={i} className="p-4 border rounded-md text-left">
-                <p className="text-slate-500 italic text-sm">
+                <p className="text-muted-foreground italic text-sm">
                   [Add a real move-in review here — first name and
                   neighborhood, pulled from Google Business Profile]
                 </p>
@@ -444,10 +444,10 @@ export default function MoveInCleanPage() {
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq) => (
             <AccordionItem key={faq.question} value={faq.question}>
-              <AccordionTrigger className="text-black hover:no-underline hover:text-secondary">
+              <AccordionTrigger className="text-foreground hover:no-underline hover:text-secondary">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600">
+              <AccordionContent className="text-muted-foreground">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
@@ -456,11 +456,11 @@ export default function MoveInCleanPage() {
       </div>
 
       {/* Close */}
-      <div className="w-full px-5 py-12 bg-white flex flex-col items-center text-center space-y-4">
-        <h2 className="text-3xl text-black font-bold">
+      <div className="w-full px-5 py-12 bg-card flex flex-col items-center text-center space-y-4">
+        <h2 className="text-3xl text-foreground font-bold">
           Ready to Book Your Move-In Clean?
         </h2>
-        <p className="text-slate-500 max-w-xl">
+        <p className="text-muted-foreground max-w-xl">
           Backed by our satisfaction guarantee — if something&apos;s not
           right, we&apos;ll come back and make it right.
         </p>
@@ -474,7 +474,7 @@ export default function MoveInCleanPage() {
             (623) 295-0506
           </a>
         </div>
-        <p className="max-w-2xl text-slate-500 pt-4">
+        <p className="max-w-2xl text-muted-foreground pt-4">
           Moving out of your current place? See our{" "}
           <Link href="/services/move-cleaning" className="underline text-secondary">
             move-out cleaning

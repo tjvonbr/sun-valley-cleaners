@@ -68,7 +68,7 @@ export default function TempePage() {
         </ServiceCard>
       </div>
 
-      <div className="max-w-2xl mt-12 text-center text-slate-500">
+      <div className="max-w-2xl mt-12 text-center text-muted-foreground">
         <p>
           We also serve nearby areas including{" "}
           <Link href="/locations/phoenix-az" className="underline text-secondary">Phoenix</Link>,{" "}

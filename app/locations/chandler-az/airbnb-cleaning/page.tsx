@@ -76,21 +76,21 @@ export default function Home() {
         </div>
 
         {/* BENEFITS SECTION */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Airbnb Cleaning in Chandler,
                 AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Trusted service, spotless stays
               </p>
 
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Dependable Scheduling:</b> We coordinate cleanings around
                     your guest calendar to ensure timely turnovers and seamless
                     transitions between bookings—no delays, no stress.
@@ -99,7 +99,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Trained Local Professionals:</b> Each of our
                     Chandler-based cleaners is vetted and trained to follow
                     detailed Airbnb protocols for hygiene, presentation, and
@@ -109,7 +109,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Flexible Cleaning Packages:</b> Choose from one-time,
                     weekly, or after-checkout cleaning options tailored to your
                     property’s schedule and guest turnover frequency.
@@ -136,20 +136,20 @@ export default function Home() {
         </div>
 
         {/* WHY SECTION */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Airbnb Cleaning Matters in Chandler, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Cleaner spaces, better reviews
               </p>
 
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Improves Guest Experience:</b> Reliable Airbnb cleaning
                     in{" "}
                     <a
@@ -167,7 +167,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Supports Faster Turnovers:</b> Our process streamlines
                     check-out to check-in transitions, allowing you to accept
                     more bookings while maintaining top cleanliness standards.
@@ -176,7 +176,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Prevents Wear and Tear:</b> Regular professional cleaning
                     preserves furniture, flooring, and fixtures, extending your
                     property’s lifespan and maintaining long-term value.

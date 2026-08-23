@@ -75,20 +75,20 @@ export default function Home() {
         </div>
 
         {/* BENEFITS SECTION */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Airbnb Cleaning in Paradise Valley, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Reliable, thorough, and locally trusted
               </p>
 
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Tailored Services for Every Rental:</b> Our Paradise Valley Airbnb
                     cleaning adapts to your property type—whether it’s a cozy
                     guest suite or full home—to ensure every surface meets
@@ -98,7 +98,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Consistent Results You Can Rely On:</b> Our cleaning
                     specialists arrive on time, follow precise checklists, and
                     deliver pristine results that consistently exceed host and
@@ -108,7 +108,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Flexible Cleaning Schedules:</b> We accommodate your
                     booking calendar with same-day and scheduled Airbnb cleaning
                     to keep your Paradise Valley property always guest-ready.
@@ -135,20 +135,20 @@ export default function Home() {
         </div>
 
         {/* WHY SECTION */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Airbnb Cleaning Matters in Paradise Valley, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Cleaner homes, happier guests
               </p>
 
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Boosts Guest Ratings:</b> Trusted Airbnb cleaning in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Paradise_Valley,_Arizona"
@@ -164,7 +164,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Maintains Property Value:</b> Routine professional
                     cleaning preserves flooring, furniture, and fixtures while
                     extending the life of your property investment.
@@ -173,7 +173,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Creates a Lasting Impression:</b> Guests remember
                     spotless, well-kept spaces. With our Paradise Valley Airbnb cleaning,
                     you’ll leave every visitor impressed and eager to return.

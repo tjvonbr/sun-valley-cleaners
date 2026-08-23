@@ -37,8 +37,8 @@ export default function Home() {
         <Image src={icon} height="500" width="500" alt="hello" />
       </div>
 
-      <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-white">
-        <h2 className="text-3xl text-black font-bold">Our Service Areas</h2>
+      <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-card">
+        <h2 className="text-3xl text-foreground font-bold">Our Service Areas</h2>
         <div className="mx-auto grid justify-center gap-12 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
           <ServiceCard
             title="Phoenix, AZ"

@@ -78,21 +78,21 @@ export default function Home() {
         </div>
 
         {/* BENEFITS SECTION */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Airbnb Cleaning in Gilbert,
                 AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Local experts, spotless stays
               </p>
 
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Comprehensive Cleaning for Every Space:</b> Whether you
                     manage a studio apartment or a luxury vacation home, our
                     Gilbert Airbnb cleaning service ensures spotless kitchens,
@@ -102,7 +102,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Professional & Dependable Staff:</b> Our trained team is
                     punctual, respectful, and detail-oriented, treating your
                     Airbnb property with the same care as their own home.
@@ -111,7 +111,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>High Guest Satisfaction Rates:</b> Our consistent service
                     quality leads to better reviews and repeat bookings for
                     Gilbert hosts who rely on clean, welcoming environments.
@@ -138,20 +138,20 @@ export default function Home() {
         </div>
 
         {/* WHY SECTION */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Airbnb Cleaning Matters in Gilbert, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Consistency, comfort, confidence
               </p>
 
               <div className="flex flex-col items-start space-y-4">
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Enhances Guest Comfort:</b> Professional Airbnb cleaning
                     in{" "}
                     <a
@@ -169,7 +169,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Prevents Maintenance Issues:</b> Regular professional
                     cleaning prevents damage from spills, dust, and neglected
                     areas—protecting your furniture, flooring, and investment.
@@ -178,7 +178,7 @@ export default function Home() {
 
                 <div className="flex items-start space-x-2">
                   <IconCircleCheck className="w-5 h-5 text-secondary mt-1" />
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Builds Host Credibility:</b> Guests trust consistently
                     clean spaces. With our Airbnb cleaning service, Gilbert
                     hosts maintain five-star reputations and long-term booking

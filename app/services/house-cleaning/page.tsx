@@ -42,7 +42,7 @@ export default function StandardCleanPage() {
         </ServiceCard>
       </div>
 
-      <div className="max-w-2xl mt-8 text-center text-slate-500">
+      <div className="max-w-2xl mt-8 text-center text-muted-foreground">
         <p>
           Looking for a deeper clean? Check out our{" "}
           <Link href="/services/deep-cleaning" className="underline text-secondary">

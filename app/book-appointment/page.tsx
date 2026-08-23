@@ -14,7 +14,7 @@ export default function BookAppointmentPage() {
   return (
     <div className="container min-h-screen w-full flex flex-col items-center">
       <div className="h-[400px] w-full max-w-[600px] flex flex-col md:flex-row justify-center items-center space-y-4 text-center">
-        <h1 className="text-4xl text-black font-bold">
+        <h1 className="text-4xl text-foreground font-bold">
           Book a cleaning with us today!
         </h1>
         <p className="text-muted-foreground">

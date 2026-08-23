@@ -80,14 +80,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Choose Sun Valley Cleaners for Deep Cleaning Services in
                 Gilbert, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Detail-first. Odor-free. Lasting.
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -95,7 +95,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Kitchen & Bath Rejuvenation:</b> Our thorough deep
                     cleaning in Gilbert targets grease films on cabinet fronts,
                     mineral residue on fixtures, soap‑scum on glass, and grime
@@ -108,7 +108,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Seasonal & Allergy Relief:</b> Deep cleaning in{" "}
                     <a
                       href="https://en.wikipedia.org/wiki/Gilbert,_Arizona"
@@ -128,7 +128,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Move‑In/Move‑Out Precision:</b> Whether you’re preparing
                     to list or settling into a new address, deep cleaning in
                     Gilbert resets kitchens, baths, and living spaces to a
@@ -158,13 +158,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why Deep Cleaning Services Matter in Gilbert, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Clean foundations, calmer living
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -172,7 +172,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Post‑Project Clarity:</b> Renovations and DIY tasks leave
                     fine dust on trim, glass, and fixtures. Deep cleaning in
                     Gilbert removes leftover particles from vents, corners, and
@@ -184,7 +184,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Hygiene Where It Counts:</b> Grease, soap residue, and
                     allergens collect in places routine cleaning skips. Deep
                     cleaning in Gilbert tackles grout joints, appliance gaskets,
@@ -196,7 +196,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Stress‑Free Transitions:</b> Before moving, hosting, or
                     listing, deep cleaning in Gilbert ensures your property
                     looks crisp in photos and inviting in person. That reset

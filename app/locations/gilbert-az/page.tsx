@@ -78,14 +78,14 @@ export default function Home() {
         </div>
 
         {/* Benefits SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col lg:flex-row items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why choose Sun Valley Cleaners for House Cleaning Service in
                 Gilbert, AZ?
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Reliable care for every home
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -93,7 +93,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Custom Cleaning Plans:</b> We offer personalized services
                     tailored to the layout and needs of your home in Gilbert,
                     AZ. Whether its weekly or monthly, we adapt to you.
@@ -103,7 +103,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Respectful, Trained Staff:</b> Our friendly professionals
                     arrive on time and respect your space while delivering a
                     clean that exceeds expectations every visit.
@@ -113,7 +113,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Locally Rooted Knowledge:</b> Our team understands the
                     cleaning needs specific to
                     <a
@@ -150,13 +150,13 @@ export default function Home() {
         {/* Benefits SECTION - End */}
 
         {/* Why SECTION - Start */}
-        <div className="px-16 py-10 lg:py-20 w-full items-center bg-white flex flex-col lg:flex-row justify-center">
+        <div className="px-16 py-10 lg:py-20 w-full items-center bg-card flex flex-col lg:flex-row justify-center">
           <div className="md:max-w-[80rem] flex flex-col-reverse lg:flex-row-reverse items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start space-y-4 ">
-              <h2 className="text-3xl lg:text-5xl text-black font-bold">
+              <h2 className="text-3xl lg:text-5xl text-foreground font-bold">
                 Why House Cleaning Service Matter in Gilbert, AZ
               </h2>
-              <p className="text-sm lg:text-lg text-slate-400">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 Clean space, clear peace
               </p>
               <div className="flex flex-col items-start space-y-4">
@@ -164,7 +164,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Dust Control for Desert Living:</b> Gilberts dry air and
                     desert environment mean more dust indoors. Regular house
                     cleaning keeps surfaces clean and indoor air healthier.
@@ -174,7 +174,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Protecting Busy Family Homes:</b> With many family
                     households in Gilbert, regular cleaning keeps high-traffic
                     areas sanitary and organized, reducing stress and clutter.
@@ -184,7 +184,7 @@ export default function Home() {
                   <div className="flex-shrink-0 pt-1">
                     <IconCircleCheck className="w-5 h-5 text-secondary" />
                   </div>
-                  <p className="text-lg text-black font-semibold">
+                  <p className="text-lg text-foreground font-semibold">
                     <b>Long-Term Home Care:</b> Routine house cleaning in
                     Gilbert, AZ protects your homes value by preventing grime,
                     mildew, and wear on floors, counters, and fixtures.
@@ -212,8 +212,8 @@ export default function Home() {
         {/* Why SECTION - End */}
 
         {/* Services Section - Start */}
-        <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-white">
-          <h2 className="text-3xl text-black font-bold">Services Provided</h2>
+        <div className="py-12 px-5 w-full flex flex-col justify-between items-center space-y-8 text-center bg-card">
+          <h2 className="text-3xl text-foreground font-bold">Services Provided</h2>
           <div className="mx-auto grid justify-center gap-12 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
             <ServiceCard
               title="Apartment Cleaning"
@@ -282,9 +282,9 @@ export default function Home() {
         {/* Services Section - End */}
 
         {/* Service Links */}
-        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-white">
-          <h2 className="text-3xl text-black font-bold mb-4">Learn More About Our Services</h2>
-          <p className="max-w-2xl text-slate-500">
+        <div className="py-8 px-5 w-full flex flex-col items-center text-center bg-card">
+          <h2 className="text-3xl text-foreground font-bold mb-4">Learn More About Our Services</h2>
+          <p className="max-w-2xl text-muted-foreground">
             Explore our full range of cleaning services:{" "}
             <Link href="/services/house-cleaning" className="underline text-secondary">Standard Cleaning</Link>,{" "}
             <Link href="/services/deep-cleaning" className="underline text-secondary">Deep Cleaning</Link>,{" "}
@@ -299,14 +299,14 @@ export default function Home() {
         {/* FAQ SECTION - End */}
 
         {/* Map SECTION - Start*/}
-        <div className="px-8 py-12 w-full bg-white">
-          <section id="map" className="bg-white">
+        <div className="px-8 py-12 w-full bg-card">
+          <section id="map" className="bg-card">
             <div className="max-w-md px-6 mx-auto pb-28 sm:max-w-3xl lg:max-w-7xl lg:px-8">
               <div className="flex flex-col justify-center text-center">
-                <h2 className="mt-2 text-4xl font-bold tracking-tight text-black">
+                <h2 className="mt-2 text-4xl font-bold tracking-tight text-foreground">
                   Find Us
                 </h2>
-                <p className="pb-10 mx-auto mt-5 text-xl text-gray-900 max-w-prose">
+                <p className="pb-10 mx-auto mt-5 text-xl text-foreground max-w-prose">
                   Sun Valley Cleaners is proud to offer trusted house cleaning
                   services in Gilbert, AZ. Centrally located, we efficiently
                   serve neighborhoods across Gilbert with personalized,
