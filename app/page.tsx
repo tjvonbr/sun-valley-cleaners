@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import {
   Star,
   ShieldCheck,
@@ -141,6 +142,19 @@ export default function Home() {
                 priority
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews */}
+      <section id="reviews" className="bg-background">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mt-12">
+            <div id="featurable-7a3b5b2b-b657-4f4f-9b35-8fa43365d989" data-featurable-async />
+            <Script
+              src="https://cdn.featurable.com/widget/v2/embed.js"
+              strategy="afterInteractive"
+            />
           </div>
         </div>
       </section>
