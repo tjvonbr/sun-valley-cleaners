@@ -8,9 +8,10 @@ import {
   Phone,
   Sparkles,
   Droplets,
-  Home as HomeIcon,
   Leaf,
   Smile,
+  LogOut,
+  LogIn,
 } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -42,14 +43,14 @@ const services = [
   },
   {
     title: "Move-Out Cleaning",
-    icon: HomeIcon,
+    icon: LogOut,
     description:
       "Leave your home better than you found it. Walk away with your full deposit.",
     href: "/services/move-out-cleaning",
   },
     {
     title: "Move-In Cleaning",
-    icon: HomeIcon,
+    icon: LogIn,
     description:
       "A fresh start in an empty home — cabinets, appliances, and every surface sanitized.",
     href: "/services/move-in-cleaning",
