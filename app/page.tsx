@@ -17,9 +17,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
-  title: "#1 House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners",
+  title: "House Cleaning Service in Scottsdale, AZ | Sun Valley Cleaners",
   description:
-    "Looking for reliable house cleaning in Scottsdale? Sun Valley Cleaners offers professional house cleaning services. Get a free quote today!",
+    "Professional house cleaning in Scottsdale, AZ — recurring, deep, move-in/out, and Airbnb turnovers. Flat-rate pricing, insured and bonded. Free quote.",
   alternates: {
     canonical: "https://www.sunvalleycleaners.com",
   },
@@ -41,11 +41,18 @@ const services = [
     href: "/services/deep-cleaning",
   },
   {
-    title: "Move-In / Move-Out",
+    title: "Move-Out Cleaning",
     icon: HomeIcon,
     description:
-      "Thorough cleanings that make your move smoother and leave every surface ready for the next chapter.",
-    href: "/services/move-cleaning",
+      "Leave your home better than you found it. Walk away with your full deposit.",
+    href: "/services/move-out-cleaning",
+  },
+    {
+    title: "Move-In Cleaning",
+    icon: HomeIcon,
+    description:
+      "A fresh start in an empty home — cabinets, appliances, and every surface sanitized.",
+    href: "/services/move-in-cleaning",
   },
   {
     title: "Airbnb Cleaning",
@@ -170,10 +177,14 @@ export default function Home() {
               Flexible cleaning plans designed for busy Scottsdale households.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 flex flex-wrap justify-center gap-6">
             {services.map((service) => (
-              <Link key={service.title} href={service.href} className="block">
-                <Card className="h-full bg-card transition-shadow hover:border-primary/50 hover:shadow-md">
+              <Link
+                key={service.title}
+                href={service.href}
+                className="block w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+              >
+                <Card className="h-full bg-card transition-all duration-200 ease-out hover:-translate-y-1 hover:border-primary/50 hover:shadow-md">
                   <CardHeader>
                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                       <service.icon className="h-6 w-6" />
