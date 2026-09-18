@@ -49,6 +49,7 @@ const services = [
 const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Checklist", href: "/cleaning-checklist" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
