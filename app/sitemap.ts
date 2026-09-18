@@ -1,14 +1,30 @@
 import type { MetadataRoute } from "next";
+import { getAllPostMeta } from "@/lib/blog";
 
 const BASE_URL = "https://www.sunvalleycleaners.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const blogPosts: MetadataRoute.Sitemap = getAllPostMeta().map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: post.date,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
   return [
     {
       url: BASE_URL,
       changeFrequency: "weekly",
       priority: 1.0,
     },
+
+    // Blog
+    {
+      url: `${BASE_URL}/blog`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...blogPosts,
 
     // Services
     {

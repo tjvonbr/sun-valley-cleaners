@@ -20,6 +20,12 @@ export default function Footer() {
           Home
         </Link>
         <Link
+          href="/blog"
+          className="flex items-center hover:underline"
+        >
+          Blog
+        </Link>
+        <Link
           href="/contact"
           className="flex items-center hover:underline"
         >
