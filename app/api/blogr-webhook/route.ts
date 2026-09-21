@@ -85,7 +85,10 @@ async function commitFile(path: string, content: Buffer, message: string): Promi
     let sha: string | undefined;
     if (existing.ok) {
       sha = ((await existing.json()) as { sha: string }).sha;
-      if (sha === gitBlobSha(content)) return false;
+      if (sha === gitBlobSha(content)) {
+        console.log(`[blogr-webhook] ${path} already up to date on ${branch}; nothing to commit`);
+        return false;
+      }
     } else if (existing.status !== 404) {
       throw new Error(`GitHub lookup failed for ${path}: ${existing.status}`);
     }
@@ -94,8 +97,17 @@ async function commitFile(path: string, content: Buffer, message: string): Promi
       method: "PUT",
       body: JSON.stringify({ message, content: content.toString("base64"), branch, sha }),
     });
-    if (response.ok) return true;
+    if (response.ok) {
+      const result = (await response.json()) as { commit?: { sha?: string; html_url?: string } };
+      console.log(
+        `[blogr-webhook] Committed ${path} to ${branch} (${sha ? "updated" : "created"}) ${result.commit?.html_url ?? ""}`,
+      );
+      return true;
+    }
     // 409: the branch moved under us (e.g. another commit landed). Refetch the sha and retry.
+    console.warn(
+      `[blogr-webhook] PUT ${path} returned ${response.status} (attempt ${attempt + 1}/3)`,
+    );
     if (response.status !== 409) {
       throw new Error(
         `GitHub commit failed for ${path}: ${response.status} ${await response.text()}`,
@@ -108,16 +120,26 @@ async function commitFile(path: string, content: Buffer, message: string): Promi
 async function downloadImage(url: string): Promise<{ data: Buffer; extension: string } | null> {
   try {
     const response = await fetch(url, { signal: AbortSignal.timeout(5000) });
-    if (!response.ok) return null;
+    if (!response.ok) {
+      console.warn(`[blogr-webhook] Image download returned ${response.status} for ${url}`);
+      return null;
+    }
 
     const contentType = (response.headers.get("content-type") ?? "").split(";")[0].trim();
     const extension = IMAGE_EXTENSIONS[contentType];
-    if (!extension) return null;
+    if (!extension) {
+      console.warn(`[blogr-webhook] Unsupported image content-type "${contentType}" for ${url}`);
+      return null;
+    }
 
     const data = Buffer.from(await response.arrayBuffer());
-    if (data.length === 0 || data.length > MAX_IMAGE_BYTES) return null;
+    if (data.length === 0 || data.length > MAX_IMAGE_BYTES) {
+      console.warn(`[blogr-webhook] Image size ${data.length} bytes out of range for ${url}`);
+      return null;
+    }
     return { data, extension };
-  } catch {
+  } catch (error) {
+    console.warn(`[blogr-webhook] Image download failed for ${url}`, error);
     return null;
   }
 }
@@ -153,35 +175,53 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Webhook not configured" }, { status: 500 });
   }
   if (!isAuthorized(request)) {
+    console.warn("[blogr-webhook] Rejected request: bad or missing Authorization header");
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   let payload: BlogrPayload;
   try {
     payload = (await request.json()) as BlogrPayload;
-  } catch {
+  } catch (error) {
+    console.warn("[blogr-webhook] Rejected request: invalid JSON body", error);
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
+  console.log(
+    `[blogr-webhook] Received event=${payload.event} test=${Boolean(payload.test)} ` +
+      `type=${payload.article?.type} slug=${payload.article?.slug} domain=${payload.website?.domain}`,
+  );
+
   // Test deliveries: acknowledge without publishing anything.
   if (payload.test) {
+    console.log("[blogr-webhook] Test delivery acknowledged; nothing published");
     return NextResponse.json({ ok: true, test: true });
   }
 
   // This site has no CMS-managed inner pages, so only blog posts are published.
   const article = payload.article;
   if (payload.event !== "article.published" || article?.type !== "post") {
+    console.log(
+      `[blogr-webhook] Skipped: event=${payload.event} type=${article?.type} (only article.published posts are handled)`,
+    );
     return NextResponse.json({ ok: true, skipped: `Unsupported event: ${payload.event}` });
   }
 
   // The slug becomes a file path, so it must be strictly validated.
   if (!SLUG_PATTERN.test(article.slug ?? "") || !article.title || !article.content_markdown) {
+    console.warn(
+      `[blogr-webhook] Invalid article: slug=${JSON.stringify(article.slug)} ` +
+        `hasTitle=${Boolean(article.title)} hasContent=${Boolean(article.content_markdown)}`,
+    );
     return NextResponse.json({ error: "Invalid article" }, { status: 400 });
   }
 
   const { slug } = article;
 
   try {
+    const { repo, branch } = githubConfig();
+    console.log(`[blogr-webhook] Publishing "${slug}" to ${repo}@${branch}`);
+
     let image: string | undefined;
     if (article.og_image_url) {
       const downloaded = await downloadImage(article.og_image_url);
@@ -210,6 +250,8 @@ export async function POST(request: Request) {
       Buffer.from(file, "utf8"),
       `blog: publish "${article.title}"`,
     );
+
+    console.log(`[blogr-webhook] Done: slug=${slug} changed=${changed}`);
 
     const domain = payload.website?.domain;
     return NextResponse.json({
