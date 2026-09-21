@@ -133,9 +133,18 @@ function fallbackDescription(markdown: string): string {
   return text.length > 155 ? `${text.slice(0, 152).trimEnd()}...` : text;
 }
 
+// Arizona has no DST, so evening publishes don't roll over to the next day the way a UTC date would.
+const DATE_FORMAT = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "America/Phoenix",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+
 function publishedDate(publishedAt?: string | null): string {
-  const day = publishedAt?.slice(0, 10);
-  return day && /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : new Date().toISOString().slice(0, 10);
+  const parsed = publishedAt ? new Date(publishedAt) : null;
+  const date = parsed && !Number.isNaN(parsed.getTime()) ? parsed : new Date();
+  return DATE_FORMAT.format(date); // en-CA formats as YYYY-MM-DD
 }
 
 export async function POST(request: Request) {
