@@ -1,8 +1,12 @@
 ---
-title: "House Cleaning Services in Scottsdale AZ: What to Expect"
-description: "Hiring house cleaning services in Scottsdale AZ? Learn what types are available, how long they take, and exactly what happens during your first visit."
-date: "2026-09-17"
-author: "Sun Valley Cleaners"
+title: 'House Cleaning Services in Scottsdale AZ: What to Expect'
+description: >-
+  Hiring house cleaning services in Scottsdale AZ? Learn what types are
+  available, how long they take, and exactly what happens during your first
+  visit.
+date: '2026-09-21'
+image: /images/blog/house-cleaning-services-scottsdale-az.png
+author: Sun Valley Cleaners
 ---
 
 When you search for "house cleaning services Scottsdale AZ," you're likely facing a mix of practical questions and underlying anxiety: What will they actually clean? How long does it take? Is your home safe with strangers inside? Most people feel caught between relief and doubt when considering hiring a professional team.
