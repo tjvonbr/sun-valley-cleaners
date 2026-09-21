@@ -4,7 +4,7 @@ description: >-
   Hiring house cleaning services in Scottsdale AZ? Learn what types are
   available, how long they take, and exactly what happens during your first
   visit.
-date: '2026-09-21'
+date: '2026-09-20'
 image: /images/blog/house-cleaning-services-scottsdale-az.png
 author: Sun Valley Cleaners
 ---
