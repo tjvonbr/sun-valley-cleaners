@@ -109,7 +109,7 @@ export default function Home() {
                     <b>Odor & Stain Removal:</b> We address lingering smells
                     from cooking, pets, and daily use by using targeted cleaning
                     solutions that neutralize odors at the source. Stubborn
-                    stains on carpets, tile grout, and countertops are lifted
+                    stains on carpets, tile, and countertops are lifted
                     effectively, leaving the space fresher and more inviting for
                     the next resident.
                   </p>

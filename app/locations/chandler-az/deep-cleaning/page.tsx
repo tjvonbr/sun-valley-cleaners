@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "What does deep cleaning in Chandler, AZ typically include?",
     answer:
-      "Deep cleaning in Chandler, AZ usually targets overlooked areas like grout lines, baseboards, vent covers, inside appliances, and high-touch surfaces for a full reset of kitchens and bathrooms. In the latter half of service delivery, Sun Valley Cleaners verifies detailing to ensure every space meets a like‑new standard.",
+      "Deep cleaning in Chandler, AZ usually targets overlooked areas like baseboards, vent covers, inside appliances, and high-touch surfaces for a full reset of kitchens and bathrooms. In the latter half of service delivery, Sun Valley Cleaners verifies detailing to ensure every space meets a like‑new standard.",
   },
   {
     question: "How often should I schedule deep cleaning in Chandler, AZ?",
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "What’s the difference between standard and deep cleaning in Chandler, AZ?",
     answer:
-      "Standard cleaning maintains frequently used surfaces, while deep cleaning in Chandler, AZ addresses built‑up residue and hard‑to‑reach zones like behind appliances, fixtures, tile grout, and window tracks. For a thorough reset with professional tools and methods, Sun Valley Cleaners provides the added detail regular cleaning misses.",
+      "Standard cleaning maintains frequently used surfaces, while deep cleaning in Chandler, AZ addresses built‑up residue and hard‑to‑reach zones like behind appliances, fixtures, and window tracks. For a thorough reset with professional tools and methods, Sun Valley Cleaners provides the added detail regular cleaning misses.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function Home() {
                 Sun Valley Cleaners
               </a>{" "}
               delivers expert deep cleaning in Chandler, AZ—removing stubborn
-              buildup on grout, trim, fixtures, and inside appliances for a
+              buildup on trim, fixtures, and inside appliances for a
               like-new feel. Perfect for move-ins, seasonal refreshes, and
               post-renovation dust, with meticulous detailing and dependable
               scheduling tailored to your home.
@@ -106,8 +106,8 @@ export default function Home() {
                     >
                       Chandler, AZ
                     </a>{" "}
-                    includes the interiors of ovens and refrigerators, stubborn
-                    grout, baseboards, fans, and fixtures. We focus on
+                    includes the interiors of ovens and refrigerators,
+                    baseboards, fans, and fixtures. We focus on
                     hard‑to‑reach areas and built‑up residue so your home feels
                     refreshed, sanitized, and truly reset after one detailed
                     visit.
@@ -176,8 +176,8 @@ export default function Home() {
                   <p className="text-lg text-foreground font-semibold">
                     <b>Refresh After Busy Seasons:</b> High activity brings
                     extra dust, spills, and scuffs. Deep cleaning in Chandler
-                    resets kitchens, baths, and living spaces—especially grout,
-                    glass, and trim—so your home looks brighter and stays
+                    resets kitchens, baths, and living spaces—especially glass
+                    and trim—so your home looks brighter and stays
                     easier to maintain between standard cleanings.
                   </p>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
                   <p className="text-lg text-foreground font-semibold">
                     <b>Healthier Home Surfaces:</b> Grease, soap scum, and
                     allergens build up on overlooked areas. Targeted deep
-                    cleaning removes residues from fixtures, grout lines, and
+                    cleaning removes residues from fixtures and
                     appliance interiors to help reduce irritants and keep rooms
                     hygienic for daily living.
                   </p>

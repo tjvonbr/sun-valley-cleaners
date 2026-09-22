@@ -113,7 +113,7 @@ export default function Home() {
                   <p className="text-lg text-foreground font-semibold">
                     <b>Detailing for High-Impact Areas:</b> We focus on spots
                     that matter most during move-out inspections, including
-                    grout lines, fixtures, and appliances. This ensures the
+                    fixtures and appliances. This ensures the
                     property looks polished and ready without adding unnecessary
                     delays.
                   </p>

@@ -28,7 +28,7 @@ const whatsLeftBehind = [
   "Grease film inside kitchen cabinets and baked onto hood filters",
   "Crumbs, spills, and old shelf liner in drawers and pantry shelves",
   "Residue inside the fridge, freezer, oven, and dishwasher gasket",
-  "Rings around toilet bases, behind toilets, and in grout lines",
+  "Rings around toilet bases, and behind toilets",
   "Dust caked in vent registers and on ceiling fan blades",
   "Handprints and smudges on switch plates, door frames, and closet doors",
 ];
@@ -49,7 +49,7 @@ const included = [
       "Inside vanities and drawers",
       "Showers and tubs scrubbed, soap scum and hard water scale removed",
       "Toilets cleaned including the base and behind the bowl",
-      "Mirrors, exhaust fans, and grout lines",
+      "Mirrors and exhaust fans",
     ],
   },
   {
