@@ -197,12 +197,6 @@ const checklistData: RoomChecklist[] = [
         moveInOut: true,
       },
       {
-        task: "Scrub tile and grout",
-        standard: false,
-        deep: true,
-        moveInOut: true,
-      },
-      {
         task: "Wipe down baseboards",
         standard: false,
         deep: true,

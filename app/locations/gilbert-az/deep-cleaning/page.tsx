@@ -63,7 +63,7 @@ export default function Home() {
                 Sun Valley Cleaners
               </a>{" "}
               provides thorough deep cleaning in Gilbert, AZ, focusing on
-              grease‑prone kitchens, soap‑scum in baths, stubborn grout, fan
+              grease‑prone kitchens, soap‑scum in baths, fan
               blades, vents, and appliance interiors. This detail‑first reset is
               perfect for move‑ins, seasonal transitions, or tackling long‑term
               buildup with reliable scheduling.
@@ -187,7 +187,7 @@ export default function Home() {
                   <p className="text-lg text-foreground font-semibold">
                     <b>Hygiene Where It Counts:</b> Grease, soap residue, and
                     allergens collect in places routine cleaning skips. Deep
-                    cleaning in Gilbert tackles grout joints, appliance gaskets,
+                    cleaning in Gilbert tackles appliance gaskets,
                     faucet bases, and door hardware to reduce buildup and keep
                     high‑touch zones safer for daily use.
                   </p>

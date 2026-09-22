@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "What is included in your deep cleaning services in Phoenix, AZ?",
     answer:
-      "Our deep cleaning in Phoenix includes baseboard scrubbing, interior appliances, hard-to-reach surfaces, grout detailing, and full kitchen and bath sanitation.",
+      "Our deep cleaning in Phoenix includes baseboard scrubbing, interior appliances, hard-to-reach surfaces, and full kitchen and bath sanitation.",
   },
   {
     question: "When should I schedule deep cleaning for my Phoenix home?",
@@ -42,7 +42,7 @@ const faqs = [
     question:
       "Is there a difference between standard and deep cleaning in Phoenix, AZ?",
     answer:
-      "Yes, deep cleaning goes beyond surface cleaning and targets buildup in overlooked areas like vents, behind furniture, inside appliances, and grout lines.",
+      "Yes, deep cleaning goes beyond surface cleaning and targets buildup in overlooked areas like vents, behind furniture, and inside appliances.",
   },
 ];
 

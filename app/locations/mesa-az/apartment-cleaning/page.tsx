@@ -42,7 +42,7 @@ const faqs = [
     question:
       "Do you offer specialized treatments during apartment cleaning in Mesa, AZ?",
     answer:
-      "Yes, <a href='https://www.sunvalleycleaners.com/' target='_blank' class='underline text-secondary'>Sun Valley Cleaners</a> offers specialized treatments including stain removal, grout cleaning, and appliance detailing as part of our expert apartment cleaning in Mesa, AZ.",
+      "Yes, <a href='https://www.sunvalleycleaners.com/' target='_blank' class='underline text-secondary'>Sun Valley Cleaners</a> offers specialized treatments including stain removal and appliance detailing as part of our expert apartment cleaning in Mesa, AZ.",
   },
 ];
 

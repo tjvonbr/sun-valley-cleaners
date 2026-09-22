@@ -34,7 +34,7 @@ Most Scottsdale clients schedule this weekly, biweekly, or monthly. Biweekly wor
 
 ### Deep Cleaning
 
-A deep clean tackles everything in a standard clean plus the neglected zones: baseboards, ceiling fan blades, window tracks, oven interiors, refrigerator interiors, grout lines, behind and under appliances, and cabinet interiors if requested.
+A deep clean tackles everything in a standard clean plus the neglected zones: baseboards, ceiling fan blades, window tracks, oven interiors, refrigerator interiors, behind and under appliances, and cabinet interiors if requested.
 
 Think of it as restoring your home to a professional baseline. Book this for your first cleaning visit, after renovations, at spring start, or after a Scottsdale monsoon season leaves dust in every corner. Deep cleans require more time:
 

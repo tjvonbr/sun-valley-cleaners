@@ -107,7 +107,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-foreground font-semibold">
                     <b>Specialized Residue Removal:</b> Construction leaves
-                    behind adhesives, paint splatters, and grout haze. Our
+                    behind adhesives and paint splatters. Our
                     Chandler team uses specialized techniques to remove these
                     stubborn residues without damaging new surfaces.
                   </p>

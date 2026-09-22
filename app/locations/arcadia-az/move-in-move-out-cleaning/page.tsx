@@ -115,7 +115,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-foreground font-semibold">
                     <b>Attention to Detail:</b> We focus on high-impact areas
-                    like grout, fixtures, and appliances, leaving the property
+                    like fixtures and appliances, leaving the property
                     polished and ready without delays or re-cleaning.
                   </p>
                 </div>

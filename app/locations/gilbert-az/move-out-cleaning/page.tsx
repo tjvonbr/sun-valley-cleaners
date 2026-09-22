@@ -115,7 +115,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-foreground font-semibold">
                     <b>Attention to High-Impact Details:</b> Our team deep cleans
-                    grout, fixtures, and appliances—ensuring every detail
+                    fixtures and appliances—ensuring every detail
                     reflects care and readiness for a smooth handover.
                   </p>
                 </div>

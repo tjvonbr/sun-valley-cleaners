@@ -174,7 +174,7 @@ export default function Home() {
                   </div>
                   <p className="text-lg text-foreground font-semibold">
                     <b>Preserving Long-Term Value:</b> Regular deep cleaning in
-                    Paradise Valley slows wear on tile, grout, and high-use surfaces,
+                    Paradise Valley slows wear on tile and high-use surfaces,
                     helping your property maintain its appearance and condition
                     for years to come.
                   </p>

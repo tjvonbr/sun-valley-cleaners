@@ -25,7 +25,7 @@ export default function StandardCleanPage() {
         <p className="max-w-[750px] text-center">
           Maintain a consistently clean and comfortable home with Sun Valley
           Cleaners&apos; Standard Cleaning Service, perfect for recurring
-          visits. Our professional team in Chandler, AZ, ensures your home stays
+          visits. Our professional team in Scottsdale, AZ, ensures your home stays
           fresh and tidy with regular, high-quality cleaning tailored to your
           schedule and needs.
         </p>
