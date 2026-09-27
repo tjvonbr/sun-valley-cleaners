@@ -10,6 +10,7 @@ const BLOG_DIR = path.join(process.cwd(), "content/blog");
 export interface BlogPostMeta {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   date: string;
   image?: string;
@@ -38,6 +39,7 @@ export function getAllPostMeta(): BlogPostMeta[] {
     return {
       slug,
       title: data.title as string,
+      seoTitle: data.seoTitle as string | undefined,
       description: data.description as string,
       date: data.date as string,
       image: data.image as string | undefined,
@@ -62,6 +64,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   return {
     slug,
     title: data.title as string,
+    seoTitle: data.seoTitle as string | undefined,
     description: data.description as string,
     date: data.date as string,
     image: data.image as string | undefined,

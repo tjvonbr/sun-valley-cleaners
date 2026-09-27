@@ -1,13 +1,19 @@
 import { createHash, timingSafeEqual } from "crypto";
 import matter from "gray-matter";
 import { NextResponse } from "next/server";
+import { isReservedPath, isValidPagePath, normalizePath } from "@/lib/pages";
 
-// Receives blogr.ai `article.published` webhooks and commits the post (and its cover image)
-// to the GitHub repo. Vercel redeploys on push, and lib/blog.ts picks the file up.
+// Receives blogr.ai `article.published` (blog posts) and `page.published` (site pages,
+// e.g. pricing/comparisons/services/locations) webhooks and commits the content (and its
+// cover image) to the GitHub repo. Vercel redeploys on push, and lib/blog.ts / lib/pages.ts
+// pick the file up.
 // Docs: https://blogr.ai/integrations/webhooks
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+const BLOG_DIR = "content/blog";
+const PAGES_DIR = "content/pages";
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
@@ -24,9 +30,15 @@ interface BlogrArticle {
   type: "post" | "page";
   title: string;
   slug: string;
+  path?: string | null;
   content_markdown: string;
+  content_html?: string;
   seo?: { title?: string | null; meta_description?: string | null };
   og_image_url?: string | null;
+  og_image_alt?: string | null;
+  target_keyword?: string | null;
+  categories?: string[];
+  tags?: string[];
   published_at?: string | null;
 }
 
@@ -117,6 +129,63 @@ async function commitFile(path: string, content: Buffer, message: string): Promi
   throw new Error(`GitHub commit kept conflicting for ${path}`);
 }
 
+/** Deletes a file if it exists. No-op if it's already gone. */
+async function deleteFile(path: string, message: string): Promise<void> {
+  const { branch } = githubConfig();
+  const existing = await github(`${path}?ref=${branch}`);
+  if (existing.status === 404) return;
+  if (!existing.ok) throw new Error(`GitHub lookup failed for ${path}: ${existing.status}`);
+
+  const { sha } = (await existing.json()) as { sha: string };
+  const response = await github(path, { method: "DELETE", body: JSON.stringify({ message, sha, branch }) });
+  if (!response.ok) {
+    throw new Error(`GitHub delete failed for ${path}: ${response.status} ${await response.text()}`);
+  }
+}
+
+async function listMarkdownFiles(dir: string): Promise<Array<{ name: string; path: string }>> {
+  const { branch } = githubConfig();
+  const response = await github(`${dir}?ref=${branch}`);
+  if (response.status === 404) return [];
+  if (!response.ok) throw new Error(`GitHub list failed for ${dir}: ${response.status}`);
+
+  const entries = (await response.json()) as Array<{ name: string; path: string; type: string }>;
+  return entries.filter(
+    (entry) => entry.type === "file" && entry.name.endsWith(".md") && entry.name.toLowerCase() !== "readme.md",
+  );
+}
+
+async function getFileText(path: string): Promise<string | null> {
+  const { branch } = githubConfig();
+  const response = await github(`${path}?ref=${branch}`);
+  if (response.status === 404) return null;
+  if (!response.ok) throw new Error(`GitHub read failed for ${path}: ${response.status}`);
+
+  const { content } = (await response.json()) as { content: string };
+  return Buffer.from(content, "base64").toString("utf8");
+}
+
+/**
+ * Finds the file in `dir` whose frontmatter `blogrId` matches, wherever its current slug
+ * lives. Lets a delivery that changes an article's slug update the existing file (renaming
+ * it) instead of creating a duplicate alongside it.
+ */
+async function findExistingFileById(
+  dir: string,
+  id: number,
+): Promise<{ path: string; slug: string } | null> {
+  const files = await listMarkdownFiles(dir);
+  for (const file of files) {
+    const text = await getFileText(file.path);
+    if (!text) continue;
+    const { data } = matter(text);
+    if (data.blogrId === id) {
+      return { path: file.path, slug: file.name.replace(/\.md$/, "") };
+    }
+  }
+  return null;
+}
+
 async function downloadImage(url: string): Promise<{ data: Buffer; extension: string } | null> {
   try {
     const response = await fetch(url, { signal: AbortSignal.timeout(5000) });
@@ -169,6 +238,155 @@ function publishedDate(publishedAt?: string | null): string {
   return DATE_FORMAT.format(date); // en-CA formats as YYYY-MM-DD
 }
 
+/** Downloads the cover image (if any) and commits it under `dir`. Returns its public path. */
+async function publishImage(
+  dir: string,
+  slug: string,
+  imageUrl: string | null | undefined,
+  logPrefix: string,
+): Promise<string | undefined> {
+  if (!imageUrl) return undefined;
+
+  const downloaded = await downloadImage(imageUrl);
+  if (!downloaded) {
+    console.warn(`[blogr-webhook] Could not fetch cover image for ${logPrefix}; publishing without it`);
+    return undefined;
+  }
+
+  const imagePath = `public/images/${dir}/${slug}.${downloaded.extension}`;
+  await commitFile(imagePath, downloaded.data, `${logPrefix}: add cover image`);
+  return `/images/${dir}/${slug}.${downloaded.extension}`;
+}
+
+async function publishPost(article: BlogrArticle, domain: string | undefined) {
+  if (!SLUG_PATTERN.test(article.slug ?? "") || !article.title || !article.content_markdown) {
+    console.warn(
+      `[blogr-webhook] Invalid article: slug=${JSON.stringify(article.slug)} ` +
+        `hasTitle=${Boolean(article.title)} hasContent=${Boolean(article.content_markdown)}`,
+    );
+    return NextResponse.json({ error: "Invalid article" }, { status: 400 });
+  }
+
+  const { slug, id } = article;
+  const { repo, branch } = githubConfig();
+  console.log(`[blogr-webhook] Publishing post "${slug}" to ${repo}@${branch}`);
+
+  // A repeat delivery for the same article whose slug changed should rename the existing
+  // file rather than leave a duplicate behind.
+  const renameFrom = Number.isFinite(id) ? await findExistingFileById(BLOG_DIR, id) : null;
+
+  const image = await publishImage(
+    "blog",
+    slug,
+    article.og_image_url,
+    `blog: publish "${article.title}"`,
+  );
+
+  const frontmatter: Record<string, string | number> = {
+    title: article.title,
+    description: article.seo?.meta_description || fallbackDescription(article.content_markdown),
+    date: publishedDate(article.published_at),
+    author: "Sun Valley Cleaners",
+    blogrId: id,
+  };
+  if (image) frontmatter.image = image;
+  if (article.seo?.title) frontmatter.seoTitle = article.seo.title;
+
+  const file = matter.stringify(`\n${article.content_markdown.trim()}\n`, frontmatter);
+  const changed = await commitFile(
+    `${BLOG_DIR}/${slug}.md`,
+    Buffer.from(file, "utf8"),
+    `blog: publish "${article.title}"`,
+  );
+
+  if (renameFrom && renameFrom.slug !== slug) {
+    await deleteFile(renameFrom.path, `blog: remove "${renameFrom.slug}" after slug change to "${slug}"`);
+  }
+
+  console.log(`[blogr-webhook] Done: slug=${slug} changed=${changed}`);
+  return NextResponse.json({
+    ok: true,
+    changed,
+    ...(domain ? { url: `https://${domain}/blog/${slug}` } : {}),
+  });
+}
+
+async function publishPage(article: BlogrArticle, domain: string | undefined) {
+  if (
+    !SLUG_PATTERN.test(article.slug ?? "") ||
+    !article.title ||
+    !article.content_markdown ||
+    !article.path
+  ) {
+    console.warn(
+      `[blogr-webhook] Invalid page: slug=${JSON.stringify(article.slug)} path=${JSON.stringify(article.path)} ` +
+        `hasTitle=${Boolean(article.title)} hasContent=${Boolean(article.content_markdown)}`,
+    );
+    return NextResponse.json({ error: "Invalid page" }, { status: 400 });
+  }
+
+  const normalizedPath = normalizePath(article.path);
+  if (!isValidPagePath(normalizedPath)) {
+    console.warn(`[blogr-webhook] Invalid page path: ${JSON.stringify(article.path)}`);
+    return NextResponse.json({ error: "Invalid page path" }, { status: 400 });
+  }
+
+  // Never let a blogr.ai page shadow a route we've hand-built (or the homepage).
+  if (isReservedPath(normalizedPath)) {
+    console.log(
+      `[blogr-webhook] Skipped page: ${normalizedPath} is a hand-built route; leaving it as-is`,
+    );
+    return NextResponse.json({
+      ok: true,
+      skipped: `${normalizedPath} is already a hand-built route`,
+      ...(domain ? { url: `https://${domain}${normalizedPath}` } : {}),
+    });
+  }
+
+  const { slug, id } = article;
+  const { repo, branch } = githubConfig();
+  console.log(`[blogr-webhook] Publishing page "${slug}" (${normalizedPath}) to ${repo}@${branch}`);
+
+  const renameFrom = Number.isFinite(id) ? await findExistingFileById(PAGES_DIR, id) : null;
+
+  const image = await publishImage(
+    "pages",
+    slug,
+    article.og_image_url,
+    `page: publish "${article.title}"`,
+  );
+
+  const frontmatter: Record<string, string | number> = {
+    title: article.title,
+    description: article.seo?.meta_description || fallbackDescription(article.content_markdown),
+    path: normalizedPath,
+    blogrId: id,
+  };
+  if (image) {
+    frontmatter.image = image;
+    if (article.og_image_alt) frontmatter.imageAlt = article.og_image_alt;
+  }
+  if (article.seo?.title) frontmatter.seoTitle = article.seo.title;
+
+  const file = matter.stringify(`\n${article.content_markdown.trim()}\n`, frontmatter);
+  const changed = await commitFile(
+    `${PAGES_DIR}/${slug}.md`,
+    Buffer.from(file, "utf8"),
+    `page: publish "${article.title}" at ${normalizedPath}`,
+  );
+
+  if (renameFrom && renameFrom.slug !== slug) {
+    await deleteFile(renameFrom.path, `page: remove "${renameFrom.slug}" after slug change to "${slug}"`);
+  }
+
+  console.log(`[blogr-webhook] Done: path=${normalizedPath} changed=${changed}`);
+  return NextResponse.json({
+    ok: true,
+    changed,
+    ...(domain ? { url: `https://${domain}${normalizedPath}` } : {}),
+  });
+}
+
 export async function POST(request: Request) {
   if (!process.env.BLOGR_TOKEN) {
     console.error("[blogr-webhook] BLOGR_TOKEN is not set");
@@ -198,66 +416,28 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, test: true });
   }
 
-  // This site has no CMS-managed inner pages, so only blog posts are published.
   const article = payload.article;
-  if (payload.event !== "article.published" || article?.type !== "post") {
-    console.log(
-      `[blogr-webhook] Skipped: event=${payload.event} type=${article?.type} (only article.published posts are handled)`,
-    );
-    return NextResponse.json({ ok: true, skipped: `Unsupported event: ${payload.event}` });
-  }
+  const domain = payload.website?.domain;
 
-  // The slug becomes a file path, so it must be strictly validated.
-  if (!SLUG_PATTERN.test(article.slug ?? "") || !article.title || !article.content_markdown) {
-    console.warn(
-      `[blogr-webhook] Invalid article: slug=${JSON.stringify(article.slug)} ` +
-        `hasTitle=${Boolean(article.title)} hasContent=${Boolean(article.content_markdown)}`,
-    );
-    return NextResponse.json({ error: "Invalid article" }, { status: 400 });
+  if (!article) {
+    console.warn(`[blogr-webhook] Rejected request: missing article for event=${payload.event}`);
+    return NextResponse.json({ error: "Missing article" }, { status: 400 });
   }
-
-  const { slug } = article;
 
   try {
-    const { repo, branch } = githubConfig();
-    console.log(`[blogr-webhook] Publishing "${slug}" to ${repo}@${branch}`);
-
-    let image: string | undefined;
-    if (article.og_image_url) {
-      const downloaded = await downloadImage(article.og_image_url);
-      if (downloaded) {
-        const imagePath = `public/images/blog/${slug}.${downloaded.extension}`;
-        await commitFile(imagePath, downloaded.data, `blog: add cover image for ${slug}`);
-        image = `/images/blog/${slug}.${downloaded.extension}`;
-      } else {
-        console.warn(
-          `[blogr-webhook] Could not fetch cover image for ${slug}; publishing without it`,
-        );
-      }
+    if (payload.event === "article.published" && article.type === "post") {
+      return await publishPost(article, domain);
+    }
+    if (payload.event === "page.published" && article.type === "page") {
+      return await publishPage(article, domain);
     }
 
-    const frontmatter: Record<string, string> = {
-      title: article.title,
-      description: article.seo?.meta_description || fallbackDescription(article.content_markdown),
-      date: publishedDate(article.published_at),
-    };
-    if (image) frontmatter.image = image;
-    frontmatter.author = "Sun Valley Cleaners";
-
-    const file = matter.stringify(`\n${article.content_markdown.trim()}\n`, frontmatter);
-    const changed = await commitFile(
-      `content/blog/${slug}.md`,
-      Buffer.from(file, "utf8"),
-      `blog: publish "${article.title}"`,
+    console.log(
+      `[blogr-webhook] Skipped: event=${payload.event} type=${article.type} (unrecognized event/type combination)`,
     );
-
-    console.log(`[blogr-webhook] Done: slug=${slug} changed=${changed}`);
-
-    const domain = payload.website?.domain;
     return NextResponse.json({
       ok: true,
-      changed,
-      ...(domain ? { url: `https://${domain}/blog/${slug}` } : {}),
+      skipped: `Unsupported event/type: ${payload.event}/${article.type}`,
     });
   } catch (error) {
     console.error("[blogr-webhook] Failed to publish", error);

@@ -1,41 +1,41 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPostMeta, getPostBySlug } from "@/lib/blog";
+import { getAllPageMeta, getPageByPath, pathSegments } from "@/lib/pages";
 
-interface BlogPostPageProps {
-  params: { slug: string };
+// Renders the site pages blogr.ai publishes from its topical map (pricing, comparisons,
+// services, locations, etc.) at whatever path it assigns them. Next.js always prefers a
+// more specific hand-built route over this catch-all, so an existing route like
+// /services/house-cleaning is never shadowed by a page published here.
+
+interface SitePageProps {
+  params: { slug: string[] };
+}
+
+function requestPath(params: SitePageProps["params"]): string {
+  return `/${params.slug.join("/")}`;
 }
 
 export async function generateStaticParams() {
-  return getAllPostMeta().map((post) => ({ slug: post.slug }));
+  return getAllPageMeta().map((page) => ({ slug: pathSegments(page.path) }));
 }
 
 export async function generateMetadata({
   params,
-}: BlogPostPageProps): Promise<Metadata> {
-  const post = await getPostBySlug(params.slug);
-  if (!post) return {};
+}: SitePageProps): Promise<Metadata> {
+  const page = await getPageByPath(requestPath(params));
+  if (!page) return {};
 
   return {
-    title: `${post.seoTitle || post.title} | Sun Valley Cleaners`,
-    description: post.description,
+    title: `${page.seoTitle || page.title} | Sun Valley Cleaners`,
+    description: page.description,
   };
 }
 
-function formatDate(date: string) {
-  return new Date(`${date}T00:00:00`).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
+export default async function SitePage({ params }: SitePageProps) {
+  const page = await getPageByPath(requestPath(params));
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await getPostBySlug(params.slug);
-
-  if (!post) {
+  if (!page) {
     notFound();
   }
 
@@ -43,25 +43,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <div className="flex min-h-screen flex-col items-center bg-primary">
       <article className="w-full px-4 py-10 lg:px-16 lg:py-20">
         <div className="mx-auto max-w-3xl">
-          <Link
-            href="/blog"
-            className="mb-6 inline-block text-sm font-medium text-background/80 hover:text-background hover:underline"
-          >
-            ← Back to Blog
-          </Link>
-
-          <h1 className="mb-3 text-4xl font-black text-primary-foreground lg:text-5xl">
-            {post.title}
+          <h1 className="mb-8 text-4xl font-black text-primary-foreground lg:text-5xl">
+            {page.title}
           </h1>
-          <p className="mb-8 text-sm text-background/80">
-            {formatDate(post.date)} · {post.readingTime} · By {post.author}
-          </p>
 
-          {post.image ? (
+          {page.image ? (
             <div className="relative mb-8 h-64 w-full overflow-hidden rounded-lg lg:h-96">
               <Image
-                src={post.image}
-                alt={post.title}
+                src={page.image}
+                alt={page.imageAlt || page.title}
                 fill
                 className="object-cover"
                 priority
@@ -71,7 +61,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           <div
             className="prose prose-lg max-w-none rounded-lg bg-background p-6 prose-headings:text-foreground prose-p:text-foreground prose-a:text-secondary prose-strong:text-foreground prose-li:text-foreground lg:p-10"
-            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+            dangerouslySetInnerHTML={{ __html: page.contentHtml }}
           />
 
           <div className="mt-10 text-center">

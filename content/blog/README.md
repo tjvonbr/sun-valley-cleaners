@@ -24,12 +24,16 @@ author: "Sun Valley Cleaners"
 Your post content goes here, written in normal Markdown...
 ```
 
-- `title` — required. Used as the page title and H1.
+- `title` — required. Used as the H1.
 - `description` — required. Used for the meta description and listing preview.
 - `date` — required. Format `YYYY-MM-DD`. Controls sort order (newest first).
 - `image` — optional. Path to a cover image in `/public/images/blog/`. Upload the image
   file there with the same name referenced in the frontmatter.
 - `author` — optional. Defaults to "Sun Valley Cleaners" if omitted.
+- `seoTitle` — optional. Overrides `title` in the `<title>` tag only; the H1 still uses `title`.
+- `blogrId` — managed by the blogr.ai webhook (`app/api/blogr-webhook/route.ts`). It's how a
+  repeat delivery for the same article is matched back to this file, even after a slug
+  change. Leave it alone in hand-written posts.
 
 ## Body content
 
