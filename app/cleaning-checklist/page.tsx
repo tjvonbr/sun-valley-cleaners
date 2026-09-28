@@ -24,6 +24,15 @@ export default function CleaningChecklistPage() {
 
         <CleaningChecklist />
 
+        <div className="mt-10 max-w-2xl mx-auto bg-card rounded-lg shadow-lg px-6 py-5 text-center">
+          <p className="text-muted-foreground">
+            <span className="font-semibold text-primary">Our satisfaction guarantee:</span>{" "}
+            We want you to love your clean! If anything was missed or doesn&apos;t
+            look right, just let us know within 24 hours of your appointment
+            and we&apos;ll make it right.
+          </p>
+        </div>
+
         <div className="mt-12 text-center space-y-4">
           <p className="text-background/80 max-w-2xl mx-auto">
             Learn more about each service:{" "}
