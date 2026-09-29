@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RoleDetails from "@/components/role-details";
 
 export const metadata = {
   title: "Careers | Sun Valley Cleaners Scottsdale, AZ",
@@ -79,9 +80,7 @@ export default function CareersPage() {
           {openRoles.map((role) => (
             <a
               key={role.title}
-              href={`mailto:hello@sunvalleycleaners.com?subject=${encodeURIComponent(
-                `Application: ${role.title}`
-              )}`}
+              href="#role-overview"
               className="block rounded-xl border border-background/30 bg-background p-6 text-primary transition-shadow hover:shadow-lg"
             >
               <h3 className="text-2xl font-semibold">{role.title}</h3>
@@ -94,6 +93,8 @@ export default function CareersPage() {
           ))}
         </div>
       </div>
+
+      <RoleDetails />
 
       <div className="w-full max-w-3xl px-8 py-12 flex flex-col items-center space-y-4 text-center">
         <h2 className="text-3xl lg:text-5xl text-background font-bold">
