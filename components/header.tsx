@@ -50,6 +50,7 @@ const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Checklist", href: "/cleaning-checklist" },
   { label: "Blog", href: "/blog" },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
 
