@@ -112,6 +112,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
 
+    // Careers
+    {
+      url: `${BASE_URL}/careers`,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
+
     // Contact
     {
       url: `${BASE_URL}/contact`,

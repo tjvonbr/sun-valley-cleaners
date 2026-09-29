@@ -26,6 +26,12 @@ export default function Footer() {
           Blog
         </Link>
         <Link
+          href="/careers"
+          className="flex items-center hover:underline"
+        >
+          Careers
+        </Link>
+        <Link
           href="/contact"
           className="flex items-center hover:underline"
         >
