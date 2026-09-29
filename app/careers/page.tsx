@@ -27,6 +27,17 @@ const reasons = [
   },
 ];
 
+const openRoles = [
+  {
+    department: "Cleaning",
+    title: "Professional House Cleaner",
+    details: [
+      ["Cleaning", "Scottsdale, AZ"],
+      ["$25 – $30 / hour"],
+    ],
+  },
+];
+
 export default function CareersPage() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-primary">
@@ -55,6 +66,31 @@ export default function CareersPage() {
               <h3 className="text-xl font-bold">{reason.title}</h3>
               <p className="mt-2 text-sm">{reason.description}</p>
             </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full max-w-4xl px-8 py-12 flex flex-col space-y-6">
+        <h2 className="text-3xl text-background font-bold">
+          Open Positions{" "}
+          <span className="text-background/70">({openRoles.length})</span>
+        </h2>
+        <div className="flex flex-col gap-4">
+          {openRoles.map((role) => (
+            <a
+              key={role.title}
+              href={`mailto:hello@sunvalleycleaners.com?subject=${encodeURIComponent(
+                `Application: ${role.title}`
+              )}`}
+              className="block rounded-xl border border-background/30 bg-background p-6 text-primary transition-shadow hover:shadow-lg"
+            >
+              <h3 className="text-2xl font-semibold">{role.title}</h3>
+              <div className="mt-6 space-y-2 text-sm font-semibold uppercase tracking-widest">
+                {role.details.map((row) => (
+                  <p key={row.join()}>{row.join(" • ")}</p>
+                ))}
+              </div>
+            </a>
           ))}
         </div>
       </div>
