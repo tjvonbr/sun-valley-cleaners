@@ -14,7 +14,7 @@ const LIMITS = {
   role: 100,
   experience: 50,
   transportation: 10,
-  about: 2000,
+  driversLicense: 100
 } as const;
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -47,6 +47,8 @@ export async function POST(request: Request) {
   const name = field(body, "name");
   const email = field(body, "email");
   const phone = field(body, "phone");
+  const experience = field(body, "experience")
+  const driversLicense = field(body, "driversLicense")
   if (!name || !phone || !EMAIL_PATTERN.test(email)) {
     return NextResponse.json({ error: "Name, phone, and a valid email are required" }, { status: 400 });
   }
@@ -62,10 +64,9 @@ export async function POST(request: Request) {
         Name: name,
         Email: email,
         Phone: phone,
-        Role: field(body, "role"),
-        Experience: field(body, "experience"),
-        Transportation: field(body, "transportation"),
-        About: field(body, "about"),
+        Experience: experience,
+        "Driver's License": driversLicense,
+        "Reliable Transportation": field(body, "transportation"),
       },
     }),
   });
