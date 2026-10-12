@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
 const roleOverview = {
-  title: "Professional House Cleaner",
+  title: "House Cleaner",
   facts: [
     { label: "Location", value: "Scottsdale, AZ" },
     { label: "Compensation", value: "$25 – $30 / hour" },
@@ -34,9 +34,19 @@ type Status = "idle" | "submitting" | "success" | "error";
 const fieldClass =
   "w-full rounded-md border border-primary/30 bg-background px-3 py-2 text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
+function formatPhone(input: string): string {
+  let digits = input.replace(/\D/g, "");
+  if (digits.length === 11 && digits.startsWith("1")) digits = digits.slice(1);
+  digits = digits.slice(0, 10);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+  return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+}
+
 export default function RoleDetails() {
   const [tab, setTab] = useState<Tab>("overview");
   const [status, setStatus] = useState<Status>("idle");
+  const [phone, setPhone] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -137,7 +147,20 @@ export default function RoleDetails() {
                 </label>
                 <label className="space-y-1">
                   <span>Phone *</span>
-                  <input name="phone" type="tel" required maxLength={30} autoComplete="tel" className={fieldClass} />
+                  <input
+                    name="phone"
+                    type="tel"
+                    inputMode="numeric"
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(formatPhone(e.target.value))}
+                    pattern="\d{3}-\d{3}-\d{4}"
+                    title="Phone number in the format 555-555-5555"
+                    placeholder="555-555-5555"
+                    maxLength={12}
+                    autoComplete="tel"
+                    className={fieldClass}
+                  />
                 </label>
               </div>
               <label className="block space-y-1">
@@ -146,13 +169,27 @@ export default function RoleDetails() {
               </label>
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="space-y-1">
+                  <span>City</span>
+                  <input name="city" maxLength={100} autoComplete="address-level2" className={fieldClass} />
+                </label>
+                <label className="space-y-1">
+                  <span>Valid driver&apos;s license? *</span>
+                  <select name="driversLicense" required defaultValue="" className={fieldClass}>
+                    <option value="" disabled>Select one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </label>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <label className="space-y-1">
                   <span>Cleaning experience *</span>
                   <select name="experience" required defaultValue="" className={fieldClass}>
                     <option value="" disabled>Select one</option>
                     <option>None</option>
-                    <option>Less than 1 year</option>
-                    <option>1–3 years</option>
-                    <option>3+ years</option>
+                    <option>Less than 3 years</option>
+                    <option>3–5 years</option>
+                    <option>5+ years</option>
                   </select>
                 </label>
                 <label className="space-y-1">
