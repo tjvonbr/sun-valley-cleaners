@@ -9,12 +9,13 @@ export const dynamic = "force-dynamic";
 
 const LIMITS = {
   name: 100,
+  role: 100,
+  city: 100,
   email: 200,
   phone: 30,
-  role: 100,
   experience: 50,
+  driversLicense: 100,
   transportation: 10,
-  driversLicense: 100
 } as const;
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -45,13 +46,32 @@ export async function POST(request: Request) {
   }
 
   const name = field(body, "name");
+  const role = field(body, "role");
+  const city = field(body, "city");
   const email = field(body, "email");
   const phone = field(body, "phone");
   const experience = field(body, "experience")
   const driversLicense = field(body, "driversLicense")
+  const transportation = field(body, "transportation")
+
   if (!name || !phone || !EMAIL_PATTERN.test(email)) {
     return NextResponse.json({ error: "Name, phone, and a valid email are required" }, { status: 400 });
   }
+
+  const payload = {
+    fields: {
+      Name: name,
+      Role: role,
+      City: city,
+      Email: email,
+      Phone: phone,
+      Experience: experience,
+      "Driver's License": driversLicense,
+      "Reliable Transportation": transportation,
+    },
+  };
+  console.log("Apply form body:", body);
+  console.log("Airtable payload:", JSON.stringify(payload, null, 2));
 
   const res = await fetch(`https://api.airtable.com/v0/${baseId}/${tableId}`, {
     method: "POST",
@@ -59,20 +79,11 @@ export async function POST(request: Request) {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      fields: {
-        Name: name,
-        Email: email,
-        Phone: phone,
-        Experience: experience,
-        "Driver's License": driversLicense,
-        "Reliable Transportation": field(body, "transportation"),
-      },
-    }),
+    body: JSON.stringify(payload),
   });
   if (!res.ok) {
     console.error("Airtable applicant create failed:", res.status, await res.text());
-    return NextResponse.json({ error: "Could not save application" }, { status: 502 });
+    return NextResponse.json({ error: "There was an error creating a prospect record" }, { status: 502 });
   }
   return NextResponse.json({ ok: true });
 }
