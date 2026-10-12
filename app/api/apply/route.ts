@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { escapeSlack, postSlackMessage } from "@/lib/slack";
 
 // Receives job applications from the /careers form and adds them to the Airtable
 // applicants table. Expected Airtable fields (all single line text unless noted):
@@ -85,5 +86,18 @@ export async function POST(request: Request) {
     console.error("Airtable applicant create failed:", res.status, await res.text());
     return NextResponse.json({ error: "There was an error creating a prospect record" }, { status: 502 });
   }
+
+  // Awaited so the serverless function isn't frozen before Slack is notified.
+  await postSlackMessage(
+    [
+      `:broom: *New applicant: ${escapeSlack(name)}*${role ? ` — ${escapeSlack(role)}` : ""}`,
+      `Phone: ${escapeSlack(phone)}`,
+      `Email: ${escapeSlack(email)}`,
+      `City: ${escapeSlack(city) || "—"}`,
+      `Experience: ${escapeSlack(experience) || "—"}`,
+      `Driver's license: ${escapeSlack(driversLicense) || "—"}`,
+      `Reliable transportation: ${escapeSlack(transportation) || "—"}`,
+    ].join("\n"),
+  );
   return NextResponse.json({ ok: true });
 }
