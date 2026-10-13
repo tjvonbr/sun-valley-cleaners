@@ -7,7 +7,9 @@ export function escapeSlack(text: string): string {
   return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-export async function postSlackMessage(text: string): Promise<void> {
+// `text` is the plain-text fallback used for notifications and clients that
+// can't render blocks; `blocks` is the rich layout shown in the channel.
+export async function postSlackMessage(text: string, blocks?: unknown[]): Promise<void> {
   const token = process.env.SLACK_APP_TRACKER_BOT_TOKEN;
   const channel = process.env.SLACK_HIRING_CHANNEL_ID;
   if (!token || !channel) {
@@ -22,7 +24,7 @@ export async function postSlackMessage(text: string): Promise<void> {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json; charset=utf-8",
       },
-      body: JSON.stringify({ channel, text }),
+      body: JSON.stringify({ channel, text, blocks }),
       signal: AbortSignal.timeout(5000),
     });
     // Slack returns HTTP 200 with { ok: false, error } for most failures.

@@ -87,17 +87,43 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "There was an error creating a prospect record" }, { status: 502 });
   }
 
+  // Link straight to the new Airtable record, if the response includes its id.
+  const recordId = await res.json().then((r) => r?.id as string | undefined).catch(() => undefined);
+
+  const detail = (label: string, value: string) => ({
+    type: "mrkdwn",
+    text: `*${label}*\n${escapeSlack(value) || "—"}`,
+  });
+
   // Awaited so the serverless function isn't frozen before Slack is notified.
-  await postSlackMessage(
-    [
-      `:broom: *New applicant: ${escapeSlack(name)}*${role ? ` — ${escapeSlack(role)}` : ""}`,
-      `Phone: ${escapeSlack(phone)}`,
-      `Email: ${escapeSlack(email)}`,
-      `City: ${escapeSlack(city) || "—"}`,
-      `Experience: ${escapeSlack(experience) || "—"}`,
-      `Driver's license: ${escapeSlack(driversLicense) || "—"}`,
-      `Reliable transportation: ${escapeSlack(transportation) || "—"}`,
-    ].join("\n"),
-  );
+  await postSlackMessage(`New applicant: ${name} (${role || "no role"})`, [
+    {
+      type: "section",
+      fields: [
+        detail("Name", name),
+        detail("Role", role),
+        detail("Phone", phone),
+        detail("Email", email),
+        detail("City", city),
+        detail("Experience", experience),
+        detail("Driver's license", driversLicense),
+        detail("Reliable transportation", transportation),
+      ],
+    },
+    ...(recordId
+      ? [
+          {
+            type: "actions",
+            elements: [
+              {
+                type: "button",
+                text: { type: "plain_text", text: "View in Airtable" },
+                url: `https://airtable.com/${baseId}/${tableId}/${recordId}`,
+              },
+            ],
+          },
+        ]
+      : []),
+  ]);
   return NextResponse.json({ ok: true });
 }
