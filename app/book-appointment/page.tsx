@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Script from "next/script";
+import JotformEmbed from "@/components/jotform-embed";
 
 export const metadata = {
   title: "Book a Cleaning Appointment | Sun Valley Cleaners in Scottsdale, AZ",
@@ -13,15 +12,7 @@ export const metadata = {
 export default function BookAppointmentPage() {
   return (
     <div className="container min-h-screen w-full flex flex-col items-center">
-      <iframe
-        src="https://sunvalleycleaners.bookingkoala.com/booknow/home_cleaning?embed=true&bar=false&banner=false"
-        style={{ border: "none", height: "1000px" }}
-        width="100%"
-      ></iframe>
-      <Script
-        src="https://sunvalleycleaners.bookingkoala.com/resources/embed.js"
-        strategy="afterInteractive"
-      />
+      <JotformEmbed />
     </div>
   );
 }
