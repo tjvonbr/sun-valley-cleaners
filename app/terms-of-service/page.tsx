@@ -33,9 +33,20 @@ export default function TermsOfServicePage() {
           <h2 className="text-2xl font-bold">Bookings and Cancellations</h2>
           <p>
             Appointments must be cancelled or rescheduled at least 24 hours in advance. Late
-            cancellations or no-shows may be subject to a cancellation fee. We reserve the right to
+            cancellations or no-shows may be subject to a cancellation fee. Same-day cancellations
+            and no-shows may be charged up to 50% of the booking fee. We reserve the right to
             reschedule appointments due to unforeseen circumstances and will notify you as soon as
             possible if this occurs.
+          </p>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-2xl font-bold">First Clean Promotion</h2>
+          <p>
+            New customers who commit to three cleans receive 50% off their first clean. If you
+            cancel service before completing three cleans, the first clean will be charged at full
+            price, and the difference will be billed to your payment method on file. This promotion
+            does not apply if we cancel or are unable to complete service.
           </p>
         </section>
 
@@ -60,8 +71,8 @@ export default function TermsOfServicePage() {
         <section className="space-y-3">
           <h2 className="text-2xl font-bold">Satisfaction Guarantee</h2>
           <p>
-            If you are not satisfied with the quality of your cleaning, please contact us within 24
-            hours of your appointment. We will make reasonable efforts to address your concerns,
+            If you are not satisfied with the quality of your cleaning, please contact us within 48
+            hours of your appointment's conclusion. We will make reasonable efforts to address your concerns,
             including returning to re-clean affected areas at no additional charge.
           </p>
         </section>
