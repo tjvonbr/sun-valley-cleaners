@@ -3,7 +3,7 @@ title: How to Handle Airbnb Turnover Quickly Between Guests (2026)
 description: >-
   A proven six-step system for fast, reliable Airbnb turnover cleaning between
   guests, with real Scottsdale timing benchmarks you can use today.
-date: '2026-11-24'
+date: '2026-11-25'
 author: Sun Valley Cleaners
 blogrId: 6158
 image: /images/blog/airbnb-turnover-tips.png
@@ -129,7 +129,7 @@ Every turnover, check and refill: toilet paper in every bathroom, hand soap, sha
 
 ### Stage for Listing-Photo Consistency
 
-Guests compare what they see in person to what they booked. Fold towels the same way every time, fluff and arrange pillows to match the listing photos, straighten rugs, close cabinet doors, and reset any decor that got moved. If your listing photo shows three throw pillows arranged a specific way on the sofa, that's what the guest expects to walk into. A short-term rental cleaning checklist specific to your unit, with photos attached, saves a cleaner from guessing.
+Guests compare what they see in person to what they booked. Fold towels the same way every time, fluff and arrange pillows to match the listing photos, straighten rugs, close cabinet doors, and reset any decor that got moved. If your listing photo shows three throw pillows arranged a specific way on the sofa, that's what the guest expects to walk into. A [short-term rental cleaning checklist](https://sunvalleycleaners.com/blog/str-host-checklist) specific to your unit, with photos attached, saves a cleaner from guessing.
 
 ## Step 6: Run a Final Walkthrough Checklist Before Check-In
 
