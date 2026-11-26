@@ -4,7 +4,7 @@ import Link from "next/link";
 import image from "../../public/about_us.svg";
 
 export const metadata = {
-  title: "About Sun Valley Cleaners | Professional House Cleaning in Scottsdale, AZ",
+  title: "About Sun Valley Cleaners | Scottsdale House Cleaning",
   description:
     "Sun Valley Cleaners is Scottsdale's trusted home cleaning company, specializing in residential cleaning and Airbnb turnover services. Reliable, detail-focused, and locally owned.",
   alternates: {
