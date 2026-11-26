@@ -53,6 +53,9 @@ const config = {
           foreground: "hsl(var(--card-foreground) / <alpha-value>)",
         },
       },
+      fontFamily: {
+        serif: ["var(--font-lora)", "Georgia", "serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
