@@ -10,20 +10,20 @@ export default function FrequentlyAskedQuestions() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left text-lg font-semibold text-foreground">
           What house cleaning service does your company provide?
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-serif text-lg leading-[1.7] text-foreground">
           We offer a comprehensive range of cleaning services, including room
           cleaning, kitchen cleaning, and various other specialized cleaning
           solutions tailored to meet your needs.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left text-lg font-semibold text-foreground">
           How do I schedule a cleaning with your company?
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-serif text-lg leading-[1.7] text-foreground">
           We want to make booking an appointment as simple as possible for you
           and make the pricing as transparent as possible. You can click{" "}
           <Link href="/book-appointment" className="underline">
@@ -35,11 +35,11 @@ export default function FrequentlyAskedQuestions() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left text-lg font-semibold text-foreground">
           Can I customize the house cleaning service based on my specific
           requirements?
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-serif text-lg leading-[1.7] text-foreground">
           Of course! The appointment booking form{" "}
           <Link href="/book-appointment" className="underline">
             here
@@ -53,10 +53,10 @@ export default function FrequentlyAskedQuestions() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left text-lg font-semibold text-foreground">
           What areas do you serve, and do you have specific hours?
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-serif text-lg leading-[1.7] text-foreground">
           At the moment, we are happily serving Phoenix, Scottsdale, Paradise
           Valley, Tempe, Mesa, Queen Creek, Chandler, and Gilbert communities!
           If you don&apos;t see your city on this list, give us a call and we
