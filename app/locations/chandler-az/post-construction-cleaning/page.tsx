@@ -7,17 +7,11 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
-  IconBed,
-  IconBox,
-  IconBoxOpen,
   IconCircleCheck,
-  IconEvent,
-  IconOven,
-  IconSprayBottle,
 } from "@/components/ui/icons";
 
 export const metadata = {
-  title: "Detailed Post Construction Cleaning in Chandler, AZ | Sun Valley Cleaners",
+  title: "Post-Construction Cleaning in Chandler, AZ",
   description:
     "Sun Valley Cleaners provides detailed post construction cleaning in Chandler, AZ with meticulous attention to every surface and corner. Call now!",
   alternates: {
